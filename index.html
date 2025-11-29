@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/common.css">
 
   <!-- PWA Manifest -->
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="data/manifest.json">
 
   <!-- Theme Color (Android + iOS) -->
   <meta name="theme-color" content="#1f2a36">
@@ -271,7 +271,7 @@
 
     <script>
       if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/service-worker.js')
+        navigator.serviceWorker.register('js/service-worker.js')
           .then(() => console.log('Service Worker registered'));
       }
     </script>
