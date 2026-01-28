@@ -55,7 +55,7 @@
       max-width: 600px;       /* limits width on larger screens */
       margin: 0 auto;          /* centers within flex/grid cell */
       flex: 0 1 auto;          /* prevents unwanted stretching */
-      margin-top: 0.5rem;   /* or 0 if you want it tight */
+      margin-top: 0rem;   /* or 0 if you want it tight */
 
   }
 
