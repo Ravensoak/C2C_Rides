@@ -30,179 +30,221 @@
   <link rel="apple-touch-startup-image" href="/graphics/icon-512.png">
 </head>
   
-  <style>
-    #footer-placeholder {
-      margin-top: auto;
-      width: 100%; 
-    }
+ <style>
+  /* =========================================================
+     FOOTER PLACEHOLDER
+     Keeps footer pushed to the bottom when content is short
+  ========================================================== */
+  #footer-placeholder {
+    margin-top: auto;
+    width: 100%;
+  }
 
-    #refreshButton {
-      display: none;
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      border: none;
-      background: #003366; /* C2C navy */
-      color: white;
-      font-size: 24px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      z-index: 1000;
+  /* =========================================================
+     FLOATING REFRESH BUTTON
+     Hidden by default, appears when .visible is added
+  ========================================================== */
+  #refreshButton {
+    display: none;                 /* hidden until enabled via JS */
+    position: fixed;               /* stays in bottom-right corner */
+    bottom: 20px;
+    right: 20px;
+
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: none;
+
+    background: #003366;           /* C2C navy */
+    color: #fff;
+    font-size: 24px;
+
+    display: flex;                 /* centers icon/text */
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    z-index: 1000;
+
+    opacity: 0;                    /* fades in when visible */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.5s ease, background 0.2s ease, transform 0.2s ease;
+  }
+
+  /* Visible state (fade in) */
+  #refreshButton.visible {
+    opacity: 1;
+  }
+
+  /* Hover state (slightly larger + lighter blue) */
+  #refreshButton:hover {
+    background: #0055aa;
+    transform: scale(1.1);
+  }
+
+  /* =========================================================
+     HEADER / PAGE INTRO
+  ========================================================== */
+  header {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-bottom: 0;              /* adjust to taste */
+    animation: fadeIn 1.5s ease-out;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #f0f0f0;
+  }
+
+  header p {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+  }
+
+  /* =========================================================
+     LOGO
+  ========================================================== */
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .logo {
+    width: clamp(100px, 10vw, 140px); /* responsive sizing */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+    transition: transform 0.3s ease, filter 0.3s ease;
+    will-change: transform, filter;   /* performance hint */
+  }
+
+  .logo:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+  }
+
+  /* =========================================================
+     BUTTON GRID + BUTTON STYLES
+  ========================================================== */
+  .button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+
+    width: 90%;
+    max-width: 600px;
+    margin-top: 2rem;
+  }
+
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+
+    background: var(--accent);
+    color: #fff;
+
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+  }
+
+  .btn:hover {
+    background: var(--hover);
+  }
+
+  /* =========================================================
+     ANIMATIONS
+  ========================================================== */
+  @keyframes fadeIn {
+    from {
       opacity: 0;
-      transition: opacity 0.5s ease, background 0.2s ease, transform 0.2s ease;
+      transform: translateY(-10px);
     }
-
-    #refreshButton.visible {
+    to {
       opacity: 1;
+      transform: translateY(0);
     }
+  }
 
-    #refreshButton:hover {
-      background: #0055aa; /* lighter hover blue */
-      transform: scale(1.1);
-    }
+  /* =========================================================
+     SPLASH SCREEN
+  ========================================================== */
+  #splash-screen {
+    position: fixed;
+    inset: 0;                      /* shorthand for top/right/bottom/left: 0 */
+    z-index: 9999;
 
-    header {
-      text-align: center;
-      padding: 2rem 1rem;
-      animation: fadeIn 1.5s ease-out;
-      margin-bottom: 0rem;  /* adjust to taste */
+    background-color: #0d47a1;     /* C2C blue */
+    color: #fff;
 
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
+    font-family: sans-serif;
+    text-align: center;
+    padding: 0 1.5rem;
+
+    transition: opacity 0.6s ease; /* for fade-out effect */
+  }
+
+  #splash-screen img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+  }
+
+  /* =========================================================
+     RESPONSIVE RULES
+  ========================================================== */
+
+  /* Small screens: reduce text + make buttons 2 columns */
+  @media (max-width: 500px) {
     header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-      color: #F0F0F0;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      color: #F0F0F0;
-    }
-    
-
-    .button-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 1rem;
-      width: 90%;
-      max-width: 600px;
-      margin-top: 2rem;
+      font-size: 2rem;
     }
 
     .btn {
-      display: inline-block;
-      text-decoration: none;
-      text-align: center;
-      background: var(--accent);
-      color: white;
-      padding: 1rem;
-      border-radius: 8px;
-      font-size: 1rem;
-      transition: background 0.3s ease;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      font-size: 0.95rem;
+      padding: 0.8rem;
     }
 
-    .btn:hover {
-      background: var(--hover);
+    .button-grid {
+      grid-template-columns: repeat(2, 1fr); /* force 2 columns */
+      margin-bottom: 3rem;                  /* space before footer */
     }
-
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    
-    .logo-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 1rem;
-    }
-
-    .logo {
-      width: clamp(100px, 10vw, 140px); /* responsive sizing */
-      height: auto;
-      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
-      transition: transform 0.3s ease, filter 0.3s ease;
-      will-change: transform, filter;
-      display: block;
-      margin: 0 auto; /* centers logo if needed */
-    }
-
-    .logo:hover {
-      transform: scale(1.05);
-      filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3)); /* slightly deeper on hover */
-    }
-
-
-    /* === Responsive ===*/
-    @media (max-width: 500px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      .btn {
-        font-size: 0.95rem;
-        padding: 0.8rem;
-      }
-      .button-grid {
-        grid-template-columns: repeat(2, 1fr); /*(ensure buttons are placed across 2 columns for smaller screens) */
-        margin-bottom: 3rem;   /* Adds space between buttons and footer */
-
   }
 
-
-      
-    } 
-
-
-
-    #splash-screen {
-      position: fixed;
-      inset: 0;
-      background-color: #0d47a1; /* C2C blue */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-family: sans-serif;
-      text-align: center;
-      z-index: 9999;
-      transition: opacity 0.6s ease;
-      padding: 0 1.5rem;
+  /* Switch to mobile nav */
+  @media (max-width: 700px) {
+    .main-nav {
+      display: none; /* hide desktop nav */
     }
 
-    #splash-screen img {
-      width: 120px;
-      height: 120px;
-      margin-bottom: 20px;
+    .menu-toggle {
+      display: block; /* show hamburger */
     }
+  }
 
-    @media (max-width: 700px) {
-      /* Switch to mobile nav */
-      .main-nav {
-        display: none; /* hide desktop nav */
-      }
-      .menu-toggle {
-        display: block; /* show hamburger */
-      }
+  /* Ultra-narrow: fallback to single column */
+  @media (max-width: 320px) {
+    .hotel-container {
+      grid-template-columns: 1fr;
     }
-    @media (max-width: 320px) {
-      /* Ultra-narrow: fallback to single column */
-      .hotel-container {
-        grid-template-columns: 1fr;
-      }
-    }
+  }
+</style>
 
-
-  
-  </style>
  
   <body data-theme="light">
 
@@ -229,8 +271,7 @@
       <h1>Llyn Peninsula and Anglessey 2026</h1>
           <p>4th June - 7th June 2026</p>
     </header>
-
-    <!-- new code  
+ 
       <!-- Hamburger toggle -->
       <button class="menu-toggle" aria-label="Toggle menu">☰</button>
 
