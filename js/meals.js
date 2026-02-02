@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* =========================================================
     LIGHTBOX FUNCTIONALITY
-  ========================================================== */
+  ========================================================== 
   let redirectTarget = null;
 
   function openLightbox(imgSrc, text, targetUrl) {
@@ -62,5 +62,5 @@ document.addEventListener("DOMContentLoaded", () => {
       const text = button.getAttribute('data-text');
       const target = button.getAttribute('data-target');
       openLightbox(img, text, target);
-    });
+    });*/
 });
