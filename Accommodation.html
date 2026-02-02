@@ -1,104 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- =========================================================
+      BASIC META / PAGE INFO
+    ========================================================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>C2C Rides - Accommodation</title>
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="icon" href="graphics/favicon-32x32.png" type="image/png">
-    <meta name="theme-color" content="#1f2a36">
-    <!-- other tags -->
-  </head>
- 
-  <style>
 
-    #footer-placeholder {
-      margin-top: auto;
-      width: 100%; 
-    }
-    .hotel-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      padding: 10px;
-      max-width: 1200px;
-      width: 100%;
-    }
+    <!-- =========================================================
+      STYLES + ICON
+    ========================================================== -->
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="icon" href="graphics/favicon-32x32.png" type="image/png" />
 
-    .hotel-card {
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      background: #fff;
-      padding: 15px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      display: flex;
-      flex-direction: column;
-    }
+    <!-- =========================================================
+      THEME COLOUR (PWA / Mobile)
+    ========================================================== -->
+    <meta name="theme-color" content="#1f2a36" />
 
-    .hotel-card img {
-      width: 100%;
-      height: auto;
-      max-height: 200px;
-      object-fit: cover;
-      border-radius: 6px;
-    }
+    <!-- =========================================================
+      AQccommodation page-Specific styles
+      NOTE: Ideally move into a dedicated CSS file, e.g. accommodation.css
+    ========================================================== -->
+    <style>
+      /* =========================================================
+        ACCOMMODATION PAGE STYLES
+      ========================================================== */
 
-    .hotel-card h3 {
-      margin: 10px 0 5px;
-      font-size: 1.2rem;
-    }
-
-    .hotel-card p {
-      margin: 5px 0;
-      font-size: 0.95rem;
-    }
-
-    .hotel-card a {
-      color: #0077cc;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .hotel-card a:hover {
-      text-decoration: underline;
-    }
-
-    /* === Responsive === */
-    @media (max-width: 500px) {
-
-      /* Mobile: 2-column layout */
+      /* Hotel grid container */
       .hotel-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-      }
-
-      .hotel-card {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
         padding: 10px;
+        max-width: 1200px;
+        width: 100%;
       }
 
+      /* Individual hotel card */
+      .hotel-card {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background: #fff;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Hotel image */
+      .hotel-card img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+
+      /* Hotel name */
       .hotel-card h3 {
-        font-size: 1rem;
+        margin: 10px 0 5px;
+        font-size: 1.2rem;
       }
 
+      /* Hotel details */
       .hotel-card p {
-        font-size: 0.9rem;
+        margin: 5px 0;
+        font-size: 0.95rem;
       }
-    }
 
-    
-    @media (max-width: 320px) {
+      /* Hotel link */
+      .hotel-card a {
+        color: #0077cc;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .hotel-card a:hover {
+        text-decoration: underline;
+      }
+
+      /* =========================================================
+        RESPONSIVE RULES
+      ========================================================== */
+
+      /* Mobile: force 2-column layout */
+      @media (max-width: 500px) {
+        .hotel-container {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 12px;
+        }
+
+        .hotel-card {
+          padding: 10px;
+        }
+
+        .hotel-card h3 {
+          font-size: 1rem;
+        }
+
+        .hotel-card p {
+          font-size: 0.9rem;
+        }
+      }
+
       /* Ultra-narrow: fallback to single column */
-      .hotel-container {
-        grid-template-columns: 1fr;
+      @media (max-width: 320px) {
+        .hotel-container {
+          grid-template-columns: 1fr;
+        }
       }
-    }
-
-  </style>
-  
+    </style>
+  </head>
 
   <body>
+    <!-- =========================================================
+      HEADER + NAVIGATION
+    ========================================================== -->
     <header class="main-header">
-      <!-- Hamburger toggle -->
+      <!-- Hamburger toggle (mobile only) -->
       <button class="menu-toggle" aria-label="Toggle menu">☰</button>
 
       <!-- Mobile slide-out menu -->
@@ -110,7 +131,8 @@
           <li><a href="routes.html">Routes</a></li>
         </ul>
       </nav>
-      <!-- Overlay -->
+
+      <!-- Overlay (click to close menu) -->
       <div class="menu-overlay"></div>
 
       <!-- Desktop navigation -->
@@ -124,138 +146,156 @@
       </nav>
     </header>
 
+    <!-- =========================================================
+      PAGE TITLE + INTRO
+    ========================================================== -->
     <div class="title-with-lines">
-      <!-- <hr class="fade-in delay-1"> -->
-      <hr>
-        <h1>Accommodation</h1>
-      <hr>
+      <hr />
+      <h1>Accommodation</h1>
+      <hr />
     </div>
+
     <p class="centered-summary">
-      Listed below is our accommodation for the 4-5 days. For the first and last night, the group will be split across the Manor and Caer Rhur Hall hotels, but will join together at the Manor for the evening meal
+      Listed below is our accommodation for the 4-5 days. For the first and last
+      night, the group will be split across the Manor and Caer Rhur Hall hotels,
+      but will join together at the Manor for the evening meal
     </p>
 
-  
+    <!-- =========================================================
+      HOTEL CARDS (Loaded from JSON)
+    ========================================================== -->
     <div class="hotel-container" id="hotelContainer"></div>
 
-    
+    <!-- =========================================================
+      FOOTER PLACEHOLDER (Loaded dynamically)
+    ========================================================== -->
     <div id="footer-placeholder"></div>
 
-     <!-- Floating Refresh Button -->
+    <!-- =========================================================
+      FLOATING REFRESH BUTTON (PWA only)
+    ========================================================== -->
     <button id="refreshButton" title="Refresh">🔄</button>
 
-  <script>
-    const btn = document.getElementById('refreshButton');
-    let hideTimer;
+    <!-- =========================================================
+      JAVASCRIPT
+    ========================================================== -->
+    <script>
+      /* =========================================================
+        MOBILE MENU TOGGLE
+      ========================================================== */
+      const menuToggle = document.querySelector(".menu-toggle");
+      const mobileMenu = document.querySelector(".mobile-menu");
+      const menuOverlay = document.querySelector(".menu-overlay");
 
-    // Only show when running as a standalone PWA
-    if (window.matchMedia('(display-mode: standalone)').matches) {
-      btn.style.display = 'flex';
-      setTimeout(() => btn.classList.add('visible'), 100);
-
-      // Reload when tapped
-      btn.addEventListener('click', () => window.location.reload());
-
-      // Hide after 5 seconds of inactivity
-      function resetHideTimer() {
-        btn.classList.add('visible');
-        clearTimeout(hideTimer);
-        hideTimer = setTimeout(() => btn.classList.remove('visible'), 5000);
+      function toggleMenu() {
+        mobileMenu.classList.toggle("active");
+        menuOverlay.classList.toggle("active");
       }
 
-      // Detect activity (tap, scroll, move)
-      ['mousemove', 'scroll', 'touchstart'].forEach(evt =>
-        document.addEventListener(evt, resetHideTimer)
-      );
+      menuToggle.addEventListener("click", toggleMenu);
+      menuOverlay.addEventListener("click", toggleMenu);
 
-      resetHideTimer(); // start hiding timer
-    }
-  
-    fetch('data/hotels.json')
-      .then(response => response.json())
-      .then(hotels => {
-        const container = document.getElementById('hotelContainer');
-        container.innerHTML = hotels.map(hotel => `
-          <div class="hotel-card">
-            <img src="${hotel.image}" alt="${hotel.alt}">
-            <h3>${hotel.name}</h3>
-            <p><strong>Address:</strong> ${hotel.address}</p>
-            <p>${hotel.description}</p>
-            <p><a href="${hotel.url}" target="_blank">Visit Website</a></p>
+      /* =========================================================
+        FLOATING REFRESH BUTTON (PWA standalone only)
+        - Shows only when installed as an app
+        - Auto-hides after inactivity
+      ========================================================== */
+      const refreshBtn = document.getElementById("refreshButton");
+      let hideTimer;
+
+      if (window.matchMedia("(display-mode: standalone)").matches) {
+        refreshBtn.style.display = "flex";
+        setTimeout(() => refreshBtn.classList.add("visible"), 100);
+
+        // Reload when tapped
+        refreshBtn.addEventListener("click", () => window.location.reload());
+
+        // Hide after 5 seconds inactivity
+        function resetHideTimer() {
+          refreshBtn.classList.add("visible");
+          clearTimeout(hideTimer);
+          hideTimer = setTimeout(
+            () => refreshBtn.classList.remove("visible"),
+            5000
+          );
+        }
+
+        // Detect activity (tap, scroll, move)
+        ["mousemove", "scroll", "touchstart"].forEach((evt) =>
+          document.addEventListener(evt, resetHideTimer)
+        );
+
+        resetHideTimer();
+      }
+
+      /* =========================================================
+        LOAD HOTELS FROM JSON
+        - Pulls hotel data from: data/hotels.json
+        - Generates hotel cards into #hotelContainer
+      ========================================================== */
+      fetch("data/hotels.json")
+        .then((response) => response.json())
+        .then((hotels) => {
+          const container = document.getElementById("hotelContainer");
+
+          container.innerHTML = hotels
+            .map(
+              (hotel) => `
+              <div class="hotel-card">
+                <img src="${hotel.image}" alt="${hotel.alt}">
+                <h3>${hotel.name}</h3>
+                <p><strong>Address:</strong> ${hotel.address}</p>
+                <p>${hotel.description}</p>
+                <p>
+                  <a href="${hotel.url}" target="_blank" rel="noopener noreferrer">
+                    Visit Website
+                  </a>
+                </p>
+              </div>
+            `
+            )
+            .join("");
+        })
+        .catch((err) => {
+          console.error("Failed to load hotels.json:", err);
+        });
+
+      /* =========================================================
+        COMPONENT LOADER (Footer, etc.)
+      ========================================================== */
+      function loadComponent(selector, url, fallbackHTML = "") {
+        const container = document.querySelector(selector);
+        if (!container) return;
+
+        fetch(url)
+          .then((response) => {
+            if (!response.ok) throw new Error(`Failed to load ${url}`);
+            return response.text();
+          })
+          .then((html) => {
+            container.innerHTML = html;
+          })
+          .catch((error) => {
+            console.warn(`Component load failed: ${url}`, error);
+            container.innerHTML = fallbackHTML;
+          });
+      }
+
+      /* =========================================================
+        LOAD STANDARD FOOTER
+      ========================================================== */
+      loadComponent(
+        "#footer-placeholder",
+        "footer.html",
+        `
+        <footer>
+          <div class="footer-content">
+            <span class="footer-text">© C2C Rides</span>
           </div>
-        `).join('');
-      })
-      .catch(err => {
-        console.error('Failed to load hotels.json:', err);
-      });
+        </footer>
+        `
+      );
     </script>
-
   </body>
-
-  <script>
-    // JavaScript for toggling mobile menu
-    const menuToggle = document.querySelector('.menu-toggle');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    const menuOverlay = document.querySelector('.menu-overlay');
-
-    menuToggle.addEventListener('click', () => {
-      mobileMenu.classList.toggle('active');
-      menuOverlay.classList.toggle('active');
-    });
-
-    menuOverlay.addEventListener('click', () => {
-      mobileMenu.classList.remove('active');
-      menuOverlay.classList.remove('active');
-    }); 
-
-     function loadComponent(selector, url, fallbackHTML = '') {
-    const container = document.querySelector(selector);
-    if (!container) return;
-
-    fetch(url)
-      .then(response => {
-        if (!response.ok) throw new Error(`Failed to load ${url}`);
-        return response.text();
-      })
-      .then(html => {
-        container.innerHTML = html;
-      })
-      .catch(error => {
-        console.warn(`Component load failed: ${url}`, error);
-        container.innerHTML = fallbackHTML;
-      });
-  }
-  /* New code for standard footer */
-  loadComponent('#footer-placeholder', 'footer.html', `
-    <footer>
-      <div class="footer-content">
-        <span class="footer-text">© C2C Rides</span>
-      </div>
-    </footer>
-  `);
-  </script>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- End of Accommodation.html -->
