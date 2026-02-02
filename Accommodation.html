@@ -82,6 +82,17 @@
     <div id="footer-placeholder"></div>
 
     <!-- =========================================================
+      Lightbox (in case needed for the future)
+    ========================================================== -->
+    <div class="lightbox-overlay" id="lightbox">
+      <div class="lightbox-content">
+      <button class="lightbox-close" onclick="closeLightbox()">✖</button>
+      <img id="lightbox-img" src="" alt="Lightbox Image" />
+      <p id="lightbox-text"></p>
+      </div>
+    </div>
+
+    <!-- =========================================================
       FLOATING REFRESH BUTTON (PWA only)
     ========================================================== -->
     <button id="refreshButton" title="Refresh">🔄</button>
@@ -91,6 +102,8 @@
       (defer = loads after HTML parsing, safer for DOM elements)
     ========================================================== -->
     <script src="js/accommodation.js" defer></script>
+    <script src="js/site.js"></script>
+
   </body>
 </html>
 <!-- End of Accommodation.html -->
