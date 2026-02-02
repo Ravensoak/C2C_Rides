@@ -32,7 +32,7 @@ if (refreshBtn && window.matchMedia('(display-mode: standalone)').matches) {
 
 /* =========================================================
   LIGHTBOX FUNCTIONALITY
-========================================================== */
+========================================================== 
 let redirectTarget = null;
 
 function openLightbox(imgSrc, text, targetUrl) {
@@ -73,7 +73,7 @@ document.querySelectorAll('.lightbox-trigger').forEach(button => {
     const target = button.getAttribute('data-target');
     openLightbox(img, text, target);
   });
-});
+});*/
 
 /* =========================================================
   DYNAMIC COMPONENT LOADING (e.g., footer)
