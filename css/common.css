@@ -160,18 +160,18 @@
   .main-nav a:focus {
       color: var(--hover);
   }
-  /* === Navigation Responsive === */
-  @media (max-width: 700px) {
-    /* Switch to mobile nav */
-    .main-nav {
-         display: none; /* hide desktop nav */
-    }
-    .menu-toggle {
-        display: block; /* show hamburger */
-    }
-  }
+ 
 
   /* === Footer === */
+
+   /* =========================================================
+     FOOTER PLACEHOLDER
+     Keeps footer pushed to the bottom when content is short
+  ========================================================== */
+  #footer-placeholder {
+    margin-top: auto;
+    width: 100%;
+  }
   footer {
     width: 100%;
     background-color: #1f2a36;
@@ -231,8 +231,20 @@
   .whatsapp-link:hover .whatsapp-label {
     text-decoration: underline;
   }
-
-/* === Footer - Responsive === */
+/* =========================================================
+     RESPONSIVE RULES
+  ========================================================== */
+ /* === Navigation - Responsive === */
+  @media (max-width: 700px) {
+    /* Switch to mobile nav */
+    .main-nav {
+         display: none; /* hide desktop nav */
+    }
+    .menu-toggle {
+        display: block; /* show hamburger */
+    }
+  }
+  /* === Footer - Responsive === */
   @media (max-width: 600px) {
     .footer-content {
       flex-direction: column;
@@ -258,32 +270,44 @@
 
 
 
+  /* =========================================================
+     FLOATING REFRESH BUTTON - for PWA version
+          Hidden by default, appears when .visible is added
+  ========================================================== */
   #refreshButton {
-    display: none;
-    position: fixed;
+    display: none;                 /* hidden until enabled via JS */
+    position: fixed;               /* stays in bottom-right corner */
     bottom: 20px;
     right: 20px;
+
     width: 56px;
     height: 56px;
     border-radius: 50%;
     border: none;
-    background: #003366; /* C2C navy */
-    color: white;
+
+    background: #003366;           /* C2C navy */
+    color: #fff;
     font-size: 24px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+
+    display: flex;                 /* centers icon/text */
     align-items: center;
     justify-content: center;
+
     cursor: pointer;
     z-index: 1000;
-    opacity: 0;
+
+    opacity: 0;                    /* fades in when visible */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: opacity 0.5s ease, background 0.2s ease, transform 0.2s ease;
   }
 
+  /* Visible state (fade in) */
   #refreshButton.visible {
     opacity: 1;
   }
 
+  /* Hover state (slightly larger + lighter blue) */
   #refreshButton:hover {
-    background: #0055aa; /* lighter hover blue */
+    background: #0055aa;
     transform: scale(1.1);
   }

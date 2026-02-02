@@ -31,58 +31,7 @@
 </head>
   
  <style>
-  /* =========================================================
-     FOOTER PLACEHOLDER
-     Keeps footer pushed to the bottom when content is short
-  ========================================================== */
-  #footer-placeholder {
-    margin-top: auto;
-    width: 100%;
-  }
-
-  /* =========================================================
-     FLOATING REFRESH BUTTON
-     Hidden by default, appears when .visible is added
-  ========================================================== */
-  #refreshButton {
-    display: none;                 /* hidden until enabled via JS */
-    position: fixed;               /* stays in bottom-right corner */
-    bottom: 20px;
-    right: 20px;
-
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    border: none;
-
-    background: #003366;           /* C2C navy */
-    color: #fff;
-    font-size: 24px;
-
-    display: flex;                 /* centers icon/text */
-    align-items: center;
-    justify-content: center;
-
-    cursor: pointer;
-    z-index: 1000;
-
-    opacity: 0;                    /* fades in when visible */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: opacity 0.5s ease, background 0.2s ease, transform 0.2s ease;
-  }
-
-  /* Visible state (fade in) */
-  #refreshButton.visible {
-    opacity: 1;
-  }
-
-  /* Hover state (slightly larger + lighter blue) */
-  #refreshButton:hover {
-    background: #0055aa;
-    transform: scale(1.1);
-  }
-
-  /* =========================================================
+   /* =========================================================
      HEADER / PAGE INTRO
   ========================================================== */
   header {
@@ -226,23 +175,8 @@
     }
   }
 
-  /* Switch to mobile nav */
-  @media (max-width: 700px) {
-    .main-nav {
-      display: none; /* hide desktop nav */
-    }
 
-    .menu-toggle {
-      display: block; /* show hamburger */
-    }
-  }
 
-  /* Ultra-narrow: fallback to single column */
-  @media (max-width: 320px) {
-    .hotel-container {
-      grid-template-columns: 1fr;
-    }
-  }
 </style>
 
  
