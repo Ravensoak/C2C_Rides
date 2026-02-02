@@ -1,5 +1,5 @@
 /* =========================================================
-  PWA REFRESH BUTTON
+  FLOATING REFRESH BUTTON (PWA standalone only)
 ========================================================== */
 const refreshBtn = document.getElementById('refreshButton');
 let hideTimer;

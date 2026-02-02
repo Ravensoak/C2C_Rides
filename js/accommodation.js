@@ -24,34 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     menuOverlay.addEventListener("click", toggleMenu);
   }
 
-  /* =========================================================
-    FLOATING REFRESH BUTTON (PWA standalone only)
-  ========================================================== */
-  const refreshBtn = document.getElementById("refreshButton");
-  let hideTimer;
-
-  if (refreshBtn && window.matchMedia("(display-mode: standalone)").matches) {
-    refreshBtn.style.display = "flex";
-    setTimeout(() => refreshBtn.classList.add("visible"), 100);
-
-    refreshBtn.addEventListener("click", () => window.location.reload());
-
-    function resetHideTimer() {
-      refreshBtn.classList.add("visible");
-      clearTimeout(hideTimer);
-      hideTimer = setTimeout(
-        () => refreshBtn.classList.remove("visible"),
-        5000
-      );
-    }
-
-    ["mousemove", "scroll", "touchstart"].forEach((evt) =>
-      document.addEventListener(evt, resetHideTimer)
-    );
-
-    resetHideTimer();
-  }
-
+  
   /* =========================================================
     LOAD HOTELS FROM JSON
   ========================================================== */
