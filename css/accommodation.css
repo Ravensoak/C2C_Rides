@@ -1,0 +1,97 @@
+/* =========================================================
+  ACCOMMODATION PAGE STYLES
+========================================================== */
+
+/* Hotel grid container */
+.hotel-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 10px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Loading / error messages shown inside the container */
+.loading-message,
+.error-message {
+  grid-column: 1 / -1; /* span full width of grid */
+  text-align: center;
+  font-size: 1rem;
+  opacity: 0.9;
+  padding: 1rem;
+}
+
+/* Individual hotel card */
+.hotel-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hotel image */
+.hotel-card img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Hotel name */
+.hotel-card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+}
+
+/* Hotel details */
+.hotel-card p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+/* Hotel link */
+.hotel-card a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hotel-card a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================================
+  RESPONSIVE RULES
+========================================================== */
+
+/* Mobile: force 2-column layout */
+@media (max-width: 500px) {
+  .hotel-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .hotel-card {
+    padding: 10px;
+  }
+
+  .hotel-card h3 {
+    font-size: 1rem;
+  }
+
+  .hotel-card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Ultra-narrow: fallback to single column */
+@media (max-width: 320px) {
+  .hotel-container {
+    grid-template-columns: 1fr;
+  }
+}
