@@ -1,9 +1,7 @@
 /* =========================================================
   ACCOMMODATION PAGE SCRIPT
   - Mobile menu toggle
-  - PWA refresh button
   - Load hotel cards from hotels.json
-  - Load footer component
 ========================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {

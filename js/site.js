@@ -1,4 +1,9 @@
 /* =========================================================
+  Site SCRIPT
+  - FLOATING REFRESH BUTTON (PWA standalone only)
+  - LIGHTBOX FUNCTIONALITY
+  - DYNAMIC COMPONENT LOADING (e.g., footer)
+========================================================== *//* =========================================================
   FLOATING REFRESH BUTTON (PWA standalone only)
 ========================================================== */
 const refreshBtn = document.getElementById('refreshButton');
