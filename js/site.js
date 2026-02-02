@@ -23,22 +23,7 @@ if (refreshBtn && window.matchMedia('(display-mode: standalone)').matches) {
   resetHideTimer();
 }
 
-/* =========================================================
-  MOBILE MENU TOGGLE
-========================================================== */
-const menuToggleBtn = document.querySelector('.menu-toggle');
-const mobileMenu = document.querySelector('.mobile-menu');
-const menuOverlay = document.querySelector('.menu-overlay');
 
-if (menuToggleBtn && mobileMenu && menuOverlay) {
-  function toggleMenu() {
-    mobileMenu.classList.toggle('active');
-    menuOverlay.classList.toggle('active');
-  }
-
-  menuToggleBtn.addEventListener('click', toggleMenu);
-  menuOverlay.addEventListener('click', toggleMenu);
-}
 
 /* =========================================================
   LIGHTBOX FUNCTIONALITY
