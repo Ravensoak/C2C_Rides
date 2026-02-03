@@ -1,6 +1,4 @@
-
-  
-    /* === Professional select box === */
+/* === Professional select box === */
     .controls {
       margin: 1.5rem 0;
     }
@@ -162,11 +160,11 @@
 
     /* === Responsive === */
     @media (max-width: 600px) {
-      .card {
+      .route-card {
         flex: 1 1 100%;
       }
 
-      .card img {
+      .route-card img {
         aspect-ratio: auto;
         max-height: 60vh;
       }
