@@ -218,14 +218,14 @@
     }
 
     /* Core fix: constrain positioning inside this box */
-    .image-box {
+    .image-box1 {
       position: relative;
       display: inline-block;
       max-width: 90vw;
       max-height: 80vh;
     }
 
-    .image-box img {
+    .image-box1 img {
       display: block;
       width: 100%;
       height: auto;
