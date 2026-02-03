@@ -49,8 +49,8 @@ document.addEventListener("DOMContentLoaded", () => {
           </ul>
           <div class="thumbnail-gallery">
             <img src="pictures/Beddgelert.jpg" alt="Beddgelert" onclick="openLightbox(this)">
-            <img src="pictures/Gelert.jpg" alt="Gelerts Grave" onclick="openLightbox(this)">
-            <img src="pictures/Criccieth.jpg" alt="Criccieth" onclick="openLightbox(this)">
+            <img src="pictures/Gelert.jpg" alt="Gelerts Grave" onclick="openLightbox1(this)">
+            <img src="pictures/Criccieth.jpg" alt="Criccieth" onclick="openLightbox1(this)">
           </div>
       `,
       link: 'https://ridewithgps.com/routes/52509283'
@@ -447,7 +447,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return fullHeight > clampedHeight + 5;
   }
 
-  function openLightbox(img) {
+  function openLightbox1(img) {
     const lightbox = document.getElementById("lightbox");
     const lightboxImg = document.getElementById("lightbox-img");
     const caption = document.getElementById("lightbox-caption");
@@ -457,7 +457,7 @@ document.addEventListener("DOMContentLoaded", () => {
     lightbox.classList.add("active");
   }
 
-  function closeLightbox() {
+  function closeLightbox1() {
     document.getElementById("lightbox").classList.remove("active");
   }
 });
