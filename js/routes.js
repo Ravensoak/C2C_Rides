@@ -21,7 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
     menuToggle.addEventListener("click", toggleMenu);
     menuOverlay.addEventListener("click", toggleMenu);
   }
-
+  /* =========================================================
+    LOAD ROUTE DATA FOR EACH DAY
+  ========================================================== */
   const routeData = {
   1: [
     {
