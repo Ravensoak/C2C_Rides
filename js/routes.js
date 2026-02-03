@@ -448,9 +448,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function openLightbox1(img) {
-    const lightbox = document.getElementById("lightbox");
-    const lightboxImg = document.getElementById("lightbox-img");
-    const caption = document.getElementById("lightbox-caption");
+    const lightbox = document.getElementById("lightbox1");
+    const lightboxImg = document.getElementById("lightbox1-img");
+    const caption = document.getElementById("lightbox1-caption");
     
     lightboxImg.src = img.src;
     caption.textContent = img.alt;
@@ -458,6 +458,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function closeLightbox1() {
-    document.getElementById("lightbox").classList.remove("active");
+    document.getElementById("lightbox1").classList.remove("active");
   }
 });
