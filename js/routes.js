@@ -448,13 +448,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function openLightbox1(img) {
-    const lightbox = document.getElementById("lightbox1");
-    const lightboxImg = document.getElementById("lightbox1-img");
-    const caption = document.getElementById("lightbox1-caption");
+    const lightbox1 = document.getElementById("lightbox1");
+    const lightbox1Img = document.getElementById("lightbox1-img");
+    const caption1 = document.getElementById("lightbox1-caption");
     
-    lightboxImg.src = img.src;
-    caption.textContent = img.alt;
-    lightbox.classList.add("active");
+    lightbox1Img.src = img.src;
+    caption1.textContent = img.alt;
+    lightbox1.classList.add("active");
   }
 
   function closeLightbox1() {
