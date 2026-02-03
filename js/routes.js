@@ -329,54 +329,103 @@ const routeData = {
   ]
 };
 
-const selector = document.getElementById('daySelector');
-const grid = document.getElementById('routeGrid');
+const selector = document.getElementById("daySelector");
+const grid = document.getElementById("routeGrid");
 
-selector.addEventListener('change', () => {
+if (selector && grid) {
+  selector.addEventListener("change", handleDayChange);
+}
+
+function handleDayChange() {
   const day = selector.value;
-  grid.innerHTML = '';
 
-  if (routeData[day]) {
-    routeData[day].forEach((route, index) => {
-      const card = document.createElement('div');
-      card.className = 'route-card';
-      card.style.animationDelay = `${index * 0.1}s`; 
-      card.innerHTML = `
-      <img src="${route.img}" alt="${route.name}" />
-      <div class="route-card-content">
-        <h3>${route.name}</h3><a href="${route.link}" target="_blank" rel="noopener noreferrer">View Route</a>
-              
-        <div class="description">${route.description}</div>
-        <span class="more-link" style="display:none;">More</span>
-      </div>
+  clearGrid();
 
+  const routes = routeData?.[day];
+  if (!routes || !routes.length) return;
+
+  routes.forEach((route, index) => {
+    const card = createRouteCard(route, index);
+    grid.appendChild(card);
+  });
+
+  setupMoreLessToggles();
+}
+
+function clearGrid() {
+  grid.innerHTML = "";
+}
+
+function createRouteCard(route, index) {
+  const card = document.createElement("div");
+  card.className = "route-card";
+  card.style.animationDelay = `${index * 0.1}s`;
+
+  card.innerHTML = `
+    <img src="${route.img}" alt="${route.name}" />
+    <div class="route-card-content">
+      <h3>${route.name}</h3>
+      <a href="${route.link}" target="_blank" rel="noopener noreferrer">View Route</a>
+
+      <div class="description">${route.description}</div>
       <span class="more-link" style="display:none;">More</span>
-      </div>
-          `;
-          grid.appendChild(card);
-        });
+    </div>
+  `;
 
-        // Attach "More/Less" toggle, only if needed
-        grid.querySelectorAll('.route-card').forEach(card => {
-          const desc = card.querySelector('.description');
-          const moreLink = card.querySelector('.more-link');
+  return card;
+}
 
-          // Temporarily remove clamp to measure true height
-          desc.classList.add('expanded');
-          const fullHeight = desc.scrollHeight;
-          desc.classList.remove('expanded');
-          const clampHeight = desc.scrollHeight;
+function setupMoreLessToggles() {
+  const cards = grid.querySelectorAll(".route-card");
 
-          if (fullHeight > clampHeight + 5) { 
-            moreLink.style.display = 'inline-block';
-            moreLink.addEventListener('click', () => {
-              desc.classList.toggle('expanded');
-              moreLink.textContent = desc.classList.contains('expanded') ? 'Less' : 'More';
-            });
-          }
-        });
+  cards.forEach((card) => {
+    const desc = card.querySelector(".description");
+    const moreLink = card.querySelector(".more-link");
+
+    if (!desc || !moreLink) return;
+
+    // If it isn't overflowing, don't show More/Less
+    if (!isClamped(desc)) return;
+
+    moreLink.style.display = "inline-block";
+    moreLink.textContent = "More";
+
+    // Set initial max-height to current collapsed height (smooth base)
+    desc.style.maxHeight = desc.scrollHeight + "px";
+
+    // Force back to collapsed height (CSS handles it)
+    requestAnimationFrame(() => {
+      desc.style.maxHeight = ""; // lets CSS collapsed max-height apply
+    });
+
+    moreLink.addEventListener("click", () => {
+      const isExpanded = desc.classList.toggle("expanded");
+
+      if (isExpanded) {
+        // Expand smoothly to full height
+        desc.style.maxHeight = desc.scrollHeight + "px";
+        moreLink.textContent = "Less";
+      } else {
+        // Collapse smoothly back to CSS collapsed height
+        desc.style.maxHeight = ""; // back to CSS (3.6em)
+        moreLink.textContent = "More";
       }
     });
+  });
+}
+
+function isClamped(desc) {
+  // Full height
+  desc.classList.add("expanded");
+  const fullHeight = desc.scrollHeight;
+  desc.classList.remove("expanded");
+
+  // Clamped height
+  const clampedHeight = desc.scrollHeight;
+
+  return fullHeight > clampedHeight + 5;
+}
+
    
    
    

@@ -33,29 +33,48 @@
       box-shadow: 0 0 0 3px rgba(52,152,219,0.3);
     }
 
-    /* === Description truncation === */
-    .description {
-      display: -webkit-box;
-      -webkit-line-clamp: 4; /* show only 4 lines */
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      position: relative;
-    }
+   /* === Description truncation + smooth expand/collapse === */
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* show only 4 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
 
-    .description.expanded {
-      /*-webkit-line-clamp: unset;*/
-      -webkit-line-clamp: unset;
-      overflow: visible;
-    }
+  /* Smooth expand/collapse */
+  max-height: 6.2em; /* fallback for non-webkit, approx 4 lines */
+  transition: max-height 0.35s ease, opacity 0.35s ease;
+  opacity: 0.92;
+}
 
-    .more-link {
-      color: var(--accent);
-      cursor: pointer;
-      font-weight: 500;
-      display: inline-block;
-      margin-top: 0.3rem;
-    }
+.description.expanded {
+  -webkit-line-clamp: unset;
+  overflow: visible;
+
+  /* Smooth expand/collapse */
+  max-height: 1000px; /* big enough for most descriptions */
+  opacity: 1;
+}
+
+/* More/Less link */
+.more-link {
+  color: var(--accent);
+  cursor: pointer;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 0.3rem;
+
+  /* Smooth hover */
+  text-decoration: underline;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.more-link:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
 
     /* === Cards === */
     .flex-grid {
