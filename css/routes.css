@@ -195,7 +195,7 @@
     }
 
     /* Lightbox container */
-    .lightbox {
+    .lightbox1 {
       position: fixed;
       top: 0;
       left: 0;
@@ -208,11 +208,11 @@
       z-index: 9999;
       cursor: zoom-out;
     }
-    .lightbox.active {
+    .lightbox1.active {
       display: flex;
     }
 
-    .lightbox-content {
+    .lightbox1-content {
       position: relative;
       text-align: center;
     }
@@ -235,7 +235,7 @@
     }
 
     /* Close button sits INSIDE top-right corner */
-    .lightbox-close {
+    .lightbox1-close {
       position: absolute;
       top: 10px;
       right: 10px;
@@ -254,10 +254,10 @@
       transition: background 0.2s ease;
     }
 
-    .lightbox-close:hover {
+    .lightbox1-close:hover {
       background: rgba(0, 0, 0, 0.8);
     }
-    #lightbox-caption {
+    #lightbox1-caption {
       color: #fff; /* pure white text */
       text-shadow: 0 0 5px rgba(0, 0, 0, 0.8), 
                   0 0 10px rgba(0, 0, 0, 0.6); /* dark shadow for contrast */
