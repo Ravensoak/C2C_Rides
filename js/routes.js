@@ -348,118 +348,116 @@ document.addEventListener("DOMContentLoaded", () => {
       link: 'https://ridewithgps.com/routes/52662119'
     }
   ]
-};
+  };
 
-const selector = document.getElementById("daySelector");
-const grid = document.getElementById("routeGrid");
+  const selector = document.getElementById("daySelector");
+  const grid = document.getElementById("routeGrid");
 
-if (selector && grid) {
-  selector.addEventListener("change", handleDayChange);
-}
+  if (selector && grid) {
+    selector.addEventListener("change", handleDayChange);
+  }
 
-function handleDayChange() {
-  const day = selector.value;
+  function handleDayChange() {
+    const day = selector.value;
 
-  clearGrid();
+    clearGrid();
 
-  const routes = routeData?.[day];
-  if (!routes || !routes.length) return;
+    const routes = routeData?.[day];
+    if (!routes || !routes.length) return;
 
-  routes.forEach((route, index) => {
-    const card = createRouteCard(route, index);
-    grid.appendChild(card);
-  });
-
-  setupMoreLessToggles();
-}
-
-function clearGrid() {
-  grid.innerHTML = "";
-}
-
-function createRouteCard(route, index) {
-  const card = document.createElement("div");
-  card.className = "route-card";
-  card.style.animationDelay = `${index * 0.1}s`;
-
-  card.innerHTML = `
-    <img src="${route.img}" alt="${route.name}" />
-    <div class="route-card-content">
-      <h3>${route.name}</h3>
-      <a href="${route.link}" target="_blank" rel="noopener noreferrer">View Route</a>
-
-      <div class="description">${route.description}</div>
-      <span class="more-link" style="display:none;">More</span>
-    </div>
-  `;
-
-  return card;
-}
-
-function setupMoreLessToggles() {
-  const cards = grid.querySelectorAll(".route-card");
-
-  cards.forEach((card) => {
-    const desc = card.querySelector(".description");
-    const moreLink = card.querySelector(".more-link");
-
-    if (!desc || !moreLink) return;
-
-    // If it isn't overflowing, don't show More/Less
-    if (!isClamped(desc)) return;
-
-    moreLink.style.display = "inline-block";
-    moreLink.textContent = "More";
-
-    // Set initial max-height to current collapsed height (smooth base)
-    desc.style.maxHeight = desc.scrollHeight + "px";
-
-    // Force back to collapsed height (CSS handles it)
-    requestAnimationFrame(() => {
-      desc.style.maxHeight = ""; // lets CSS collapsed max-height apply
+    routes.forEach((route, index) => {
+      const card = createRouteCard(route, index);
+      grid.appendChild(card);
     });
 
-    moreLink.addEventListener("click", () => {
-      const isExpanded = desc.classList.toggle("expanded");
+    setupMoreLessToggles();
+  }
 
-      if (isExpanded) {
-        // Expand smoothly to full height
-        desc.style.maxHeight = desc.scrollHeight + "px";
-        moreLink.textContent = "Less";
-      } else {
-        // Collapse smoothly back to CSS collapsed height
-        desc.style.maxHeight = ""; // back to CSS (3.6em)
-        moreLink.textContent = "More";
-      }
+  function clearGrid() {
+    grid.innerHTML = "";
+  }
+
+  function createRouteCard(route, index) {
+    const card = document.createElement("div");
+    card.className = "route-card";
+    card.style.animationDelay = `${index * 0.1}s`;
+
+    card.innerHTML = `
+      <img src="${route.img}" alt="${route.name}" />
+      <div class="route-card-content">
+        <h3>${route.name}</h3>
+        <a href="${route.link}" target="_blank" rel="noopener noreferrer">View Route</a>
+
+        <div class="description">${route.description}</div>
+        <span class="more-link" style="display:none;">More</span>
+      </div>
+    `;
+
+    return card;
+  }
+
+  function setupMoreLessToggles() {
+    const cards = grid.querySelectorAll(".route-card");
+
+    cards.forEach((card) => {
+      const desc = card.querySelector(".description");
+      const moreLink = card.querySelector(".more-link");
+
+      if (!desc || !moreLink) return;
+
+      // If it isn't overflowing, don't show More/Less
+      if (!isClamped(desc)) return;
+
+      moreLink.style.display = "inline-block";
+      moreLink.textContent = "More";
+
+      // Set initial max-height to current collapsed height (smooth base)
+      desc.style.maxHeight = desc.scrollHeight + "px";
+
+      // Force back to collapsed height (CSS handles it)
+      requestAnimationFrame(() => {
+        desc.style.maxHeight = ""; // lets CSS collapsed max-height apply
+      });
+
+      moreLink.addEventListener("click", () => {
+        const isExpanded = desc.classList.toggle("expanded");
+
+        if (isExpanded) {
+          // Expand smoothly to full height
+          desc.style.maxHeight = desc.scrollHeight + "px";
+          moreLink.textContent = "Less";
+        } else {
+          // Collapse smoothly back to CSS collapsed height
+          desc.style.maxHeight = ""; // back to CSS (3.6em)
+          moreLink.textContent = "More";
+        }
+      });
     });
-  });
-}
+  }
 
-function isClamped(desc) {
-  // Full height
-  desc.classList.add("expanded");
-  const fullHeight = desc.scrollHeight;
-  desc.classList.remove("expanded");
+  function isClamped(desc) {
+    // Full height
+    desc.classList.add("expanded");
+    const fullHeight = desc.scrollHeight;
+    desc.classList.remove("expanded");
 
-  // Clamped height
-  const clampedHeight = desc.scrollHeight;
+    // Clamped height
+    const clampedHeight = desc.scrollHeight;
 
-  return fullHeight > clampedHeight + 5;
-}
+    return fullHeight > clampedHeight + 5;
+  }
 
+  function openLightbox(img) {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const caption = document.getElementById("lightbox-caption");
+    
+    lightboxImg.src = img.src;
+    caption.textContent = img.alt;
+    lightbox.classList.add("active");
+  }
 
-
- function openLightbox(img) {
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
-  const caption = document.getElementById("lightbox-caption");
-  
-  lightboxImg.src = img.src;
-  caption.textContent = img.alt;
-  lightbox.classList.add("active");
-}
-
-function closeLightbox() {
-  document.getElementById("lightbox").classList.remove("active");
-}
+  function closeLightbox() {
+    document.getElementById("lightbox").classList.remove("active");
+  }
 });
