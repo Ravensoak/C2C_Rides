@@ -1,6 +1,7 @@
 /* =========================================================
   MEALS PAGE SCRIPT
   - Mobile menu toggle
+  - Load meal data for each hotel and render sortable table
 ========================================================== */
 document.addEventListener('DOMContentLoaded', () => {
     /* =========================================================
@@ -19,10 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
     menuToggle.addEventListener("click", toggleMenu);
     menuOverlay.addEventListener("click", toggleMenu);
   }
-/* =========================================================
-    LOAD AND PROCESS MEAL DATA FOR EACH HOTEL
-========================================================== */
-const hotelData = {
+  /* =========================================================
+      LOAD AND PROCESS MEAL DATA FOR EACH HOTEL
+  ========================================================== */
+  const hotelData = {
     hotelA: [
     { name: "David Olney", starter: "Soup of the day, bread roll", main: "Mini Fish & Chips, mushy peas, tartare sauce", dessert: "Mini Eaton Mess" },
     { name: "Jane Olney", starter: "No Starter", main: "Pan Fried Minute Steak, fries, Café de Paris butter, tomato", dessert: "Mini Eaton Mess" },
@@ -43,60 +44,60 @@ const hotelData = {
     { name: "Jane Olney", starter: "Haddock & Spring Onion Fishcake – Wilted spinach, tartare hollandaise", main: "Maple-Smoked Aubergine & Red Lentil Lasagne – Garlic bread, balsamic dressed rocket (vg)", dessert: "No Dessert" },
     { name: "Kevin Marriott", starter: "Chicken Liver Pâté – Redcurrant & thyme butter, red onion & balsamic chutney, warm mini loaf", main: "Beer Battered Fish & Chips – Mushy peas, tartare sauce, thick-cut chips", dessert: "No Dessert" }
     ]
-};
+  };
 
-const hotelSelector = document.getElementById('hotelSelector');
-const tableContainer = document.getElementById('tableContainer');
+  const hotelSelector = document.getElementById('hotelSelector');
+  const tableContainer = document.getElementById('tableContainer');
 
-const headers = [
+  const headers = [
     { label: 'Name', key: 'name', icon: '' },
     { label: 'Starter', key: 'starter', icon: '🥗' },
     { label: 'Main', key: 'main', icon: '🍽️' },
     { label: 'Dessert', key: 'dessert', icon: '🍰' }
-];
+  ];
 
-    let currentHotel = '';
-    let currentSort = { key: null, direction: 'asc' };
+  let currentHotel = '';
+  let currentSort = { key: null, direction: 'asc' };
 
-    function createTableHeaders(data) {
-    const headerRow = document.createElement('tr');
+  function createTableHeaders(data) {
+  const headerRow = document.createElement('tr');
 
-    headers.forEach(({ label, key, icon }) => {
-      const th = document.createElement('th');
-      th.style.cursor = 'pointer';
-      th.setAttribute('role', 'columnheader');
-      th.setAttribute('aria-sort', currentSort.key === key ? currentSort.direction : 'none');
+  headers.forEach(({ label, key, icon }) => {
+    const th = document.createElement('th');
+    th.style.cursor = 'pointer';
+    th.setAttribute('role', 'columnheader');
+    th.setAttribute('aria-sort', currentSort.key === key ? currentSort.direction : 'none');
 
-      const isSorted = currentSort.key === key;
-      const arrowClass = isSorted ? `sort-arrow ${currentSort.direction}` : 'sort-arrow asc';
+    const isSorted = currentSort.key === key;
+    const arrowClass = isSorted ? `sort-arrow ${currentSort.direction}` : 'sort-arrow asc';
 
-      const arrowSVG = `
-        <svg class="${arrowClass}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
-          <path d="M7 10l5-5 5 5H7z"/>
-        </svg>
-      `;
-
-    th.innerHTML = `
-      ${icon ? `<span style="margin-right: 0.4rem;">${icon}</span>` : ''}
-      ${label}
-      ${arrowSVG}
+    const arrowSVG = `
+      <svg class="${arrowClass}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+        <path d="M7 10l5-5 5 5H7z"/>
+      </svg>
     `;
 
-    if (isSorted) {
-      th.classList.add('sorted');
-    }
+  th.innerHTML = `
+    ${icon ? `<span style="margin-right: 0.4rem;">${icon}</span>` : ''}
+    ${label}
+    ${arrowSVG}
+  `;
 
-    th.addEventListener('click', () => {
-      const direction = isSorted && currentSort.direction === 'asc' ? 'desc' : 'asc';
-      currentSort = { key, direction };
-      renderHotelTable(currentHotel);
-    });
+  if (isSorted) {
+    th.classList.add('sorted');
+  }
 
-    headerRow.appendChild(th);
-   });
+  th.addEventListener('click', () => {
+    const direction = isSorted && currentSort.direction === 'asc' ? 'desc' : 'asc';
+    currentSort = { key, direction };
+    renderHotelTable(currentHotel);
+  });
 
-    return headerRow;
-    }
+  headerRow.appendChild(th);
+  });
+
+  return headerRow;
+  }
 
     function createGuestRow(guest) {
       const row = document.createElement('tr');
