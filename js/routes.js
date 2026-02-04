@@ -447,17 +447,17 @@ document.addEventListener("DOMContentLoaded", () => {
     return fullHeight > clampedHeight + 5;
   }
 
-  function openLightbox1(img) {
-    const lightbox1 = document.getElementById("lightbox1");
-    const lightbox1Img = document.getElementById("lightbox1-img");
-    const caption1 = document.getElementById("lightbox1-caption");
+  function openLightbox(img) {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const caption1 = document.getElementById("lightbox-caption");
     
-    lightbox1Img.src = img.src;
-    caption1.textContent = img.alt;
-    lightbox1.classList.add("active");
+    lightboxImg.src = img.src;
+    caption.textContent = img.alt;
+    lightbox.classList.add("active");
   }
 
-  function closeLightbox1() {
-    document.getElementById("lightbox1").classList.remove("active");
+  function closeLightbox() {
+    document.getElementById("lightbox").classList.remove("active");
   }
 });
