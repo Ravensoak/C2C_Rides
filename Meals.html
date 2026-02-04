@@ -1,129 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 
+  <head>
+    <!-- =========================================================
+        BASIC META / PAGE INFO
+      ========================================================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C2C Rides - Meals</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#1f2a36">
-  <title>C2C 2026 - Meals</title>
+    <!-- =========================================================
+      ICON + THEME COLOUR
+    ========================================================== -->
+    <link rel="icon" href="graphics/favicon-32x32.png" type="image/png">
+    <meta name="theme-color" content="#1f2a36">
 
-  <!-- Common Styles -->
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/lightbox.css">
+    <!-- =========================================================
+      STYLESHEETS
+    ========================================================== -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/meals.css">
+  </head>
 
-  <!-- Meals page specific CSS -->
-  <link rel="stylesheet" href="css/meals.css">
+  <body>
+    <!-- =========================================================
+      HEADER & NAVIGATION
+    ========================================================== -->
+    <header>
+      <!-- Hamburger toggle (mobile) -->
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
 
-  <!-- Favicon -->
-  <link rel="icon" href="graphics/favicon-32x32.png" type="image/png">
-</head>
+      <!-- Mobile slide-out menu -->
+      <nav class="mobile-menu" aria-label="Mobile Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="accommodation.html">Accommodation</a></li>
+          <li><a href="meals.html">Meals</a></li>
+          <li><a href="routes.html">Routes</a></li>
+        </ul>
+      </nav>
 
-<body>
-  <!-- =========================================================
-    HEADER & NAVIGATION
-  ========================================================== -->
-  <header>
-    <!-- Hamburger toggle (mobile) -->
-    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <!-- Overlay (click to close mobile menu) -->
+      <div class="menu-overlay"></div>
 
-    <!-- Mobile slide-out menu -->
-    <nav class="mobile-menu" aria-label="Mobile Navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="accommodation.html">Accommodation</a></li>
-        <li><a href="meals.html">Meals</a></li>
-        <li><a href="routes.html">Routes</a></li>
-      </ul>
-    </nav>
+      <!-- Desktop navigation -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="accommodation.html">Accommodation</a></li>
+          <li><a href="meals.html">Meals</a></li>
+          <li><a href="routes.html">Routes</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <!-- Overlay (click to close mobile menu) -->
-    <div class="menu-overlay"></div>
+    <!-- =========================================================
+      PAGE TITLE + INTRO
+    ========================================================== -->
+    <div class="title-with-lines">
+      <hr>
+      <h1>Meals</h1>
+      <hr>
+    </div>
 
-    <!-- Desktop navigation -->
-    <nav class="main-nav" aria-label="Main Navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="accommodation.html">Accommodation</a></li>
-        <li><a href="meals.html">Meals</a></li>
-        <li><a href="routes.html">Routes</a></li>
-      </ul>
-    </nav>
-  </header>
+    <p class="centered-summary">
+      Please review the menus, and then make your choice for each hotel - the button will open a Google Form for you to input your selection.
+    </p>
 
-  <!-- =========================================================
-    PAGE TITLE + INTRO
-  ========================================================== -->
-  <div class="title-with-lines">
-    <hr>
-    <h1>Meals</h1>
-    <hr>
-  </div>
+    <!-- =========================================================
+      MENU BUTTONS (PDF / Form)
+    ========================================================== -->
 
-  <p class="centered-summary">
-    Please review the menus, and then make your choice for each hotel - the button will open a Google Form for you to input your selection.
-  </p>
-
-  <!-- =========================================================
-    MENU BUTTONS (PDF / Form)
-  ========================================================== -->
-
-  <!--re-instate when menus available
+    <!--re-instate when menus available
+      <div class="button-container">
+        <a href="files/Menu-TheManor.pdf" class="menu-button" target="_blank" rel="noopener">View Menus (PDF)</a>
+        <a href="https://forms.gle/aJ5iLYMDShPKzC4p8" class="menu-button" target="_blank" rel="noopener">Input Meal Choice</a>
+      </div>
+      -->
+      
     <div class="button-container">
-      <a href="files/Menu-TheManor.pdf" class="menu-button" target="_blank" rel="noopener">View Menus (PDF)</a>
-      <a href="https://forms.gle/aJ5iLYMDShPKzC4p8" class="menu-button" target="_blank" rel="noopener">Input Meal Choice</a>
+      <button class="menu-button lightbox-trigger"
+        data-img="/graphics/c2cRIDESlogoblack.png"
+        data-text="Menus are not yet available, but you can see an example from 'The Manor Hotel'.<br><br>When menus are available, we will let you know and ask you to come here to review them so you can make your selection."
+        data-target="files/Menu-TheManor.pdf">
+        View Menus (PDF)
+      </button>
+
+      <button class="menu-button lightbox-trigger"
+        data-img="/graphics/c2cRIDESlogoblack.png"
+        data-text="Menus are not yet available, but please feel free to try out an example of how you would input your selection.<br><br>When menus are available, we will let you know and ask you to come here to make your meal selections."
+        data-target="https://forms.gle/aJ5iLYMDShPKzC4p8">
+        Input Meal Choice
+      </button>
     </div>
-    -->
-  <div class="button-container">
-    <button class="menu-button lightbox-trigger"
-      data-img="/graphics/c2cRIDESlogoblack.png"
-      data-text="Menus are not yet available, but you can see an example from 'The Manor Hotel'.<br><br>When menus are available, we will let you know and ask you to come here to review them so you can make your selection."
-      data-target="files/Menu-TheManor.pdf">
-      View Menus (PDF)
-    </button>
 
-    <button class="menu-button lightbox-trigger"
-      data-img="/graphics/c2cRIDESlogoblack.png"
-      data-text="Menus are not yet available, but please feel free to try out an example of how you would input your selection.<br><br>When menus are available, we will let you know and ask you to come here to make your meal selections."
-      data-target="https://forms.gle/aJ5iLYMDShPKzC4p8">
-      Input Meal Choice
-    </button>
-  </div>
+    <!-- =========================================================
+      FIND EXPLANATION AND BUTTONS
+    ========================================================== -->
+    <p class="centered-summary">
+      Once all meal options have been sent out and received back, use the buttons below to see your meal choice.
+    </p>
 
-  <p class="centered-summary">
-    Once all meal options have been sent out and received back, use the buttons below to see your meal choice.
-  </p>
-
-  <div class="button-container">
-    <a href="https://c2crides.netlify.app/mealselectionbyname" class="menu-button">Find by Name</a>
-    <a href="https://c2crides.netlify.app/mealselectionbyhotel" class="menu-button">Find by Hotel</a>
-  </div>
-
-  <!-- =========================================================
-    LIGHTBOX CONTAINER
-  ========================================================== -->
-  <div class="lightbox-overlay" id="lightbox">
-    <div class="lightbox-content">
-      <button class="lightbox-close" onclick="closeLightbox()">✖</button>
-      <img id="lightbox-img" src="" alt="Lightbox Image" />
-      <p id="lightbox-text"></p>
+    <div class="button-container">
+      <a href="https://c2crides.netlify.app/mealselectionbyname" class="menu-button">Find by Name</a>
+      <a href="https://c2crides.netlify.app/mealselectionbyhotel" class="menu-button">Find by Hotel</a>
     </div>
-  </div>
 
-  <!-- =========================================================
-    FOOTER PLACEHOLDER
-  ========================================================== -->
-  <div id="footer-placeholder"></div>
+    <!-- =========================================================
+      LIGHTBOX CONTAINER
+    ========================================================== -->
+    <div class="lightbox-overlay" id="lightbox">
+      <div class="lightbox-content">
+        <button class="lightbox-close" onclick="closeLightbox()">✖</button>
+        <img id="lightbox-img" src="" alt="Lightbox Image" />
+        <p id="lightbox-text"></p>
+      </div>
+    </div>
 
-  <!-- =========================================================
-    FLOATING REFRESH BUTTON
-  ========================================================== -->
-  <button id="refreshButton" title="Refresh">🔄</button>
+    <!-- =========================================================
+      FOOTER PLACEHOLDER
+    ========================================================== -->
+    <div id="footer-placeholder"></div>
 
-  <!-- =========================================================
-    PAGE-SPECIFIC JS
-  ========================================================== -->
-  <script src="js/meals.js" defer></script>
-  <script src="js/site.js" defer></script>
-</body>
+    <!-- =========================================================
+      FLOATING REFRESH BUTTON (PWA only)
+    ========================================================== -->
+    <button id="refreshButton" title="Refresh">🔄</button>
+
+    <!-- =========================================================
+      PAGE SCRIPTS
+      (defer = loads after HTML parsing, safer for DOM elements)
+      ========================================================== -->
+    <script src="js/meals.js" defer></script>
+    <script src="js/site.js" defer></script>
+    
+  </body>
 </html>
