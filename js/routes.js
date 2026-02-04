@@ -450,7 +450,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function openLightbox(img) {
     const lightbox = document.getElementById("lightbox");
     const lightboxImg = document.getElementById("lightbox-img");
-    const caption1 = document.getElementById("lightbox-caption");
+    const caption = document.getElementById("lightbox-caption");
     
     lightboxImg.src = img.src;
     caption.textContent = img.alt;
