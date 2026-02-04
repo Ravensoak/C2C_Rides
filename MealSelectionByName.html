@@ -56,6 +56,9 @@
       </nav>
     </header>
 
+    <!-- =========================================================
+      PAGE TITLE + INTRO
+    ========================================================== -->
     <div class="title-with-lines">
     <!-- <hr class="fade-in delay-1"> -->
     <hr>
@@ -67,168 +70,66 @@
       Until meal choices have been sent out and recieved, the data in the following list is ficticious, but it will give you an idea on what will be presented.
     </p>
   
-
- <!--<label for="entrySelect">Please select your name:</label>-->
-  <!--<div class="select-wrapper">-->
- 
+    <!-- =========================================================
+    NAME SELECTOR + MEAL TABLE
+    ========================================================== -->
     <div class="controls">
       <select id="nameSelector">
-    <option value="" disabled selected style="font-style: italic;">Select name</option>
-  </select>
-  <!--<select id="nameSelector" onchange="updateOutput()"></select>-->
+        <option value="" disabled selected style="font-style: italic;">Select name</option>
+      </select>
+    <!--<select id="nameSelector" onchange="updateOutput()"></select>-->
    
-</div>
-
-  <div class="grid hidden">
-    <div class="output" id="themanor1Box">
-      <strong>The Manor - 3rd June</strong>
-      <p id="themanor1F"></p>
-      <p id="themanor1G"></p>
-      <p id="themanor1H"></p>
     </div>
 
-    <div class="output" id="LionHotelBox">
-      <strong>The Lion Hotel - 4th June</strong>
-      <p id="lionhotelF"></p>
-      <p id="lionhotelG"></p>
-      <p id="lionhotelH"></p>
+    <div class="grid hidden">
+      <div class="output" id="themanor1Box">
+        <strong>The Manor - 3rd June</strong>
+        <p id="themanor1F"></p>
+        <p id="themanor1G"></p>
+        <p id="themanor1H"></p>
+      </div>
+
+      <div class="output" id="LionHotelBox">
+        <strong>The Lion Hotel - 4th June</strong>
+        <p id="lionhotelF"></p>
+        <p id="lionhotelG"></p>
+        <p id="lionhotelH"></p>
+      </div>
+
+      <div class="output" id="NanhoronHotelBox">
+        <strong>Nanhoron Hotel - 5th June</strong>
+        <p id="nanhoronhotelF"></p>
+        <p id="nanhoronhotelG"></p>
+        <p id="nanhoronhotelH"></p>
+      </div>
+
+      <div class="output" id="BullInnBox">
+        <strong>The Bull Inn - 6th June</strong>
+        <p id="bullinnF"></p>
+        <p id="bullinnG"></p>
+        <p id="bullinnH"></p>
+      </div>
+
     </div>
 
-    <div class="output" id="NanhoronHotelBox">
-      <strong>Nanhoron Hotel - 5th June</strong>
-      <p id="nanhoronhotelF"></p>
-      <p id="nanhoronhotelG"></p>
-      <p id="nanhoronhotelH"></p>
-    </div>
+    <!-- =========================================================
+      FOOTER PLACEHOLDER
+    ========================================================== -->
+    <div id="footer-placeholder"></div>
 
-    <div class="output" id="BullInnBox">
-      <strong>The Bull Inn - 6th June</strong>
-      <p id="bullinnF"></p>
-      <p id="bullinnG"></p>
-      <p id="bullinnH"></p>
-    </div>
+    <!-- =========================================================
+      FLOATING REFRESH BUTTON (PWA only)
+    ========================================================== -->
+    <button id="refreshButton" title="Refresh">🔄</button>
 
-  </div>
+ <!-- =========================================================
+      PAGE SCRIPTS
+      (defer = loads after HTML parsing, safer for DOM elements)
+      ========================================================== -->
+    <script src="js/mealsbyname.js" defer></script>
+    <script src="js/site.js" defer></script>
 
-  <div id="footer-placeholder"></div>
   </body>
 
   
-  <!-- old footer content
-  <footer>
-    <div class="footer-content">
-      <span class="footer-text">© C2C Rides</span>
-      <a href="https://chat.whatsapp.com/BdqWB9yBthG91Yl9rVlVQl?mode=ems_copy_h_c" target="_blank" class="whatsapp-link" aria-label="Join WhatsApp group">
-        <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-          <path d="M16.001 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.26.59 4.47 1.71 6.42L3.2 28.8l6.58-1.72c1.88 1.03 4.01 1.57 6.22 1.57h.001c7.06 0 12.8-5.74 12.8-12.8s-5.74-12.8-12.8-12.8zm0 23.2c-1.91 0-3.78-.51-5.42-1.47l-.39-.23-3.91 1.02 1.04-3.81-.25-.39c-1.08-1.65-1.65-3.56-1.65-5.52 0-5.9 4.8-10.7 10.7-10.7s10.7 4.8 10.7 10.7-4.8 10.7-10.7 10.7zm5.86-8.04c-.32-.16-1.88-.93-2.17-1.04-.29-.11-.5-.16-.71.16-.21.32-.82 1.04-1.01 1.25-.18.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.59-.95-.85-1.59-1.89-1.78-2.21-.18-.32-.02-.49.13-.65.13-.13.29-.34.45-.5.16-.16.21-.27.32-.45.11-.18.05-.34-.03-.5-.08-.16-.71-1.71-.97-2.35-.26-.64-.52-.55-.71-.56h-.61c-.21 0-.55.08-.84.39s-1.1 1.08-1.1 2.63 1.13 3.05 1.29 3.26c.16.21 2.23 3.4 5.4 4.77.76.33 1.35.53 1.81.68.76.24 1.45.21 2 .13.61-.09 1.88-.77 2.15-1.52.27-.75.27-1.39.19-1.52-.08-.13-.29-.21-.61-.37z"/>
-        </svg>
-        <span class="whatsapp-label">Join WhatsApp Group</span>
-      </a>
-    </div>
-  </footer>
-  -->
-
-  <script>
-    const sheetData = [
-    {Name: "David Olney", Starter: "Soup of the day, bread roll", Main: "Mini Fish & Chips, mushy peas, tartare sauce", Dessert: "Mini Eaton Mess", Hotel: "themanor1" },
-    {Name: "David Olney", Starter: "Buffalo Wings – Crisp fried wings tossed in spicy relish, garnished with spring onions & red chillies", Main: "Tagliatelle in Langoustine Bisque – With prawns, squid & mussels, lemon, Urfa chilli & parmesan", Dessert: "No Dessert", Hotel: "lionhotel" },
-    {Name: "David Olney", Starter: "No Starter", Main: "Caesar Chicken Burger - Crispy chicken, bacon, parmesan, lettuce, garlic & black pepper mayo, coleslaw, hand-cut chips", Dessert: "Cheesecake of the Day", Hotel: "nanhoronhotel" },
-    {Name: "David Olney", Starter: "Soup of the Day – Served with Welsh butter and crusty bread (v)", Main: "Pulled Beef ‘Wellington’ – Truffle & parmesan mash, roasted carrot, parsnip purée, red wine jus", Dessert: "Selection of Welsh Cheeses – Biscuits, chutney, grapes", Hotel: "bullinn" },
-    {Name: "Jane Olney", Starter: "No Starter", Main: "Pan Fried Minute Steak, fries, Café de Paris butter, tomato", Dessert: "Mini Eaton Mess", Hotel: "themanor1" },
-    {Name: "Jane Olney", Starter: "Buffalo Wings – Crisp fried wings tossed in spicy relish, garnished with spring onions & red chillies", Main: "Tagliatelle in Langoustine Bisque – With prawns, squid & mussels, lemon, Urfa chilli & parmesan", Dessert: "No Dessert", Hotel: "lionhotel" },
-    {Name: "Jane Olney", Starter: "No Starter", Main: "Beef or V Vegetable Lasagne - Dressed leaves, chips & garlic bread", Dessert: "Banoffee Belgian Waffle - Bananas, toffee sauce, honeycomb ice cream", Hotel: "nanhoronhotel" },
-    {Name: "Jane Olney", Starter: "Haddock & Spring Onion Fishcake – Wilted spinach, tartare hollandaise", Main: "Maple-Smoked Aubergine & Red Lentil Lasagne – Garlic bread, balsamic dressed rocket (vg)", Dessert: "No Dessert", Hotel: "bullinn" }, 
-    {Name: "Kevin Marriott", Starter: "No Starter", Main: "Welsh Cheese & Leek Risotto, toasted sourdough, basil dressing (vegan option available)", Dessert: "Lemon Meringue Roulade", Hotel: "themanor1" },
-    {Name: "Kevin Marriott", Starter: "Soup of the Day – Freshly prepared daily, served with crusty bread (v)", Main: "Tagliatelle in Langoustine Bisque – With prawns, squid & mussels, lemon, Urfa chilli & parmesan", Dessert: "No Dessert", Hotel: "lionhotel" },
-    {Name: "Kevin Marriott", Starter: "V/VG Soup of the Day - Crusty bread & butter", Main: "Beef or V Vegetable Lasagne - Dressed leaves, chips & garlic bread", Dessert: "Double Chocolate Brownie - Warm brownie, chocolate sauce, vanilla ice cream", Hotel: "nanhoronhotel" },
-    {Name: "Kevin Marriott", Starter: "Chicken Liver Pâté – Redcurrant & thyme butter, red onion & balsamic chutney, warm mini loaf", Main: "Beer Battered Fish & Chips – Mushy peas, tartare sauce, thick-cut chips", Dessert: "No Dessert", Hotel: "bullinn" },
-];
-
-    const nameSelector = document.getElementById("nameSelector");
-    const uniqueNames = [...new Set(sheetData.map(entry => entry.Name))];
-    uniqueNames.forEach(name => {
-      const opt = document.createElement("option");
-      opt.value = name;
-      opt.textContent = name;
-      nameSelector.appendChild(opt);
-    });
-
-function updateOutput() {
-  const selected = nameSelector.value;
-  const grid = document.querySelector('.grid');
-
-  if (!selected) {
-    grid.classList.add('hidden'); // hide if no selection
-    return;
-  }
-
-  grid.classList.remove('hidden'); // show on selection
-
-  const entries = sheetData.filter(e => e.Name === selected);
-
-  const hotels = {
-    themanor1: "themanor1",
-    lionhotel: "lionhotel",
-    nanhoronhotel: "nanhoronhotel",
-    bullinn: "bullinn",
-    themanor2: "themanor2"
-  };
-
-  Object.entries(hotels).forEach(([hotelName, prefix]) => {
-    const entry = entries.find(e => e.Hotel === hotelName);
-    document.getElementById(`${prefix}F`).innerHTML = entry
-      ? `<div class="menu-row"><div class="category-label">🥗 Starter:</div><div class="food-item">${entry.Starter}</div></div>` : "";
-    document.getElementById(`${prefix}G`).innerHTML = entry
-      ? `<div class="menu-row"><div class="category-label">🍽️ Main:</div><div class="food-item">${entry.Main}</div></div>` : "";
-    document.getElementById(`${prefix}H`).innerHTML = entry
-      ? `<div class="menu-row"><div class="category-label">🍰 Dessert:</div><div class="food-item">${entry.Dessert}</div></div>` : "";
-  });
-}
-
-  const toggleBtn = document.querySelector('.menu-toggle');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    const overlay = document.querySelector('.menu-overlay');
-
-
-    function toggleMenu() {
-    mobileMenu.classList.toggle('active');
-    overlay.classList.toggle('active');
-    }
-
-  // Open/close on hamburger click
-  toggleBtn.addEventListener('click', toggleMenu);
-
-  // Close when overlay is clicked
-  overlay.addEventListener('click', toggleMenu);
-
-  // Run updateOutput when name is selected
-  nameSelector.addEventListener("change", updateOutput);
-    
-
-   function loadComponent(selector, url, fallbackHTML = '') {
-    const container = document.querySelector(selector);
-    if (!container) return;
-
-    fetch(url)
-      .then(response => {
-        if (!response.ok) throw new Error(`Failed to load ${url}`);
-        return response.text();
-      })
-      .then(html => {
-        container.innerHTML = html;
-      })
-      .catch(error => {
-        console.warn(`Component load failed: ${url}`, error);
-        container.innerHTML = fallbackHTML;
-      });
-  }
-  /* New code for standard footer */
-  loadComponent('#footer-placeholder', 'footer.html', `
-    <footer>
-      <div class="footer-content">
-        <span class="footer-text">© C2C Rides</span>
-      </div>
-    </footer>
-  `);
-  </script>  
 </html>

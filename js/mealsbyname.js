@@ -1,0 +1,103 @@
+
+    const sheetData = [
+    {Name: "David Olney", Starter: "Soup of the day, bread roll", Main: "Mini Fish & Chips, mushy peas, tartare sauce", Dessert: "Mini Eaton Mess", Hotel: "themanor1" },
+    {Name: "David Olney", Starter: "Buffalo Wings – Crisp fried wings tossed in spicy relish, garnished with spring onions & red chillies", Main: "Tagliatelle in Langoustine Bisque – With prawns, squid & mussels, lemon, Urfa chilli & parmesan", Dessert: "No Dessert", Hotel: "lionhotel" },
+    {Name: "David Olney", Starter: "No Starter", Main: "Caesar Chicken Burger - Crispy chicken, bacon, parmesan, lettuce, garlic & black pepper mayo, coleslaw, hand-cut chips", Dessert: "Cheesecake of the Day", Hotel: "nanhoronhotel" },
+    {Name: "David Olney", Starter: "Soup of the Day – Served with Welsh butter and crusty bread (v)", Main: "Pulled Beef ‘Wellington’ – Truffle & parmesan mash, roasted carrot, parsnip purée, red wine jus", Dessert: "Selection of Welsh Cheeses – Biscuits, chutney, grapes", Hotel: "bullinn" },
+    {Name: "Jane Olney", Starter: "No Starter", Main: "Pan Fried Minute Steak, fries, Café de Paris butter, tomato", Dessert: "Mini Eaton Mess", Hotel: "themanor1" },
+    {Name: "Jane Olney", Starter: "Buffalo Wings – Crisp fried wings tossed in spicy relish, garnished with spring onions & red chillies", Main: "Tagliatelle in Langoustine Bisque – With prawns, squid & mussels, lemon, Urfa chilli & parmesan", Dessert: "No Dessert", Hotel: "lionhotel" },
+    {Name: "Jane Olney", Starter: "No Starter", Main: "Beef or V Vegetable Lasagne - Dressed leaves, chips & garlic bread", Dessert: "Banoffee Belgian Waffle - Bananas, toffee sauce, honeycomb ice cream", Hotel: "nanhoronhotel" },
+    {Name: "Jane Olney", Starter: "Haddock & Spring Onion Fishcake – Wilted spinach, tartare hollandaise", Main: "Maple-Smoked Aubergine & Red Lentil Lasagne – Garlic bread, balsamic dressed rocket (vg)", Dessert: "No Dessert", Hotel: "bullinn" }, 
+    {Name: "Kevin Marriott", Starter: "No Starter", Main: "Welsh Cheese & Leek Risotto, toasted sourdough, basil dressing (vegan option available)", Dessert: "Lemon Meringue Roulade", Hotel: "themanor1" },
+    {Name: "Kevin Marriott", Starter: "Soup of the Day – Freshly prepared daily, served with crusty bread (v)", Main: "Tagliatelle in Langoustine Bisque – With prawns, squid & mussels, lemon, Urfa chilli & parmesan", Dessert: "No Dessert", Hotel: "lionhotel" },
+    {Name: "Kevin Marriott", Starter: "V/VG Soup of the Day - Crusty bread & butter", Main: "Beef or V Vegetable Lasagne - Dressed leaves, chips & garlic bread", Dessert: "Double Chocolate Brownie - Warm brownie, chocolate sauce, vanilla ice cream", Hotel: "nanhoronhotel" },
+    {Name: "Kevin Marriott", Starter: "Chicken Liver Pâté – Redcurrant & thyme butter, red onion & balsamic chutney, warm mini loaf", Main: "Beer Battered Fish & Chips – Mushy peas, tartare sauce, thick-cut chips", Dessert: "No Dessert", Hotel: "bullinn" },
+];
+
+    const nameSelector = document.getElementById("nameSelector");
+    const uniqueNames = [...new Set(sheetData.map(entry => entry.Name))];
+    uniqueNames.forEach(name => {
+      const opt = document.createElement("option");
+      opt.value = name;
+      opt.textContent = name;
+      nameSelector.appendChild(opt);
+    });
+
+function updateOutput() {
+  const selected = nameSelector.value;
+  const grid = document.querySelector('.grid');
+
+  if (!selected) {
+    grid.classList.add('hidden'); // hide if no selection
+    return;
+  }
+
+  grid.classList.remove('hidden'); // show on selection
+
+  const entries = sheetData.filter(e => e.Name === selected);
+
+  const hotels = {
+    themanor1: "themanor1",
+    lionhotel: "lionhotel",
+    nanhoronhotel: "nanhoronhotel",
+    bullinn: "bullinn",
+    themanor2: "themanor2"
+  };
+
+  Object.entries(hotels).forEach(([hotelName, prefix]) => {
+    const entry = entries.find(e => e.Hotel === hotelName);
+    document.getElementById(`${prefix}F`).innerHTML = entry
+      ? `<div class="menu-row"><div class="category-label">🥗 Starter:</div><div class="food-item">${entry.Starter}</div></div>` : "";
+    document.getElementById(`${prefix}G`).innerHTML = entry
+      ? `<div class="menu-row"><div class="category-label">🍽️ Main:</div><div class="food-item">${entry.Main}</div></div>` : "";
+    document.getElementById(`${prefix}H`).innerHTML = entry
+      ? `<div class="menu-row"><div class="category-label">🍰 Dessert:</div><div class="food-item">${entry.Dessert}</div></div>` : "";
+  });
+}
+
+  const toggleBtn = document.querySelector('.menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const overlay = document.querySelector('.menu-overlay');
+
+
+    function toggleMenu() {
+    mobileMenu.classList.toggle('active');
+    overlay.classList.toggle('active');
+    }
+
+  // Open/close on hamburger click
+  toggleBtn.addEventListener('click', toggleMenu);
+
+  // Close when overlay is clicked
+  overlay.addEventListener('click', toggleMenu);
+
+  // Run updateOutput when name is selected
+  nameSelector.addEventListener("change", updateOutput);
+    
+
+   function loadComponent(selector, url, fallbackHTML = '') {
+    const container = document.querySelector(selector);
+    if (!container) return;
+
+    fetch(url)
+      .then(response => {
+        if (!response.ok) throw new Error(`Failed to load ${url}`);
+        return response.text();
+      })
+      .then(html => {
+        container.innerHTML = html;
+      })
+      .catch(error => {
+        console.warn(`Component load failed: ${url}`, error);
+        container.innerHTML = fallbackHTML;
+      });
+  }
+  /* New code for standard footer */
+  loadComponent('#footer-placeholder', 'footer.html', `
+    <footer>
+      <div class="footer-content">
+        <span class="footer-text">© C2C Rides</span>
+      </div>
+    </footer>
+  `);
+  
