@@ -1,5 +1,5 @@
 /* =========================================================
-   MEALS PAGE SCRIPT
+   MEALS BY HOTEL PAGE SCRIPT
    - Mobile menu toggle
    - Load meal data for each hotel and render sortable table
 =========================================================== */
