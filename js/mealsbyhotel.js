@@ -3,6 +3,22 @@
   - Mobile menu toggle
 ========================================================== */
 document.addEventListener('DOMContentLoaded', () => {
+    /* =========================================================
+    MOBILE MENU TOGGLE
+  ========================================================== */
+  const menuToggle = document.querySelector(".menu-toggle");
+  const mobileMenu = document.querySelector(".mobile-menu");
+  const menuOverlay = document.querySelector(".menu-overlay");
+
+  function toggleMenu() {
+    mobileMenu.classList.toggle("active");
+    menuOverlay.classList.toggle("active");
+  }
+
+  if (menuToggle && mobileMenu && menuOverlay) {
+    menuToggle.addEventListener("click", toggleMenu);
+    menuOverlay.addEventListener("click", toggleMenu);
+  }
 /* =========================================================
     LOAD AND PROCESS MEAL DATA FOR EACH HOTEL
 ========================================================== */
@@ -122,21 +138,7 @@ const headers = [
       renderHotelTable(hotelSelector.value);
     });
 
-    const toggleBtn = document.querySelector('.menu-toggle');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    const overlay = document.querySelector('.menu-overlay');
-
-
-    function toggleMenu() {
-    mobileMenu.classList.toggle('active');
-    overlay.classList.toggle('active');
-    }
-
-    // Open/close on hamburger click
-    toggleBtn.addEventListener('click', toggleMenu);
-
-    // Close when overlay is clicked
-    overlay.addEventListener('click', toggleMenu);
+    
 
   function loadComponent(selector, url, fallbackHTML = '') {
       const container = document.querySelector(selector);
