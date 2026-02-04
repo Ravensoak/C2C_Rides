@@ -168,7 +168,7 @@
         aspect-ratio: auto;
         max-height: 60vh;
       }
-      .lightbox1-content img {
+      .lightbox-content img {
         width: 80vw;
         height: auto;
       }
@@ -195,7 +195,7 @@
     }
 
     /* Lightbox container */
-    .lightbox1 {
+    .lightbox {
       position: fixed;
       top: 0;
       left: 0;
@@ -208,24 +208,24 @@
       z-index: 9999;
       cursor: zoom-out;
     }
-    .lightbox1.active {
+    .lightbox.active {
       display: flex;
     }
 
-    .lightbox1-content {
+    .lightbox-content {
       position: relative;
       text-align: center;
     }
 
     /* Core fix: constrain positioning inside this box */
-    .image-box1 {
+    .image-box {
       position: relative;
       display: inline-block;
       max-width: 90vw;
       max-height: 80vh;
     }
 
-    .image-box1 img {
+    .image-box img {
       display: block;
       width: 100%;
       height: auto;
@@ -235,7 +235,7 @@
     }
 
     /* Close button sits INSIDE top-right corner */
-    .lightbox1-close {
+    .lightbox-close {
       position: absolute;
       top: 10px;
       right: 10px;
@@ -254,10 +254,10 @@
       transition: background 0.2s ease;
     }
 
-    .lightbox1-close:hover {
+    .lightbox-close:hover {
       background: rgba(0, 0, 0, 0.8);
     }
-    #lightbox1-caption {
+    #lightbox-caption {
       color: #fff; /* pure white text */
       text-shadow: 0 0 5px rgba(0, 0, 0, 0.8), 
                   0 0 10px rgba(0, 0, 0, 0.6); /* dark shadow for contrast */

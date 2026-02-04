@@ -48,9 +48,9 @@ document.addEventListener("DOMContentLoaded", () => {
             <li>37 miles - Porthmadog</li>
           </ul>
           <div class="thumbnail-gallery">
-            <img src="pictures/Beddgelert.jpg" alt="Beddgelert" onclick="openLightbox1(this)">
-            <img src="pictures/Gelert.jpg" alt="Gelerts Grave" onclick="openLightbox1(this)">
-            <img src="pictures/Criccieth.jpg" alt="Criccieth" onclick="openLightbox1(this)">
+            <img src="pictures/Beddgelert.jpg" alt="Beddgelert" onclick="openLightbox(this)">
+            <img src="pictures/Gelert.jpg" alt="Gelerts Grave" onclick="openLightbox(this)">
+            <img src="pictures/Criccieth.jpg" alt="Criccieth" onclick="openLightbox(this)">
           </div>
       `,
       link: 'https://ridewithgps.com/routes/52509283'
