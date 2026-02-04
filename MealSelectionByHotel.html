@@ -1,173 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+  
   <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- =========================================================
+      BASIC META / PAGE INFO
+    ========================================================== -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#1f2a36">
-    <title>C2C 2026 - Meal Choice by Hotel</title>
-    <link rel="stylesheet" href="css/common.css">
+    <title>C2C Rides - Meal Choice by Hotel</title>
+
+    <!-- =========================================================
+      ICON + THEME COLOUR
+    ========================================================== -->
     <link rel="icon" href="graphics/favicon-32x32.png" type="image/png">
+    <meta name="theme-color" content="#1f2a36">
+
+     <!-- =========================================================
+      STYLESHEETS
+    ========================================================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mealsbyhotel.css" />
+    
   </head>
 
-  <style>
-    
-    #footer-placeholder {
-      margin-top: auto;
-      width: 100%; 
-    }
 
-    /*
-    body {
-      background: url("pictures/Restaurant1.jpg") no-repeat center center;
-      */
-    }
-  
-
-    /* === Table and Select Box === */
-
-    
-
-    select:focus {
-      border-color: #0078D4;
-      outline: none;
-    }
-
-    table {
-      width: 100%;
-      margin: 0 auto;
-      border-collapse: collapse;
-      background-color: #fff;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    th, td {
-      padding: 1rem;
-      border-bottom: 1px solid #eaeaea;
-      text-align: left;
-    }
-
-    th {
-      background-color: #0078D4;
-      color: #fff;
-      font-weight: 600;
-    }
-
-    tr:last-child td {
-      border-bottom: none;
-    }
-
-
-
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 1.2rem;
-    }
-
-      table, th, td {
-        font-size: 0.8rem;
-      }
-
-      select {
-        width: 100%;
-        font-size: 0.9rem;
-      }
-    }
-    /* Hover effect for table rows */
-    table tr:hover td {
-      background-color: #eef6fc;
-      box-shadow: inset 0 0 4px rgba(0, 120, 212, 0.2);
-      cursor: default;
-    }
-
-    th:hover {
-      background-color: #005fa3;
-      box-shadow: inset 0 -2px 0 rgba(255, 255, 255, 0.2);
-      cursor: pointer;
-    }
-    .sort-arrow {
-      display: inline-block;
-      width: 12px;
-      height: 12px;
-      margin-left: 0.3rem;
-      transition: transform 0.3s ease;
-      vertical-align: middle;
-    }
-
-    .sort-arrow.asc {
-      transform: rotate(0deg);
-    }
-
-    .sort-arrow.desc {
-      transform: rotate(180deg);
-    }
-    .floating-back {
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      width: 48px;
-      height: 48px;
-      background-color: #333;
-      color: #fff;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transition: background 0.3s ease, transform 0.2s ease;
-      z-index: 1000;
-    }
-
-    .floating-back:hover {
-      background-color: #555;
-      transform: scale(1.1);
-    }
-
-/* === Professional select box === */
-    .controls {
-      display: flex;
-      justify-content: center;
-      margin: 1.5rem 0;
-    }
-
-    #hotelSelector {
-      padding: 0.6rem 1rem;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      font-size: 1rem;
-      background-color: #fff;
-      color: var(--text);
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      transition: all 0.3s ease;
-      appearance: none; /* remove default arrow */
-      background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D'12'%20height%3D'12'%20viewBox%3D'0%200%2012%2012'%20fill%3D'none'%20xmlns%3D'http%3A//www.w3.org/2000/svg'%3E%3Cpath%20d%3D'M2%204l4%204%204-4'%20stroke%3D'%233498db'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: right 0.8rem center;
-      background-size: 12px;
-      cursor: pointer;
-      width: 250px;   /* fixed width */
-      max-width: 100%; /* optional: prevents overflow on small screens */
-      padding: 8px;   /* makes it look nicer */
-    }
-
-    #hotelSelector:hover {
-      border-color: var(--accent);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    }
-
-    #hotelSelector:focus {
-      outline: none;
-      border-color: var(--accent);
-      box-shadow: 0 0 0 3px rgba(52,152,219,0.3);
-    }
-
-
-  
-
-  </style>
 
 
   <body>
