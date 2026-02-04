@@ -155,11 +155,5 @@ const headers = [
           container.innerHTML = fallbackHTML;
         });
     }
-    /* New code for standard footer 
-    loadComponent('#footer-placeholder', 'footer.html', `
-      <footer>
-        <div class="footer-content">
-          <span class="footer-text">© C2C Rides</span>
-        </div>
-      </footer>*/
+    
     });
