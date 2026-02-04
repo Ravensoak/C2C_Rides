@@ -1,142 +1,181 @@
-  /* === Meals by Name Page Styles === */
+ /* =========================================================
+   MEALS BY NAME — PAGE STYLES
+   Base form controls, grid layout, output cards, and selectors
+========================================================= */
 
 
-    label {
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
-      display: block;
-    }
+/* ---------------------------------------------------------
+   FORM LABELS & BASIC SELECT ELEMENTS
+--------------------------------------------------------- */
 
-    select {
-      padding: 0.6rem;
-      font-size: 1rem;
-      width: 100%;
-      max-width: 100%;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      margin-bottom: 1.5rem;
-      box-sizing: border-box;
-    }
+label {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.2rem;
-    }
+select {
+  padding: 0.6rem;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  box-sizing: border-box;
+}
 
-    /* === Mobile Overrides === */
-    @media (min-width: 600px) {
-      .grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      }
-    }
 
-    .output {
-      /*background-color: var(--card-bg);*/
-      background-color: #fff;
-      border: 1px solid var(--card-border);
-      border-radius: 10px;
-      padding: 1rem 1.2rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
+/* ---------------------------------------------------------
+   GRID LAYOUT FOR MEAL OUTPUT
+--------------------------------------------------------- */
 
-    .output strong {
-      display: block;
-      font-size: 1.2rem;
-      margin-bottom: 0.6rem;
-      color: var(--primary-color);
-    }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+}
 
-    .output p {
-      margin: 0.3rem 0;
-      font-size: 0.95rem;
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-      text-align: left;
-    }
-    .category-label {
-      font-weight: bold;
-      font-size: 0.9rem;
-      color: black;
-      display: inline-block;
-      margin-right: 0.3rem;
-    }
-   .category-label::before {
-      margin-right: 0.3rem;
-    }
-    .menu-row {
-      display: grid;
-      grid-template-columns: 120px 1fr;
-      align-items: start;
-      margin-bottom: 0.4rem;
-    }
+/* Responsive: switch to multi‑column layout on wider screens */
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
 
-    .category-label {
-      font-weight: bold;
-      font-size: 0.9rem;
-      color: black;
-    }
+/* Hide grid when no name is selected */
+.grid.hidden {
+  display: none;
+}
 
-    .food-item {
-      font-size: 0.95rem;
-      color: var(--text-color);
-    }
-    
-    .grid.hidden {
-      display: none;
-    }
 
-    #entrySelect {
-      width: 100%;
-      max-width: 300px; /* Adjust as needed */
-      padding: 0.5rem;
-      font-size: 1rem;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      font-family: inherit;
-      box-sizing: border-box;
-    }
-    .select-wrapper {
-      display: flex;
-      justify-content: center;
-      padding: 1rem;
-    }
+/* ---------------------------------------------------------
+   OUTPUT CARD STYLING
+--------------------------------------------------------- */
 
-    /* === Professional select box === */
-    .controls {
-      display: flex;
-      justify-content: center;
-      margin: 1.5rem 0;
-    }
+.output {
+  background-color: #fff; /* fallback if CSS variables missing */
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
 
-    #nameSelector {
-      padding: 0.6rem 1rem;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      font-size: 1rem;
-      background-color: #fff;
-      color: var(--text);
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      transition: all 0.3s ease;
-      appearance: none; /* remove default arrow */
-      background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D'12'%20height%3D'12'%20viewBox%3D'0%200%2012%2012'%20fill%3D'none'%20xmlns%3D'http%3A//www.w3.org/2000/svg'%3E%3Cpath%20d%3D'M2%204l4%204%204-4'%20stroke%3D'%233498db'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: right 0.8rem center;
-      background-size: 12px;
-      cursor: pointer;
-      width: 250px;   /* fixed width */
-      max-width: 100%; /* optional: prevents overflow on small screens */
-      padding: 8px;   /* makes it look nicer */
-    }
+.output strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+  color: var(--primary-color);
+}
 
-    #nameSelector:hover {
-      border-color: var(--accent);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    }
+.output p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-align: left;
+}
 
-    #nameSelector:focus {
-      outline: none;
-      border-color: var(--accent);
-      box-shadow: 0 0 0 3px rgba(52,152,219,0.3);
-    }
+
+/* ---------------------------------------------------------
+   MENU ROWS (Starter / Main / Dessert)
+--------------------------------------------------------- */
+
+.menu-row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  align-items: start;
+  margin-bottom: 0.4rem;
+}
+
+/* Category label (Starter / Main / Dessert) */
+.category-label {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: black;
+  display: inline-block;
+  margin-right: 0.3rem;
+}
+
+.category-label::before {
+  margin-right: 0.3rem;
+}
+
+/* Meal text */
+.food-item {
+  font-size: 0.95rem;
+  color: var(--text-color);
+}
+
+
+/* ---------------------------------------------------------
+   GENERIC SELECT WRAPPER (CENTERED)
+--------------------------------------------------------- */
+
+.select-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Legacy/alternate select element */
+#entrySelect {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+
+/* ---------------------------------------------------------
+   PROFESSIONAL SELECT BOX (Primary Name Selector)
+--------------------------------------------------------- */
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+#nameSelector {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #fff;
+  color: var(--text);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+
+  /* Remove default browser arrow */
+  appearance: none;
+
+  /* Custom dropdown arrow */
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D'12'%20height%3D'12'%20viewBox%3D'0%200%2012%2012'%20fill%3D'none'%20xmlns%3D'http%3A//www.w3.org/2000/svg'%3E%3Cpath%20d%3D'M2%204l4%204%204-4'%20stroke%3D'%233498db'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem center;
+  background-size: 12px;
+
+  cursor: pointer;
+  width: 250px;      /* fixed width for consistency */
+  max-width: 100%;   /* prevents overflow on small screens */
+  padding: 8px;      /* refined spacing */
+}
+
+/* Hover state */
+#nameSelector:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Focus state (keyboard accessibility) */
+#nameSelector:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.3);
+}
