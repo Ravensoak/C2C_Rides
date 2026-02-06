@@ -47,6 +47,17 @@
       transition: color 0.3s ease;
       line-height: 1.2;
   }
+  .centered-header {
+      color: #cfd8e3;
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 1rem;
+      max-width: 600px;       /* limits width on larger screens */
+      margin: 0 auto;          /* centers within flex/grid cell */
+      flex: 0 1 auto;          /* prevents unwanted stretching */
+      margin-top: 0rem;   /* or 0 if you want it tight */
+
+  }
   .centered-summary {
       color: #cfd8e3;
       font-size: 0.9rem;
