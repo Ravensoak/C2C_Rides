@@ -1,80 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Install 2026 C2C Rides</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      text-align: center;
-      background: #f6f8fa;
-      padding: 40px;
-    }
-    h1 { color: #222; }
-    p { color: #555; max-width: 420px; margin: 10px auto; }
-    .qr {
-      margin: 30px auto;
-      width: 200px;
-      height: 200px;
-    }
-    a.button {
-      display: inline-block;
-      padding: 12px 20px;
-      margin-top: 10px;
-      background: #007aff;
-      color: #fff;
-      border-radius: 10px;
-      text-decoration: none;
-      font-size: 17px;
-    }
-    .note {
-      margin-top: 25px;
-      font-size: 15px;
-      color: #444;
-    }
-    .steps {
-      text-align: left;
-      display: inline-block;
-      margin: 0 auto;
-      max-width: 300px;
-      padding-left: 1em;
-    }
-    .steps li {
-      margin-bottom: 0.5em;
-      }
-    
-  </style>
-  <script>
-    function openShortcut() {
-      // Step 1: open iCloud shortcut install link
-      window.location.href = "https://www.icloud.com/shortcuts/32c9e23abc104343b56267d8e8c09add";
-      // Step 2: after a short delay, open Shortcuts app (if available)
-      setTimeout(() => {
-        window.location.href = "shortcuts://";
-      }, 2500);
-    }
-  </script>
-</head>
-<body>
 
+  <head>
+    <!-- =========================================================
+      BASIC META / PAGE INFO
+    ========================================================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Install 2026 C2C Rides</title>
   
+    <!-- =========================================================
+      STYLESHEETS
+    ========================================================== -->
+    <link rel="stylesheet" href="css/screenios.css" />
 
-  <h1>Install C2C Rides as an App</h1>
-  <p>Follow the instructions below to install this site as an App on your Android device.</p>
+  </head>
 
+  <body>
+    <!-- =========================================================
+            PAGE TITLE + INTRO
+      ========================================================== -->
+    <h1>Install C2C Rides as an App</h1>
+    <p>Follow the instructions below to install this site as an App on your Android device.</p>
   
-  <div class="note">
-    <ol class="steps">
-      <li>Open the Home page at <b>https://c2crides.netlify.app</b> in <b>Google Chrome</b> on your Android device.</li>
-      <li>Whilst on the Home page tap the <b>three dot menu (⋮)</b> in the top right corner of Chrome</li>
-      <li>Choose <b>"Install app"</b> or <b>"Add to Home screen"</b>.</li>
-      <li>Tap <b>"Add"</b> → choose where you want the icon.</li>
-      <li>Done ✅ You now have an icon on your home page for a one-tap opening of the C2C Rides site.</li>
-    </ol>
-  </div>
-  <br>
-  <a href="#" onclick="window.history.length > 1 ? history.back() : window.location.href='index.html'; return false;">← Back</a>
-  <p style="margin-top:40px;color:#888;font-size:14px;">C2C Rides</p>
-</body>
+    <div class="note">
+      <ol class="steps">
+        <li>Open the Home page at <b>https://c2crides.netlify.app</b> in <b>Google Chrome</b> on your Android device.</li>
+        <li>Whilst on the Home page tap the <b>three dot menu (⋮)</b> in the top right corner of Chrome</li>
+        <li>Choose <b>"Install app"</b> or <b>"Add to Home screen"</b>.</li>
+        <li>Tap <b>"Add"</b> → choose where you want the icon.</li>
+        <li>Done ✅ You now have an icon on your home page for a one-tap opening of the C2C Rides site.</li>
+      </ol>
+    </div>
+    <br>
+    <a href="#" onclick="window.history.length > 1 ? history.back() : window.location.href='index.html'; return false;">← Back</a>
+    <p style="margin-top:40px;color:#888;font-size:14px;">C2C Rides</p>
+  </body>
 </html>
