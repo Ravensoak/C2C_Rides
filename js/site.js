@@ -103,10 +103,4 @@ loadComponent('#footer-placeholder', 'footer.html', `
   </footer>
 `);
 
-//Load navigation dynamically (if needed)
-fetch("nav.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("nav-placeholder").innerHTML = data;
-    });
 
