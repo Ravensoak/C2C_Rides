@@ -78,7 +78,7 @@ document.querySelectorAll('.lightbox-trigger').forEach(button => {
 /* =========================================================
   DYNAMIC COMPONENT LOADING (e.g., footer)
 ========================================================== */
-function loadComponent(selector, url, fallbackHTML = '') {
+function loadComponent(selector, url, fallbackHTML = '', callback) {
   const container = document.querySelector(selector);
   if (!container) return;
 
@@ -87,10 +87,14 @@ function loadComponent(selector, url, fallbackHTML = '') {
       if (!response.ok) throw new Error(`Failed to load ${url}`);
       return response.text();
     })
-    .then(html => container.innerHTML = html)
+    .then(html => {
+      container.innerHTML = html;
+      if (typeof callback === 'function') callback();
+    })
     .catch(error => {
       console.warn(`Component load failed: ${url}`, error);
       container.innerHTML = fallbackHTML;
+      if (typeof callback === 'function') callback();
     });
 }
 
