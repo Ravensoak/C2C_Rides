@@ -189,22 +189,6 @@ document.addEventListener('DOMContentLoaded', () => {
      COMPONENT LOADER (HEADER / FOOTER INCLUDES)
   ========================================================== */
 
-  function loadComponent(selector, url, fallbackHTML = '') {
-    const container = document.querySelector(selector);
-    if (!container) return;
-
-    fetch(url)
-      .then(response => {
-        if (!response.ok) throw new Error(`Failed to load ${url}`);
-        return response.text();
-      })
-      .then(html => {
-        container.innerHTML = html;
-      })
-      .catch(error => {
-        console.warn(`Component load failed: ${url}`, error);
-        container.innerHTML = fallbackHTML;
-      });
-  }
+  
 
 });
