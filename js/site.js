@@ -107,4 +107,20 @@ loadComponent('#footer-placeholder', 'footer.html', `
   </footer>
 `);
 
+function initNavigationMenu() {
+  const toggle = document.querySelector(".menu-toggle");
+  const mobileMenu = document.querySelector(".mobile-menu");
+  const overlay = document.querySelector(".menu-overlay");
 
+  if (!toggle || !mobileMenu || !overlay) return;
+
+  toggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("open");
+    overlay.classList.toggle("active");
+  });
+
+  overlay.addEventListener("click", () => {
+    mobileMenu.classList.remove("open");
+    overlay.classList.remove("active");
+  });
+}
