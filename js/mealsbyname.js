@@ -121,33 +121,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Trigger update when user selects a name
   nameSelector.addEventListener("change", updateOutput);
 
-  /* =========================================================
-     COMPONENT LOADER (HEADER / FOOTER)
-     Loads external HTML fragments into containers
-  ========================================================== */
-
-  /**
-   * Loads an external HTML component into a container.
-   * @param {string} selector - CSS selector of the container
-   * @param {string} url - URL of the component to load
-   * @param {string} fallbackHTML - Optional fallback content
-   */
-  function loadComponent(selector, url, fallbackHTML = '') {
-    const container = document.querySelector(selector);
-    if (!container) return;
-
-    fetch(url)
-      .then(response => {
-        if (!response.ok) throw new Error(`Failed to load ${url}`);
-        return response.text();
-      })
-      .then(html => {
-        container.innerHTML = html;
-      })
-      .catch(error => {
-        console.warn(`Component load failed: ${url}`, error);
-        container.innerHTML = fallbackHTML;
-      });
-  }
+ 
 
 });
