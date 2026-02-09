@@ -125,8 +125,13 @@ function initNavigationMenu() {
   const mobileMenu = document.querySelector(".mobile-menu");
   const overlay = document.querySelector(".menu-overlay");
 
-  if (!toggle || !mobileMenu || !overlay) return;
+  // If this nav doesn't include a mobile menu, skip mobile logic
+  if (!toggle || !mobileMenu || !overlay) {
+    console.log("Loaded nav without mobile menu — skipping mobile init");
+    return;
+  }
 
+  // Mobile menu logic (only runs when elements exist)
   toggle.addEventListener("click", () => {
     mobileMenu.classList.toggle("open");
     overlay.classList.toggle("active");
