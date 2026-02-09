@@ -107,6 +107,13 @@ loadComponent('#footer-placeholder', 'footer.html', `
   </footer>
 `);
 
+loadComponent(
+  '#nav-placeholder',
+  'nav.html',
+  '',                 // optional fallback HTML
+  initNavigationMenu  // callback to run AFTER nav loads
+);
+
 function initNavigationMenu() {
   const toggle = document.querySelector(".menu-toggle");
   const mobileMenu = document.querySelector(".mobile-menu");
