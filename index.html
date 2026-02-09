@@ -222,27 +222,7 @@
         body.setAttribute("data-theme", current === "light" ? "dark" : "light");
       }
 
-      /* =========================================================
-        COMPONENT LOADER (Footer, etc.)
-        - Loads external HTML into a placeholder element
-      ========================================================== */
-      function loadComponent(selector, url, fallbackHTML = "") {
-        const container = document.querySelector(selector);
-        if (!container) return;
-
-        fetch(url)
-          .then((response) => {
-            if (!response.ok) throw new Error(`Failed to load ${url}`);
-            return response.text();
-          })
-          .then((html) => {
-            container.innerHTML = html;
-          })
-          .catch((error) => {
-            console.warn(`Component load failed: ${url}`, error);
-            container.innerHTML = fallbackHTML;
-          });
-      }
+     
 
       /* =========================================================
         MOBILE MENU TOGGLE
@@ -262,20 +242,15 @@
       // Close when overlay is clicked
       overlay.addEventListener("click", toggleMenu);
 
-      /* =========================================================
-        LOAD STANDARD FOOTER
-      ========================================================== */
-      loadComponent(
-        "#footer-placeholder",
-        "footer.html",
-        `
-        <footer>
-          <div class="footer-content">
-            <span class="footer-text">© C2C Rides</span>
-          </div>
-        </footer>
-        `
-      );
+      
+      
     </script>
+
+    <!-- =========================================================
+      PAGE SCRIPTS
+      (defer = loads after HTML parsing, safer for DOM elements)
+    ========================================================== -->
+    <script src="js/site.js" defer></script>
+
   </body>
 </html>
