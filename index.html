@@ -177,40 +177,7 @@
           .then(() => console.log("Service Worker registered"));
       }
 
-      /* =========================================================
-        FLOATING REFRESH BUTTON (PWA standalone mode only)
-        - Appears only when installed as an app
-        - Auto-hides after inactivity
-      ========================================================== */
-      const refreshBtn = document.getElementById("refreshButton");
-      let hideTimer;
-
-      if (window.matchMedia("(display-mode: standalone)").matches) {
-        refreshBtn.style.display = "flex";
-
-        // Optional small delay so any CSS transition can kick in
-        setTimeout(() => refreshBtn.classList.add("visible"), 100);
-
-        // Reload when tapped
-        refreshBtn.addEventListener("click", () => window.location.reload());
-
-        // Show button and reset hide timer
-        function resetHideTimer() {
-          refreshBtn.classList.add("visible");
-          clearTimeout(hideTimer);
-          hideTimer = setTimeout(
-            () => refreshBtn.classList.remove("visible"),
-            5000
-          );
-        }
-
-        // Detect activity (tap, scroll, move)
-        ["mousemove", "scroll", "touchstart"].forEach((evt) =>
-          document.addEventListener(evt, resetHideTimer)
-        );
-
-        resetHideTimer();
-      }
+      
 
       /* =========================================================
         THEME TOGGLE FUNCTION
