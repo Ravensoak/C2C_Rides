@@ -121,8 +121,6 @@ document.addEventListener('DOMContentLoaded', () => {
     return headerRow;
   }
 
-
-
   /* =========================================================
      TABLE ROW GENERATION
   ========================================================== */
@@ -138,8 +136,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     return row;
   }
-
-
 
   /* =========================================================
      RENDER TABLE FOR SELECTED HOTEL
@@ -171,8 +167,6 @@ document.addEventListener('DOMContentLoaded', () => {
     tableContainer.appendChild(table);
   }
 
-
-
   /* =========================================================
      HOTEL SELECTOR EVENT
      Resets sorting when switching hotels
@@ -182,13 +176,5 @@ document.addEventListener('DOMContentLoaded', () => {
     currentSort = { key: null, direction: 'asc' };
     renderHotelTable(hotelSelector.value);
   });
-
-
-
-  /* =========================================================
-     COMPONENT LOADER (HEADER / FOOTER INCLUDES)
-  ========================================================== */
-
-  
 
 });
