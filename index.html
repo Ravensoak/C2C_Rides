@@ -212,70 +212,7 @@
         resetHideTimer();
       }
 
-      /* =========================================================
-        THEME TOGGLE FUNCTION
-        (Not currently used in this page, but kept for future)
-      ========================================================== */
-      function toggleTheme() {
-        const body = document.body;
-        const current = body.getAttribute("data-theme");
-        body.setAttribute("data-theme", current === "light" ? "dark" : "light");
-      }
-
-      /* =========================================================
-        COMPONENT LOADER (Footer, etc.)
-        - Loads external HTML into a placeholder element
-      ========================================================== */
-      function loadComponent(selector, url, fallbackHTML = "") {
-        const container = document.querySelector(selector);
-        if (!container) return;
-
-        fetch(url)
-          .then((response) => {
-            if (!response.ok) throw new Error(`Failed to load ${url}`);
-            return response.text();
-          })
-          .then((html) => {
-            container.innerHTML = html;
-          })
-          .catch((error) => {
-            console.warn(`Component load failed: ${url}`, error);
-            container.innerHTML = fallbackHTML;
-          });
-      }
-
-      /* =========================================================
-        MOBILE MENU TOGGLE
-      ========================================================== */
-      const toggleBtn = document.querySelector(".menu-toggle");
-      const mobileMenu = document.querySelector(".mobile-menu");
-      const overlay = document.querySelector(".menu-overlay");
-
-      function toggleMenu() {
-        mobileMenu.classList.toggle("active");
-        overlay.classList.toggle("active");
-      }
-
-      // Open/close on hamburger click
-      toggleBtn.addEventListener("click", toggleMenu);
-
-      // Close when overlay is clicked
-      overlay.addEventListener("click", toggleMenu);
-
-      /* =========================================================
-        LOAD STANDARD FOOTER
-      ========================================================== */
-      loadComponent(
-        "#footer-placeholder",
-        "footer.html",
-        `
-        <footer>
-          <div class="footer-content">
-            <span class="footer-text">© C2C Rides</span>
-          </div>
-        </footer>
-        `
-      );
+      // items took from here
     </script>
   </body>
 </html>
