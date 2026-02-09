@@ -113,6 +113,12 @@ loadComponent(
   '',                 // optional fallback HTML
   initNavigationMenu  // callback to run AFTER nav loads
 );
+loadComponent(
+  '#navindex-placeholder',
+  'navindex.html',
+  '',                 // optional fallback HTML
+  initNavigationMenu  // callback to run AFTER nav loads
+);
 
 function initNavigationMenu() {
   const toggle = document.querySelector(".menu-toggle");
