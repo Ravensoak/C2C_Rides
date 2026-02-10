@@ -70,10 +70,12 @@ header p {
   border-radius: 8px;
   font-size: 1rem;
 
-  /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08);
+  /* Add a more professional finish with subtle shadows and smooth transitions 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }*/
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: background 0.3s ease;
 }
 
