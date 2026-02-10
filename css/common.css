@@ -153,7 +153,7 @@
     transition: transform 0.3s ease;
     padding: 2rem 1rem;
     z-index: 1050;
-    visibility: hidden;
+    /*visibility: hidden;*/
 
 }
 
