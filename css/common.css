@@ -44,6 +44,7 @@
       /*background: url('Morfa-Nefyn.png') no-repeat center center fixed;*/
       background: url("../pictures/Morfa-Nefyn-background.png") no-repeat center center;
       background-size: cover;
+      background-color: #1f2a36;
       color: var(--text);
       display: flex;
       flex-direction: column;
