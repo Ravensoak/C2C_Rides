@@ -154,9 +154,15 @@
     transition: transform 0.3s ease;
     padding: 2rem 1rem;
     z-index: 1050;
-    /*visibility: hidden;*/
+    /*new line below*/
+    visibility: hidden;
 
 }
+.mobile-menu.ready {
+    visibility: visible; /* JS will add this once initialized */
+}
+/*(new line above*/
+
 
 .mobile-menu ul {
     list-style: none;
