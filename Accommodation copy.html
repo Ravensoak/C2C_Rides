@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <!-- =========================================================
+      BASIC META / PAGE INFO
+    ========================================================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C2C Rides - Accommodation</title>
+
+    <!-- =========================================================
+      ICON + THEME COLOUR
+    ========================================================== -->
+    <link rel="icon" href="graphics/favicon-32x32.png" type="image/png" />
+    <meta name="theme-color" content="#1f2a36" />
+
+    <!-- =========================================================
+      STYLESHEETS
+    ========================================================== -->
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/accommodation.css" />
+  </head>
+
+  <body>
+    <!-- =========================================================
+      NAVIGATION PLACEHOLDER (Loaded dynamically)
+    ========================================================== -->
+    <div id="nav-placeholder"></div>
+    
+
+    <!-- =========================================================
+      PAGE TITLE + INTRO
+    ========================================================== -->
+    <div class="title-with-lines">
+      <hr />
+      <h1>Accommodation</h1>
+      <hr />
+    </div>
+
+    <p class="centered-summary">
+      Listed below is our accommodation for the 4-5 days. For the first and last
+      night, the group will be split across the Manor and Caer Rhur Hall hotels,
+      but will join together at the Manor for the evening meal.
+    </p>
+
+    <!-- =========================================================
+      HOTEL CARDS (Loaded from JSON)
+    ========================================================== -->
+    <div class="hotel-container" id="hotelContainer">
+      <!-- Loading placeholder (replaced by JS) -->
+      <p class="loading-message">Loading accommodation…</p>
+    </div>
+
+    <!-- =========================================================
+      FOOTER PLACEHOLDER (Loaded dynamically)
+    ========================================================== -->
+    <div id="footer-placeholder"></div>
+
+    <!-- =========================================================
+      FLOATING REFRESH BUTTON (PWA only)
+    ========================================================== -->
+    <button id="refreshButton" title="Refresh">🔄</button>
+
+    <!-- =========================================================
+      PAGE SCRIPTS
+      (defer = loads after HTML parsing, safer for DOM elements)
+    ========================================================== -->
+    <script src="js/accommodation.js" defer></script>
+    <script src="js/site.js" defer></script>
+
+  </body>
+</html>
+<!-- End of Accommodation.html -->  
