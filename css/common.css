@@ -2,6 +2,33 @@
 
 /* === Global Styles === */
 /* CSS Variables for Theming */
+
+ /* =========================================================
+    LOGO
+  ========================================================== */
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .logo {
+    width: clamp(100px, 10vw, 140px); /* responsive sizing */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+    transition: transform 0.3s ease, filter 0.3s ease;
+    will-change: transform, filter; /* performance hint */
+  }
+
+  .logo:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+  }
+  
   :root {
       --primary: #2c3e50;
       --accent: #3498db;
