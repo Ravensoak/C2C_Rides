@@ -14,7 +14,7 @@
   }
 
   .logo {
-    width: clamp(100px, 10vw, 140px); /* responsive sizing */
+    width: clamp(50px, 5vw, 70px); /* responsive sizing */
     height: auto;
     display: block;
     margin: 0 auto;
@@ -28,7 +28,7 @@
     transform: scale(1.05);
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
   }
-  
+
   :root {
       --primary: #2c3e50;
       --accent: #3498db;
