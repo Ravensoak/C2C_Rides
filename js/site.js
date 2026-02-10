@@ -131,12 +131,6 @@ function initNavigationMenu() {
     return;
   }
 
-
- // ⭐ ADD THIS LINE HERE — right after elements exist
-  mobileMenu.classList.add("ready");
-
-
-
   // Mobile menu logic (only runs when elements exist)
   toggle.addEventListener("click", () => {
     mobileMenu.classList.toggle("open");

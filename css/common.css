@@ -155,13 +155,10 @@
     padding: 2rem 1rem;
     z-index: 1050;
     /*new line below*/
-    visibility: hidden;
+    /*visibility: hidden;*/
 
 }
-.mobile-menu.ready {
-    visibility: visible; /* JS will add this once initialized */
-}
-/*(new line above*/
+
 
 
 .mobile-menu ul {
