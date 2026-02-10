@@ -30,9 +30,9 @@ const routeData = {
           <li>37 miles - Porthmadog</li>
         </ul>
         <div class="thumbnail-gallery">
-          <img src="pictures/Beddgelert.jpg" alt="Beddgelert">
-          <img src="pictures/Gelert.jpg" alt="Gelerts Grave">
-          <img src="pictures/Criccieth.jpg" alt="Criccieth">
+          <img src="pictures/Beddgelert.jpg" alt="Beddgelert" onclick="openLightbox(this)">
+          <img src="pictures/Gelert.jpg" alt="Gelerts Grave" onclick="openLightbox(this)">
+          <img src="pictures/Criccieth.jpg" alt="Criccieth" onclick="openLightbox(this)">
         </div>
     `,
     link: 'https://ridewithgps.com/routes/52509283'
@@ -442,53 +442,3 @@ function openLightbox(img) {
 function closeLightbox() {
   document.getElementById("lightbox").classList.remove("active");
 }
-
-/* =========================================================
-  LIGHTBOX (Dynamic thumbnails via event delegation)
-========================================================== */
-
-// Open when any thumbnail inside the grid is clicked
-grid.addEventListener("click", (e) => {
-  const img = e.target;
-
-  // Only trigger for gallery thumbnails
-  if (!img.matches(".thumbnail-gallery img")) return;
-
-  openLightbox(img);
-});
-
-// Close when clicking background
-const lightbox = document.getElementById("lightbox");
-if (lightbox) {
-  lightbox.addEventListener("click", closeLightbox);
-}
-
-// Prevent closing when clicking inside content
-const lightboxContent = document.querySelector(".lightbox-content");
-if (lightboxContent) {
-  lightboxContent.addEventListener("click", (e) => e.stopPropagation());
-}
-
-// Close button
-const closeBtn = document.querySelector(".lightbox-close");
-if (closeBtn) {
-  closeBtn.addEventListener("click", closeLightbox);
-}
-
-// Make functions global (safe if referenced elsewhere)
-window.openLightbox = function (img) {
-  const lightboxImg = document.getElementById("lightbox-img");
-  const caption = document.getElementById("lightbox-caption");
-
-  if (!lightbox || !lightboxImg || !caption) return;
-
-  lightboxImg.src = img.src;
-  caption.textContent = img.alt || "";
-  lightbox.classList.add("active");
-};
-
-window.closeLightbox = function () {
-  if (lightbox) {
-    lightbox.classList.remove("active");
-  }
-};
