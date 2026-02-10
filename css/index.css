@@ -23,14 +23,14 @@
       /* =========================================================
         LOGO
       ========================================================== */
-      .logo-container {
+      .indexlogo-container {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 1rem;
       }
 
-      .logo {
+      .indexlogo {
         width: clamp(100px, 10vw, 140px); /* responsive sizing */
         height: auto;
         display: block;
@@ -41,7 +41,7 @@
         will-change: transform, filter; /* performance hint */
       }
 
-      .logo:hover {
+      .indexlogo:hover {
         transform: scale(1.05);
         filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
       }
