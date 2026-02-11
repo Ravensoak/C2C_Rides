@@ -1,0 +1,34 @@
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.accordion-header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px 0;
+}
+
+.accordion-content.open {
+  display: block;
+}
+
+.accordion-section h3 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.accordion-section ul {
+  padding-left: 20px;
+}
+
+.accordion-section a {
+  color: #0066cc;
+  text-decoration: underline;
+}
