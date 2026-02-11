@@ -47,4 +47,52 @@
       }
     ]
   }
+  {
+    "title": "2022 – Bath to Belper",
+    "blocks": [
+      {
+        "type": "text",
+        "heading": "Overview",
+        "content": "A route making its way from Bath to Bristol, then over the Severn Estuary, across the Malvern Hills and through Worcester, Birmingham and Lichfield before arriving back in Belper."
+      },
+      {
+        "type": "list",
+        "heading": "Daily Stages",
+        "items": [
+          {
+            "label": "Day 1 - Midford to Bristol",
+            "text": "The ride started in the afternoon from Midford using an old railway line with many tunnels and ending in Bristol."
+          },
+          {
+            "label": "Day 2 - Bristol to Great Malvern",
+            "text": "The route out of Bristol followed the River Avon to the Clifton Suspension Bridge before heading North West using the Severn Bridge to get to Chepstow. It then used the Wye Valley Greenway navigating the Tidenham Tunnel (bat colony) passing Tintern Abbey and onto Ross-on-Wye, before crossing the Malvern Hills into Great Malvern."
+          },
+          {
+            "label": "Day 3 - Great Malvern to Lichfield",
+            "text": "The route took us via cycle paths through the centres of Worcester and Birmingham before reaching Lichfield."
+          },
+          {
+            "label": "Day 4 - Lichfield to Belper",
+            "text": "The route took us from Lichfield back home to Belper calling at the World Peace cafe en‑route and riding a long stretch on the Great Northern Greenway."
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "heading": "Riders (17)",
+        "content": "Christine Bell, Roy Clarke, Janice Clowes, Joanne Curtis, Mark Curtis, Anthony Heaney, Jenny Heaney, Theresa Jennings, Martyn Leighton, Heather Marriott, Kevin Marriott, Paul Nathan, David Olney, Jane Olney, Laureta Peach, Beverly Smithers, Graham Whetton"
+      },
+      {
+        "type": "text",
+        "heading": "Support Crew (1)",
+        "content": "Jess Turner"
+      },
+      {
+        "type": "link",
+        "heading": "Photo Links",
+        "url": "https://photos.app.goo.gl/KhjrTxQF5tPdDtHh6",
+        "label": "View photos"
+      }
+    ]
+  }
 ]
