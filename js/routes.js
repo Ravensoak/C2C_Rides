@@ -212,7 +212,7 @@ const routeData = {
       <p>This route is similar to the short route but has an extra few miles after Beaumaris where it carries on to Trwyn Penmon Point before returning to the accommodation in Beaumaris.</p>
       <p>The route begins with a steady climb out of Nefyn to the village of Llithfaen, where expansive views across the Llŷn Peninsula reward the ascent. From there, it descends into Llanaelhaearn before continuing along quiet country lanes and a scenic stretch of disused railway line en route to Pen-y-groes.</p>
       <p>A short detour from the main cycle route leads to Pant Du Vineyard and Cafe — an ideal stop for refreshments before rejoining the route and continuing toward Caernarfon. Here, the path loops around the town’s iconic castle and follows dedicated cycle paths along the shoreline and marina, offering a relaxed and picturesque ride toward Bangor.</p>
-      <p>In Bangor, the route crosses the historic Menai Bridge and continues along the coastal road through Beaumaris, eventually reaching Trwyn Penmon Point. This dramatic headland offers striking views across the water to Puffin Island and the Trwyn Du lighthouse. From the point, the route retraces its steps along the same scenic path, returning to the accommodation in Beaumaris to complete the day’s journey.</p>
+    
       <span>Possible cafe stops are:</span>
         <ul>
           <li>19.5 miles – Pant Du Vineyard and Cafe, Penygroes</li>
