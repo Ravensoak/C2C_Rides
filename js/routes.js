@@ -16,10 +16,7 @@ const routeData = {
     //elevation: '150 m',//
     description: `
       <p>Choose this route if you want a more relaxed cycling pace with less distance and climbing.</p>
-      <p>The route makes its way to Betws-y-Coed and follows quiet country lanes to Capel Curig, offering a gentle introduction to the dramatic landscapes ahead. From Capel Curig, the journey turns toward Snowdon (Yr Wyddfa), whose imposing summit dominates the horizon — weather permitting!</p>
-      <p>At the Llanberis junction, the route descends Snowdon’s southern slopes and enters the picturesque village of Beddgelert, known for its welcoming cafés and rich folklore. If time allows, a visit to Gelert’s grave provides a poignant glimpse into one of Wales’s most enduring fables. Continuing south, the path traces the Welsh Highland Railway and the scenic river valley to Nantmor, before leaving the main road and heading toward Garreg.<br>
-      Just beyond, the RSPB reserve offers a chance to observe nesting ospreys from its viewing gallery — subject to seasonal return.</p>
-      <p>Upon reaching Tremadog, riders may opt for a brief detour into Porthmadog or continue directly to Criccieth. The town greets visitors with sweeping views of its coastal charm and the striking silhouette of Criccieth Castle overlooking the bay.</p>
+      
       <span>Possible cafe stops are:</span>
         <ul>
           <li>10 miles - Betws-Y-Coed</li>
@@ -224,7 +221,7 @@ const routeData = {
           <img src="pictures/CaernarfonCastle.jpg" alt="Caernarfon" onclick="openLightbox(this)">
           <img src="pictures/BeaumarisCastle.jpg" alt="Beaumaris" onclick="openLightbox(this)">
           <img src="pictures/TrwynPenmonPoint.jpg" alt="Trwyn Penmon Point" onclick="openLightbox(this)">
-        </div>  
+        </div>
     `,
     link: 'https://ridewithgps.com/routes/52661668'
   },
