@@ -16,7 +16,10 @@ const routeData = {
     //elevation: '150 m',//
     description: `
       <p>Choose this route if you want a more relaxed cycling pace with less distance and climbing.</p>
-      
+      <p>The route makes its way to Betws-y-Coed and follows quiet country lanes to Capel Curig, offering a gentle introduction to the dramatic landscapes ahead. From Capel Curig, the journey turns toward Snowdon (Yr Wyddfa), whose imposing summit dominates the horizon — weather permitting!</p>
+      <p>At the Llanberis junction, the route descends Snowdon’s southern slopes and enters the picturesque village of Beddgelert, known for its welcoming cafés and rich folklore. If time allows, a visit to Gelert’s grave provides a poignant glimpse into one of Wales’s most enduring fables. Continuing south, the path traces the Welsh Highland Railway and the scenic river valley to Nantmor, before leaving the main road and heading toward Garreg.<br>
+      Just beyond, the RSPB reserve offers a chance to observe nesting ospreys from its viewing gallery — subject to seasonal return.</p>
+      <p>Upon reaching Tremadog, riders may opt for a brief detour into Porthmadog or continue directly to Criccieth. The town greets visitors with sweeping views of its coastal charm and the striking silhouette of Criccieth Castle overlooking the bay.</p>
       <span>Possible cafe stops are:</span>
         <ul>
           <li>10 miles - Betws-Y-Coed</li>
@@ -207,9 +210,7 @@ const routeData = {
     //elevation: '80 m',//
       description: `
       <p>This route is similar to the short route but has an extra few miles after Beaumaris where it carries on to Trwyn Penmon Point before returning to the accommodation in Beaumaris.</p>
-      <p>The route begins with a steady climb out of Nefyn to the village of Llithfaen, where expansive views across the Llŷn Peninsula reward the ascent. From there, it descends into Llanaelhaearn before continuing along quiet country lanes and a scenic stretch of disused railway line en route to Pen-y-groes.</p>
-      <p>A short detour from the main cycle route leads to Pant Du Vineyard and Cafe — an ideal stop for refreshments before rejoining the route and continuing toward Caernarfon. Here, the path loops around the town’s iconic castle and follows dedicated cycle paths along the shoreline and marina, offering a relaxed and picturesque ride toward Bangor.</p>
-      <p>Upon reaching Bangor, the route crosses the historic Menai Bridge and follows the coastal road through Beaumaris, eventually arriving at Trwyn Penmon Point. This dramatic headland provides sweeping views of Puffin Island and the Trwyn Du lighthouse. From the point, the route retraces its steps along the same scenic path, returning to the accommodation in Beaumaris to complete the day’s ride.</p> 
+      
       <span>Possible cafe stops are:</span>
         <ul>
           <li>19.5 miles – Pant Du Vineyard and Cafe, Penygroes</li>
