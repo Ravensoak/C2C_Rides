@@ -1,6 +1,5 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
   <head>
     <!-- =========================================================
         BASIC META / PAGE INFO
@@ -12,30 +11,26 @@
     <!-- =========================================================
       ICON + THEME COLOUR
     ========================================================== -->
-    <link rel="icon" href="graphics/favicon-32x32.png" type="image/png">
-    <meta name="theme-color" content="#1f2a36">
+    <link rel="icon" href="graphics/favicon-32x32.png" type="image/png" />
+    <meta name="theme-color" content="#1f2a36" />
 
     <!-- =========================================================
       STYLESHEETS
     ========================================================== -->
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/lightbox.css">
-    <link rel="stylesheet" href="css/meals.css">
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/lightbox.css" />
+    <link rel="stylesheet" href="css/meals.css" />
   </head>
 
   <body>
-    <header> 
+    <header>
       <!-- =========================================================
         HEADER (Logo) + NAV (Loaded dynamically)
       ========================================================== -->
       <div class="pagelogo-container">
-        <img
-          src="/graphics/c2cRIDESlogoblack.png"
-          alt="C2C Ride Logo"
-          class="pagelogo"
-        />
+        <img src="/graphics/c2cRIDESlogoblack.png" alt="C2C Ride Logo" class="pagelogo" />
       </div>
-       <!-- =========================================================
+      <!-- =========================================================
       NAVIGATION PLACEHOLDER (Loaded dynamically)
       ========================================================== -->
       <div id="nav-placeholder"></div>
@@ -45,27 +40,29 @@
       PAGE TITLE + INTRO
     ========================================================== -->
     <div class="title-with-lines">
-      <hr>
+      <hr />
       <h1>Meals</h1>
-      <hr>
+      <hr />
     </div>
 
     <p class="centered-summary">
-      Please review the menus, and then make your choice for each hotel - the button will open a Google Form for you to input your selection.
+      Please review the menus, and then make your choice for each hotel - the button will open a Google Form for you to
+      input your selection.
     </p>
 
     <!-- =========================================================
       MENU BUTTONS (PDF / Form)
     ========================================================== -->
 
-    <!--re-instate when menus available
-      <div class="button-container">
-        <a href="files/Menu-TheManor.pdf" class="menu-button" target="_blank" rel="noopener">View Menus (PDF)</a>
-        <a href="https://forms.gle/aJ5iLYMDShPKzC4p8" class="menu-button" target="_blank" rel="noopener">Input Meal Choice</a>
-      </div>
-      -->
-      
+    <!--re-instate when menus available -->
     <div class="button-container">
+      <a href="files/Menu-All.pdf" class="menu-button" target="_blank" rel="noopener">View Menus (PDF)</a>
+      <a href="https://forms.gle/aJ5iLYMDShPKzC4p8" class="menu-button" target="_blank" rel="noopener"
+        >Input Meal Choice</a
+      >
+    </div>
+
+    <!--<div class="button-container">
       <button class="menu-button lightbox-trigger"
         data-img="/graphics/c2cRIDESlogoblack.png"
         data-text="Menus are not yet available, but you can see an example from 'The Manor Hotel'.<br><br>When menus are available, we will let you know and ask you to come here to review them so you can make your selection."
@@ -79,7 +76,7 @@
         data-target="https://forms.gle/aJ5iLYMDShPKzC4p8">
         Input Meal Choice
       </button>
-    </div>
+    </div>-->
 
     <!-- =========================================================
       FIND EXPLANATION AND BUTTONS
@@ -120,6 +117,5 @@
       ========================================================== -->
     <script src="js/meals.js" defer></script>
     <script src="js/site.js" defer></script>
-    
   </body>
 </html>
