@@ -2,41 +2,89 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Menus (PDF)</title>
+
+    <!-- Dynamic page title -->
+    <title>PDF Viewer</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <style>
+      /* =========================================================
+         RESET / BASE
+      ========================================================== */
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
       body {
         margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
         font-family:
           system-ui,
           -apple-system,
           BlinkMacSystemFont,
           "Segoe UI",
           sans-serif;
-        background: #f5f5f5;
+        background: #222;
       }
 
-      /* Floating Back Button */
+      /* =========================================================
+         FLOATING BACK BUTTON
+      ========================================================== */
       .back-floating {
         position: fixed;
         top: 12px;
         left: 12px;
-        padding: 12px 28px;
+        padding: 12px 24px;
         background: rgba(0, 0, 0, 0.8);
         color: #fff;
-        font-size: 18px;
-        border-radius: 999px; /* pill shape */
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 999px;
         z-index: 9999;
         text-decoration: none;
         cursor: pointer;
+        transition: background 0.2s ease;
+        user-select: none;
       }
 
-      /* Scrollable PDF container */
+      .back-floating:hover {
+        background: rgba(0, 0, 0, 0.95);
+      }
+
+      /* =========================================================
+         FLOATING TITLE
+      ========================================================== */
+      .pdf-title {
+        position: fixed;
+        top: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 12px 24px;
+        background: rgba(255, 255, 255, 0.92);
+        color: #111;
+        border-radius: 999px;
+        font-size: 16px;
+        font-weight: 700;
+        z-index: 9999;
+        max-width: 80vw;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+      }
+
+      /* =========================================================
+         PDF WRAPPER
+      ========================================================== */
       .pdf-wrapper {
         width: 100vw;
         height: 100vh;
-        overflow-y: scroll;
-        -webkit-overflow-scrolling: touch;
+        overflow: hidden;
         background: #333;
       }
 
@@ -45,24 +93,88 @@
         height: 100%;
         border: none;
       }
+
+      /* =========================================================
+         MOBILE TWEAKS
+      ========================================================== */
+      @media (max-width: 768px) {
+        .back-floating {
+          padding: 10px 18px;
+          font-size: 14px;
+        }
+
+        .pdf-title {
+          font-size: 14px;
+          padding: 10px 18px;
+          max-width: 65vw;
+        }
+      }
     </style>
   </head>
 
   <body>
-    <!-- Floating Back Button -->
+    <!-- =========================================================
+         BACK BUTTON
+    ========================================================== -->
     <a class="back-floating" onclick="goBack()">← Back</a>
 
-    <!-- Scrollable PDF Container -->
+    <!-- =========================================================
+         PDF TITLE
+    ========================================================== -->
+    <div class="pdf-title" id="display-title">PDF Viewer</div>
+
+    <!-- =========================================================
+         PDF CONTAINER
+    ========================================================== -->
     <div class="pdf-wrapper">
-      <embed src="files/Menus_All_Merged.pdf" type="application/pdf" class="pdf-frame" />
+      <embed id="pdf-embed" type="application/pdf" class="pdf-frame" />
     </div>
 
     <script>
+      /* =========================================================
+         READ URL PARAMETERS
+      ========================================================== */
+      const params = new URLSearchParams(window.location.search);
+
+      const title = params.get("title") || "PDF Viewer";
+      const pdfSrc = params.get("pdf");
+
+      /* =========================================================
+         SET TITLES
+      ========================================================== */
+      document.title = title;
+      document.getElementById("display-title").textContent = title;
+
+      /* =========================================================
+         LOAD PDF
+      ========================================================== */
+      if (pdfSrc) {
+        document.getElementById("pdf-embed").src = pdfSrc;
+      } else {
+        document.querySelector(".pdf-wrapper").innerHTML = `
+          <div style="
+            color:white;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            height:100%;
+            font-size:20px;
+            text-align:center;
+            padding:20px;
+          ">
+            No PDF file specified.
+          </div>
+        `;
+      }
+
+      /* =========================================================
+         BACK BUTTON FUNCTION
+      ========================================================== */
       function goBack() {
         if (history.length > 1) {
           history.back();
         } else {
-          window.location.href = "index.html"; // change to your home page
+          window.location.href = "index.html";
         }
       }
     </script>
