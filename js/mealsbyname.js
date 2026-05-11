@@ -28,7 +28,7 @@ const sheetData = [
   {
     Name: "David Olney",
     Starter: "Creamy Garlic Mushrooms (V) - Crusty bread & butter - £7.95",
-    Main: "Light Bites: Peppered Steak Loaded Fries - With slow cooked steak in a creamy peppercorn sauce - £12.95 + ",
+    Main: "Light Bites: Peppered Steak Loaded Fries - With slow cooked steak in a creamy peppercorn sauce - £12.95",
     Dessert:
       "Banoffee Belgian Waffle - Belgian Waffle topped with bananas, signature toffee sauce & honeycomb ice cream - £7.95",
     Hotel: "nanhoronhotel",
@@ -36,7 +36,7 @@ const sheetData = [
   {
     Name: "David Olney",
     Starter: "Potato Skins (V) – With cheese, garlic sauce and crispy onions - £7.95",
-    Main: "Steak & Ale Pie - With chips and vegetables - £18.95 + ",
+    Main: "Steak & Ale Pie - With chips and vegetables - £18.95",
     Dessert: "No dessert",
     Hotel: "bullinn",
   },
@@ -57,14 +57,14 @@ const sheetData = [
   {
     Name: "Laurie Peach",
     Starter: "No starter",
-    Main: "Classic Dishes: Beef Lasagne - Dressed leaves, chips & garlic bread - £14.95 + ",
+    Main: "Classic Dishes: Beef Lasagne - Dressed leaves, chips & garlic bread - £14.95",
     Dessert: "Lemon Posset - Creamy Lemon dessert with shortbread biscuit and berries - £7.95",
     Hotel: "nanhoronhotel",
   },
   {
     Name: "Laurie Peach",
     Starter: "No starter",
-    Main: "Chicken Supreme with Chasseur Sauce - With mashed potato and vegetables - £18.95 + ",
+    Main: "Chicken Supreme with Chasseur Sauce - With mashed potato and vegetables - £18.95",
     Dessert: "Tiramisu - Coffee, sponge and cream dessert - £6.95",
     Hotel: "bullinn",
   },
@@ -113,7 +113,7 @@ const sheetData = [
   {
     Name: "Beverly Smithers",
     Starter: "Thai Bass Fishcakes - With sweet chilli & coriander salad - £8.95",
-    Main: "Special Dishes: Pan Fried Salmon - With tomatoes, garlic, chilli & coriander - £19.95 + ",
+    Main: "Special Dishes: Pan Fried Salmon - With tomatoes, garlic, chilli & coriander - £19.95",
     Dessert: "No dessert",
     Hotel: "nanhoronhotel",
   },
@@ -141,14 +141,14 @@ const sheetData = [
   {
     Name: "Janice Clowes ",
     Starter: "Thai Bass Fishcakes - With sweet chilli & coriander salad - £8.95",
-    Main: "Light Bites: Peppered Steak Loaded Fries - With slow cooked steak in a creamy peppercorn sauce - £12.95 + ",
+    Main: "Light Bites: Peppered Steak Loaded Fries - With slow cooked steak in a creamy peppercorn sauce - £12.95",
     Dessert: "No dessert",
     Hotel: "nanhoronhotel",
   },
   {
     Name: "Janice Clowes ",
     Starter: "Chicken Caesar Croquettes - With salad and Parmesan - £7.95",
-    Main: "Lamb Hot Pot Pie & Mint Gravy - With mashed potato and vegetables - £18.95 + ",
+    Main: "Lamb Hot Pot Pie & Mint Gravy - With mashed potato and vegetables - £18.95",
     Dessert: "Rhubarb & Stem Ginger Crumble (V) - With custard - £7.95",
     Hotel: "bullinn",
   },
@@ -163,14 +163,14 @@ const sheetData = [
   {
     Name: "Roy clarke",
     Starter: "No starter",
-    Main: "Classic Dishes: Nanhoron Tikka Curry - Chicken, Served with rice, naan, mango chutney - £15.95 + ",
+    Main: "Classic Dishes: Nanhoron Tikka Curry - Chicken, Served with rice, naan, mango chutney - £15.95",
     Dessert: "Lemon Posset - Creamy Lemon dessert with shortbread biscuit and berries - £7.95",
     Hotel: "nanhoronhotel",
   },
   {
     Name: "Roy clarke",
     Starter: "No starter",
-    Main: "Lamb Hot Pot Pie & Mint Gravy - With chips and vegetables - £18.95 + ",
+    Main: "Lamb Hot Pot Pie & Mint Gravy - With chips and vegetables - £18.95",
     Dessert: "Rhubarb & Stem Ginger Crumble (V) - With vanilla ice cream - £7.95",
     Hotel: "bullinn",
   },
@@ -185,14 +185,14 @@ const sheetData = [
   {
     Name: "Theresa Jennings",
     Starter: "No starter",
-    Main: "Classic Dishes: Steak & Local Ale Pie - With puff pastry top & served with peas and chips - £15.95 + ",
+    Main: "Classic Dishes: Steak & Local Ale Pie - With puff pastry top & served with peas and chips - £15.95",
     Dessert: "Lemon Posset - Creamy Lemon dessert with shortbread biscuit and berries - £7.95",
     Hotel: "nanhoronhotel",
   },
   {
     Name: "Theresa Jennings",
     Starter: "No starter",
-    Main: "Cod & Lemon Fishcakes - With pea and bacon salad - £18.95 + ",
+    Main: "Cod & Lemon Fishcakes - With pea and bacon salad - £18.95",
     Dessert: "Rhubarb & Stem Ginger Crumble (V) - With vanilla ice cream - £7.95",
     Hotel: "bullinn",
   },
