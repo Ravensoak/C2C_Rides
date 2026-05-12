@@ -56,7 +56,7 @@ const hotelData = {
       dessert: "Sticky Toffee Pudding with Custard - £9",
     },
     {
-      name: "Jenny",
+      name: "Jenny Heaney",
       starter: "No starter",
       main: "Steak & Ale Pie with chips, sticky red cabbage, gravy - £17.50",
       dessert: "No dessert",
@@ -136,7 +136,7 @@ const hotelData = {
       dessert: "Cheesecake with Mix Berries Compote",
     },
     {
-      name: "Jenny",
+      name: "Jenny Heaney",
       starter: "No starter",
       main: "Beer battered Cod & Chips served with chips, mushy peas, lemon wedge & tartare sauce",
       dessert: "Cheesecake with Mix Berries Compote",
@@ -217,7 +217,7 @@ const hotelData = {
       dessert: "Eton Mess - Crushed meringue, mixed fruit & fresh cream - £7.95",
     },
     {
-      name: "Jenny",
+      name: "Jenny Heaney",
       starter: "No starter",
       main: "Classic Dishes: Beef Lasagne - Dressed leaves, chips & garlic bread - £14.95",
       dessert: "No dessert",
@@ -297,7 +297,7 @@ const hotelData = {
       dessert: "Rhubarb & Stem Ginger Crumble (V) - With custard - £7.95",
     },
     {
-      name: "Jenny",
+      name: "Jenny Heaney",
       starter: "No starter",
       main: "Scampi & Chips - With mushy peas and tartare sauce - £17.95",
       dessert: "Tiramisu - Coffee, sponge and cream dessert - £6.95",
