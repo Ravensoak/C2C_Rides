@@ -79,6 +79,24 @@ const hotelData = {
       main: "Steak & Ale Pie with chips, sticky red cabbage, gravy - £17.50",
       dessert: "No dessert",
     },
+    {
+      name: "Jane Olney",
+      starter: "No starter",
+      main: "Chicken Pie with mash, sticky red cabbage, gravy - £17.50",
+      dessert: "No dessert",
+    },
+    {
+      name: "Kevin Marriott ",
+      starter: "No starter",
+      main: "Beer battered cod, chips, peas - £18.50",
+      dessert: "No dessert",
+    },
+    {
+      name: "Heather Marriott ",
+      starter: "No starter",
+      main: "Steak & Ale Pie with chips, sticky red cabbage, gravy - £17.50",
+      dessert: "No dessert",
+    },
   ],
   hotelB: [
     {
@@ -158,6 +176,24 @@ const hotelData = {
       starter: "No starter",
       main: "Butter chicken in a rich & silky makhani sauce served with saffron flavored basmati rice & poppadum",
       dessert: "Sticky Toffee Pudding with Custard",
+    },
+    {
+      name: "Jane Olney",
+      starter: "No starter",
+      main: "Beer battered Cod & Chips served with chips, mushy peas, lemon wedge & tartare sauce",
+      dessert: "Sticky Toffee Pudding with Custard",
+    },
+    {
+      name: "Kevin Marriott ",
+      starter: "No starter",
+      main: "Seafood Tagliatelle simmered in Bisque with prawns, squids & mussels served with lemon, Urfa Chilli, chives & Parmesan",
+      dessert: "Sticky Toffee Pudding with Custard",
+    },
+    {
+      name: "Heather Marriott ",
+      starter: "No starter",
+      main: "Beer battered Cod & Chips served with chips, mushy peas, lemon wedge & tartare sauce",
+      dessert: "Cheesecake with Mix Berries Compote",
     },
   ],
   hotelC: [
@@ -240,6 +276,24 @@ const hotelData = {
       main: "Light Bites: Peppered Steak Loaded Fries - With slow cooked steak in a creamy peppercorn sauce - £12.95",
       dessert: "No dessert",
     },
+    {
+      name: "Jane Olney",
+      starter: "No starter",
+      main: "Classic Dishes: Hunters Chicken Burger - Crispy chicken, bacon, cheese & BBQ sauce with coleslaw, hand cut chips - £14.95",
+      dessert: "Eton Mess - Crushed meringue, mixed fruit & fresh cream - £7.95",
+    },
+    {
+      name: "Kevin Marriott ",
+      starter: "No starter",
+      main: "Special Dishes: Pan Roasted Wild Local Seabass  - white wine & mussels sauce - £21.95",
+      dessert: "No dessert",
+    },
+    {
+      name: "Heather Marriott ",
+      starter: "No starter",
+      main: "Special Dishes: Pan Roasted Wild Local Seabass  - white wine & mussels sauce - £21.95",
+      dessert: "No dessert",
+    },
   ],
   hotelD: [
     {
@@ -319,6 +373,24 @@ const hotelData = {
       starter: "Cod & Lemon Fishcake - With parsley sauce - £8.95",
       main: "Lamb Hot Pot Pie & Mint Gravy - With chips and vegetables - £18.95",
       dessert: "Tiramisu - Coffee, sponge and cream dessert - £6.95",
+    },
+    {
+      name: "Jane Olney",
+      starter: "No starter",
+      main: "Cumberland Sausage & Mash - With vegetables and gravy - £17.95",
+      dessert: "Cheese Board - With biscuits, fruit and chutney - £12.95",
+    },
+    {
+      name: "Kevin Marriott ",
+      starter: "No starter",
+      main: "Chicken Supreme with Chasseur Sauce - With mashed potato and vegetables - £18.95",
+      dessert: "Rhubarb & Stem Ginger Crumble (V) - With vanilla ice cream - £7.95",
+    },
+    {
+      name: "Heather Marriott ",
+      starter: "Beetroot Hummus (VG) - With warm flatbread - £7.95",
+      main: "Scampi & Chips - With mushy peas and tartare sauce - £17.95",
+      dessert: "Rhubarb & Stem Ginger Crumble (V) - With vanilla ice cream - £7.95",
     },
   ],
 };
