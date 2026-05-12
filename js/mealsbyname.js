@@ -213,7 +213,7 @@ const sheetData = [
   {
     Name: "Ryan Lovatt",
     Starter: "Creamy Garlic Mushrooms (V) - Crusty bread & butter - £7.95",
-    Main: "Classic Dishes: House Burger - Double beef, cheese, pickles, lettuce, burger sauce, coleslaw, hand-cut chips - £14.95 + ",
+    Main: "Classic Dishes: House Burger - Double beef, cheese, pickles, lettuce, burger sauce, coleslaw, hand-cut chips - £14.95",
     Dessert: "No dessert",
     Hotel: "nanhoronhotel",
   },
@@ -241,7 +241,7 @@ const sheetData = [
   {
     Name: "Anthony Heaney",
     Starter: "Creamy Garlic Mushrooms (V) - Crusty bread & butter - £7.95",
-    Main: "Special Dishes: Chicken Supreme - stuffed with bacon & cheese, wrapped in parma ham served on a bed of creamed leeks - £18.95 + ",
+    Main: "Special Dishes: Chicken Supreme - stuffed with bacon & cheese, wrapped in parma ham served on a bed of creamed leeks - £18.95",
     Dessert: "Eton Mess - Crushed meringue, mixed fruit & fresh cream - £7.95",
     Hotel: "nanhoronhotel",
   },
@@ -269,14 +269,14 @@ const sheetData = [
   {
     Name: "Jenny",
     Starter: "No starter",
-    Main: "Classic Dishes: Beef Lasagne - Dressed leaves, chips & garlic bread - £14.95 + ",
+    Main: "Classic Dishes: Beef Lasagne - Dressed leaves, chips & garlic bread - £14.95",
     Dessert: "No dessert",
     Hotel: "nanhoronhotel",
   },
   {
     Name: "Jenny",
     Starter: "No starter",
-    Main: "Scampi & Chips - With mushy peas and tartare sauce - £17.95 + ",
+    Main: "Scampi & Chips - With mushy peas and tartare sauce - £17.95",
     Dessert: "Tiramisu - Coffee, sponge and cream dessert - £6.95",
     Hotel: "bullinn",
   },
@@ -297,7 +297,7 @@ const sheetData = [
   {
     Name: "Ian Ferrer ",
     Starter: "Shredded Duck Bon Bons - Hoisin mayo & sticky dressing - £8.95",
-    Main: "Classic Dishes: Nanhoron Tikka Curry - Chicken, Served with rice, naan, mango chutney - £15.95 + ",
+    Main: "Classic Dishes: Nanhoron Tikka Curry - Chicken, Served with rice, naan, mango chutney - £15.95",
     Dessert: "No dessert",
     Hotel: "nanhoronhotel",
   },
@@ -325,7 +325,7 @@ const sheetData = [
   {
     Name: "Claire Ferrer",
     Starter: "Thai Bass Fishcakes - With sweet chilli & coriander salad - £8.95",
-    Main: "Special Dishes: Crispy 1/2 Roast Duck - With orange sauce - £21.95 + ",
+    Main: "Special Dishes: Crispy 1/2 Roast Duck - With orange sauce - £21.95",
     Dessert: "No dessert",
     Hotel: "nanhoronhotel",
   },
@@ -353,14 +353,14 @@ const sheetData = [
   {
     Name: "Martyn  Leighton",
     Starter: "Creamy Garlic Mushrooms (V) - Crusty bread & butter - £7.95",
-    Main: "Light Bites: Peppered Steak Loaded Fries - With slow cooked steak in a creamy peppercorn sauce - £12.95 + ",
+    Main: "Light Bites: Peppered Steak Loaded Fries - With slow cooked steak in a creamy peppercorn sauce - £12.95",
     Dessert: "No dessert",
     Hotel: "nanhoronhotel",
   },
   {
     Name: "Martyn  Leighton",
     Starter: "Cod & Lemon Fishcake - With parsley sauce - £8.95",
-    Main: "Lamb Hot Pot Pie & Mint Gravy - With chips and vegetables - £18.95 + ",
+    Main: "Lamb Hot Pot Pie & Mint Gravy - With chips and vegetables - £18.95",
     Dessert: "Tiramisu - Coffee, sponge and cream dessert - £6.95",
     Hotel: "bullinn",
   },
