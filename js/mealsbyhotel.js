@@ -97,6 +97,12 @@ const hotelData = {
       main: "Steak & Ale Pie with chips, sticky red cabbage, gravy - £17.50",
       dessert: "No dessert",
     },
+    {
+      name: "Paul Nathan",
+      starter: "No starter",
+      main: "Sweet potato roulade with a tomato & herb sauce, and seasonal veg - £16.50",
+      dessert: "Crumble of the week, with custard and pouring cream - £10.50",
+    },
   ],
   hotelB: [
     {
@@ -194,6 +200,12 @@ const hotelData = {
       starter: "No starter",
       main: "Beer battered Cod & Chips served with chips, mushy peas, lemon wedge & tartare sauce",
       dessert: "Cheesecake with Mix Berries Compote",
+    },
+    {
+      name: "Paul Nathan",
+      starter: "No starter",
+      main: "Tadka Dal (Red Lentil Curry) A flavorful and hearty dish, made with red lentils, simmered in mild spices, tempered with onions, garlic and cumin. Served with saffron flavored basmati rice & Poppadum",
+      dessert: "Sticky Toffee Pudding with Custard",
     },
   ],
   hotelC: [
@@ -294,6 +306,13 @@ const hotelData = {
       main: "Special Dishes: Pan Roasted Wild Local Seabass  - white wine & mussels sauce - £21.95",
       dessert: "No dessert",
     },
+    {
+      name: "Paul Nathan",
+      starter: "No starter",
+      main: "Classic Dishes: Vegetable Lasagne (V) - Dressed leaves, chips & garlic bread - £14.95",
+      dessert:
+        "Double Chocolate Brownie - Warm Brownie served with signature chocolate sauce & vanilla ice cream - £7.95",
+    },
   ],
   hotelD: [
     {
@@ -390,6 +409,12 @@ const hotelData = {
       name: "Heather Marriott ",
       starter: "Beetroot Hummus (VG) - With warm flatbread - £7.95",
       main: "Scampi & Chips - With mushy peas and tartare sauce - £17.95",
+      dessert: "Rhubarb & Stem Ginger Crumble (V) - With vanilla ice cream - £7.95",
+    },
+    {
+      name: "Paul Nathan",
+      starter: "No starter",
+      main: "Leek, Mushroom & Lentil Shepherds Pie (VG) - With mashed potato and vegetables  - £16.95",
       dessert: "Rhubarb & Stem Ginger Crumble (V) - With vanilla ice cream - £7.95",
     },
   ],

@@ -448,6 +448,35 @@ const sheetData = [
     Dessert: "Rhubarb & Stem Ginger Crumble (V) - With vanilla ice cream - £7.95",
     Hotel: "bullinn",
   },
+  {
+    Name: "Paul Nathan",
+    Starter: "No starter",
+    Main: "Sweet potato roulade with a tomato & herb sauce, and seasonal veg - £16.50",
+    Dessert: "Crumble of the week, with custard and pouring cream - £10.50",
+    Hotel: "themanor1",
+  },
+  {
+    Name: "Paul Nathan",
+    Starter: "No starter",
+    Main: "Tadka Dal (Red Lentil Curry) A flavorful and hearty dish, made with red lentils, simmered in mild spices, tempered with onions, garlic and cumin. Served with saffron flavored basmati rice & Poppadum",
+    Dessert: "Sticky Toffee Pudding with Custard",
+    Hotel: "lionhotel",
+  },
+  {
+    Name: "Paul Nathan",
+    Starter: "No starter",
+    Main: "Classic Dishes: Vegetable Lasagne (V) - Dressed leaves, chips & garlic bread - £14.95",
+    Dessert:
+      "Double Chocolate Brownie - Warm Brownie served with signature chocolate sauce & vanilla ice cream - £7.95",
+    Hotel: "nanhoronhotel",
+  },
+  {
+    Name: "Paul Nathan",
+    Starter: "No starter",
+    Main: "Leek, Mushroom & Lentil Shepherds Pie (VG) - With mashed potato and vegetables  - £16.95",
+    Dessert: "Rhubarb & Stem Ginger Crumble (V) - With vanilla ice cream - £7.95",
+    Hotel: "bullinn",
+  },
 ];
 
 /* =========================================================
