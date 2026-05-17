@@ -13,10 +13,9 @@
 const sheetData = [
   {
     Name: "David Olney",
-    Starter: "Creamy Garlic Mushrooms, Sourdough bread - £8.50",
+    Starter: "Creamy Garlic Mushrooms, Sourdough bread £8.50",
     Main: "Cheese & Potato Pie with chips, sticky red cabbage, gravy - £17.50",
     Dessert: "No dessert",
-    Cost: "£26.00",
     Hotel: "themanor1",
   },
   {
@@ -24,16 +23,14 @@ const sheetData = [
     Starter: "Crispy onion & corn bites served with mango mole",
     Main: "Lion’s Hot Chicken Burger with gherkins, balsamic onions, Tomato, Lettuce and Chef’ special sauce",
     Dessert: "No dessert",
-    Cost: "£25.00",
     Hotel: "lionhotel",
   },
   {
     Name: "David Olney",
-    Starter: "Creamy Garlic Mushrooms (V) - Crusty bread & butter - £8.00",
-    Main: "Light Bites: Peppered Steak Loaded Fries - With slow cooked steak in a creamy peppercorn sauce - £13.00",
+    Starter: "Creamy Garlic Mushrooms (V) - Crusty bread & butter - £7.95",
+    Main: "Light Bites: Peppered Steak Loaded Fries - With slow cooked steak in a creamy peppercorn sauce - £12.95",
     Dessert:
-      "Banoffee Belgian Waffle - Belgian Wafle topped with bananas, signature toffee sauce & honeycomb ice cream - £7.95",
-    Cost: "£28.95",
+      "Banoffee Belgian Waffle - Belgian Waffle topped with bananas, signature toffee sauce & honeycomb ice cream - £7.95",
     Hotel: "nanhoronhotel",
   },
   {
@@ -41,7 +38,6 @@ const sheetData = [
     Starter: "Potato Skins (V) – With cheese, garlic sauce and crispy onions - £7.95",
     Main: "Steak & Ale Pie - With chips and vegetables - £18.95",
     Dessert: "No dessert",
-    Cost: "£26.90",
     Hotel: "bullinn",
   },
   {
@@ -49,7 +45,6 @@ const sheetData = [
     Starter: "No starter",
     Main: "Steak & Ale Pie with mash, sticky red cabbage, gravy - £17.50",
     Dessert: "Chocolate Brownie, with Ice Cream - £8.50",
-    Cost: "£26.00",
     Hotel: "themanor1",
   },
   {
@@ -57,15 +52,13 @@ const sheetData = [
     Starter: "No starter",
     Main: "Beer battered Cod & Chips served with chips, mushy peas, lemon wedge & tartare sauce",
     Dessert: "Sticky Toffee Pudding with Custard",
-    Cost: "£25.00",
     Hotel: "lionhotel",
   },
   {
     Name: "Laurie Peach",
     Starter: "No starter",
-    Main: "Classic Dishes: Beef Lasagne - Dressed leaves, chips & garlic bread - £15.00",
+    Main: "Classic Dishes: Beef Lasagne - Dressed leaves, chips & garlic bread - £14.95",
     Dessert: "Lemon Posset - Creamy Lemon dessert with shortbread biscuit and berries - £7.95",
-    Cost: "£22.95",
     Hotel: "nanhoronhotel",
   },
   {
@@ -73,7 +66,6 @@ const sheetData = [
     Starter: "No starter",
     Main: "Chicken Supreme with Chasseur Sauce - With mashed potato and vegetables - £18.95",
     Dessert: "Tiramisu - Coffee, sponge and cream dessert - £6.95",
-    Cost: "£25.90",
     Hotel: "bullinn",
   },
   {
@@ -81,7 +73,6 @@ const sheetData = [
     Starter: "No starter",
     Main: "Sweet potato roulade with a tomato & herb sauce, and seasonal veg - £16.50",
     Dessert: "No dessert",
-    Cost: "£16.50",
     Hotel: "themanor1",
   },
   {
@@ -89,15 +80,13 @@ const sheetData = [
     Starter: "Chef’s Soup of the Day",
     Main: "Tadka Dal (Red Lentil Curry) A flavorful and hearty dish, made with red lentils, simmered in mild spices, tempered with onions, garlic and cumin. Served with saffron flavored basmati rice & Poppadum",
     Dessert: "No dessert",
-    Cost: "£25.00",
     Hotel: "lionhotel",
   },
   {
     Name: "Christine Bell",
     Starter: "No starter",
-    Main: "Special Dishes: Pan Fried Salmon - With tomatoes, garlic, chilli & coriander - £20.00 + Seasonal Side Salad (VG) - £4.50",
+    Main: "Special Dishes: Pan Fried Salmon - With tomatoes, garlic, chilli & coriander - £19.95 + Seasonal Side Salad (VG) - £3.95",
     Dessert: "No dessert",
-    Cost: "£24.50",
     Hotel: "nanhoronhotel",
   },
   {
@@ -105,15 +94,13 @@ const sheetData = [
     Starter: "Soup of the Day (V) – With bread and butter - £6.95",
     Main: "Thai Green Vegetable Curry (V) - With steamed rice and flatbread - £15.95 + New Potatoes - £4.50, Tenderstem Brocoli & honeyed carrots - £3.50",
     Dessert: "No dessert",
-    Cost: "£30.90",
     Hotel: "bullinn",
   },
   {
     Name: "Beverly Smithers",
-    Starter: "Classic Prawn Cocktail, Marie Rose Sauce, Rye Bread - £11.00",
+    Starter: "Classic Prawn Cocktail, Marie Rose Sauce, Rye Bread £11",
     Main: "Chicken Pie with mash, sticky red cabbage, gravy - £17.50",
     Dessert: "No dessert",
-    Cost: "£28.50",
     Hotel: "themanor1",
   },
   {
@@ -121,15 +108,13 @@ const sheetData = [
     Starter: "Lightly fried whitebait served with burnt lemon & tartar dip",
     Main: "Beer battered Cod & Chips served with chips, mushy peas, lemon wedge & tartare sauce",
     Dessert: "No dessert",
-    Cost: "£25.00",
     Hotel: "lionhotel",
   },
   {
     Name: "Beverly Smithers",
     Starter: "Thai Bass Fishcakes - With sweet chilli & coriander salad - £8.95",
-    Main: "Special Dishes: Pan Fried Salmon - With tomatoes, garlic, chilli & coriander - £20.00",
+    Main: "Special Dishes: Pan Fried Salmon - With tomatoes, garlic, chilli & coriander - £19.95",
     Dessert: "No dessert",
-    Cost: "£28.95",
     Hotel: "nanhoronhotel",
   },
   {
@@ -137,15 +122,13 @@ const sheetData = [
     Starter: "Pheasant & Mushroom Pate - With toasted sourdough - £8.95",
     Main: "Cod & Lemon Fishcakes - With pea and bacon salad - £18.95 + Tenderstem Brocoli & honeyed carrots - £3.50",
     Dessert: "Coconut & Vanilla Panna Cotta - With pineapple salsa - £7.95",
-    Cost: "£39.35",
     Hotel: "bullinn",
   },
   {
     Name: "Janice Clowes ",
-    Starter: "Hummus, flatbread, and olives - £7.50",
+    Starter: "Hummus, flatbread, and olives £7.50",
     Main: "Steak & Ale Pie with mash, sticky red cabbage, gravy - £17.50",
     Dessert: "No dessert",
-    Cost: "£25.00",
     Hotel: "themanor1",
   },
   {
@@ -153,15 +136,13 @@ const sheetData = [
     Starter: "No starter",
     Main: "Seafood Tagliatelle simmered in Bisque with prawns, squids & mussels served with lemon, Urfa Chilli, chives & Parmesan",
     Dessert: "Sticky Toffee Pudding with Custard",
-    Cost: "£25.00",
     Hotel: "lionhotel",
   },
   {
     Name: "Janice Clowes ",
     Starter: "Thai Bass Fishcakes - With sweet chilli & coriander salad - £8.95",
-    Main: "Light Bites: Peppered Steak Loaded Fries - With slow cooked steak in a creamy peppercorn sauce - £13.00",
+    Main: "Light Bites: Peppered Steak Loaded Fries - With slow cooked steak in a creamy peppercorn sauce - £12.95",
     Dessert: "No dessert",
-    Cost: "£21.95",
     Hotel: "nanhoronhotel",
   },
   {
@@ -169,31 +150,21 @@ const sheetData = [
     Starter: "Chicken Caesar Croquettes - With salad and Parmesan - £7.95",
     Main: "Lamb Hot Pot Pie & Mint Gravy - With mashed potato and vegetables - £18.95",
     Dessert: "Rhubarb & Stem Ginger Crumble (V) - With custard - £7.95",
-    Cost: "£34.85",
     Hotel: "bullinn",
   },
-  {
-    Name: "Roy clarke",
-    Starter: "No starter",
-    Main: "No main",
-    Dessert: "No dessert",
-    Cost: "£0.00",
-    Hotel: "themanor1",
-  },
+  { Name: "Roy clarke", Starter: "No starter", Main: "No main", Dessert: "No dessert", Hotel: "themanor1" },
   {
     Name: "Roy clarke",
     Starter: "No starter",
     Main: "Beer battered Cod & Chips served with chips, mushy peas, lemon wedge & tartare sauce",
     Dessert: "Cheesecake with Mix Berries Compote",
-    Cost: "£25.00",
     Hotel: "lionhotel",
   },
   {
     Name: "Roy clarke",
     Starter: "No starter",
-    Main: "Classic Dishes: Nanhoron Tikka Curry - Chicken, Served with rice, naan, mango chutney - £16.00",
+    Main: "Classic Dishes: Nanhoron Tikka Curry - Chicken, Served with rice, naan, mango chutney - £15.95",
     Dessert: "Lemon Posset - Creamy Lemon dessert with shortbread biscuit and berries - £7.95",
-    Cost: "£23.95",
     Hotel: "nanhoronhotel",
   },
   {
@@ -201,31 +172,21 @@ const sheetData = [
     Starter: "No starter",
     Main: "Lamb Hot Pot Pie & Mint Gravy - With chips and vegetables - £18.95",
     Dessert: "Rhubarb & Stem Ginger Crumble (V) - With vanilla ice cream - £7.95",
-    Cost: "£26.90",
     Hotel: "bullinn",
   },
-  {
-    Name: "Theresa Jennings",
-    Starter: "No starter",
-    Main: "No main",
-    Dessert: "No dessert",
-    Cost: "£0.00",
-    Hotel: "themanor1",
-  },
+  { Name: "Theresa Jennings", Starter: "No starter", Main: "No main", Dessert: "No dessert", Hotel: "themanor1" },
   {
     Name: "Theresa Jennings",
     Starter: "No starter",
     Main: "Beer battered Cod & Chips served with chips, mushy peas, lemon wedge & tartare sauce",
     Dessert: "Cheesecake with Mix Berries Compote",
-    Cost: "£25.00",
     Hotel: "lionhotel",
   },
   {
     Name: "Theresa Jennings",
     Starter: "No starter",
-    Main: "Classic Dishes: Steak & Local Ale Pie - With puff pastry top & served with peas and chips - £16.00",
+    Main: "Classic Dishes: Steak & Local Ale Pie - With puff pastry top & served with peas and chips - £15.95",
     Dessert: "Lemon Posset - Creamy Lemon dessert with shortbread biscuit and berries - £7.95",
-    Cost: "£23.95",
     Hotel: "nanhoronhotel",
   },
   {
@@ -233,15 +194,13 @@ const sheetData = [
     Starter: "No starter",
     Main: "Cod & Lemon Fishcakes - With pea and bacon salad - £18.95",
     Dessert: "Rhubarb & Stem Ginger Crumble (V) - With vanilla ice cream - £7.95",
-    Cost: "£26.90",
     Hotel: "bullinn",
   },
   {
     Name: "Ryan Lovatt",
-    Starter: "Creamy Garlic Mushrooms, Sourdough bread - £8.50",
-    Main: "Homemade beef lasagne, Garlic bread - £18.00",
+    Starter: "Creamy Garlic Mushrooms, Sourdough bread £8.50",
+    Main: "Homemade beef lasagne, Garlic bread - £18",
     Dessert: "No dessert",
-    Cost: "£26.50",
     Hotel: "themanor1",
   },
   {
@@ -249,15 +208,13 @@ const sheetData = [
     Starter: "Chef’s Soup of the Day",
     Main: "Butter chicken in a rich & silky makhani sauce served with saffron flavored basmati rice & poppadum",
     Dessert: "Cheesecake with Mix Berries Compote",
-    Cost: "£30.00",
     Hotel: "lionhotel",
   },
   {
     Name: "Ryan Lovatt",
-    Starter: "Creamy Garlic Mushrooms (V) - Crusty bread & butter - £8.00",
-    Main: "Classic Dishes: House Burger - Double beef, cheese, pickles, lettuce, burger sauce, coleslaw, hand-cut chips - £15.00",
+    Starter: "Creamy Garlic Mushrooms (V) - Crusty bread & butter - £7.95",
+    Main: "Classic Dishes: House Burger - Double beef, cheese, pickles, lettuce, burger sauce, coleslaw, hand-cut chips - £14.95",
     Dessert: "No dessert",
-    Cost: "£23.00",
     Hotel: "nanhoronhotel",
   },
   {
@@ -265,15 +222,13 @@ const sheetData = [
     Starter: "Pheasant & Mushroom Pate - With toasted sourdough - £8.95",
     Main: "Steak & Ale Pie - With mashed potato and vegetables - £18.95 + Onion Rings - £4.50",
     Dessert: "No dessert",
-    Cost: "£32.40",
     Hotel: "bullinn",
   },
   {
     Name: "Anthony Heaney",
     Starter: "No starter",
-    Main: "Steak Rump served with tomato, mushroom, chips, garlic butter sauce - £24.00",
-    Dessert: "Sticky Toffee Pudding with Custard - £9.00",
-    Cost: "£33.00",
+    Main: "Steak Rump served with tomato, mushroom, chips, garlic butter sauce - £24",
+    Dessert: "Sticky Toffee Pudding with Custard - £9",
     Hotel: "themanor1",
   },
   {
@@ -281,15 +236,13 @@ const sheetData = [
     Starter: "No starter",
     Main: "Beer battered Cod & Chips served with chips, mushy peas, lemon wedge & tartare sauce",
     Dessert: "Cheesecake with Mix Berries Compote",
-    Cost: "£25.00",
     Hotel: "lionhotel",
   },
   {
     Name: "Anthony Heaney",
-    Starter: "Creamy Garlic Mushrooms (V) - Crusty bread & butter - £8.00",
-    Main: "Special Dishes: Chicken Supreme - stuffed with bacon & cheese, wrapped in parma ham served on a bed of creamed leeks - £19.00",
+    Starter: "Creamy Garlic Mushrooms (V) - Crusty bread & butter - £7.95",
+    Main: "Special Dishes: Chicken Supreme - stuffed with bacon & cheese, wrapped in parma ham served on a bed of creamed leeks - £18.95",
     Dessert: "Eton Mess - Crushed meringue, mixed fruit & fresh cream - £7.95",
-    Cost: "£34.95",
     Hotel: "nanhoronhotel",
   },
   {
@@ -297,7 +250,6 @@ const sheetData = [
     Starter: "Potato Skins (V) – With cheese, garlic sauce and crispy onions - £7.95",
     Main: "Chicken Supreme with Chasseur Sauce - With mashed potato and vegetables - £18.95 + Jacket Potato - £4.50",
     Dessert: "Rhubarb & Stem Ginger Crumble (V) - With custard - £7.95",
-    Cost: "£39.35",
     Hotel: "bullinn",
   },
   {
@@ -305,7 +257,6 @@ const sheetData = [
     Starter: "No starter",
     Main: "Steak & Ale Pie with chips, sticky red cabbage, gravy - £17.50",
     Dessert: "No dessert",
-    Cost: "£17.50",
     Hotel: "themanor1",
   },
   {
@@ -313,15 +264,13 @@ const sheetData = [
     Starter: "No starter",
     Main: "Beer battered Cod & Chips served with chips, mushy peas, lemon wedge & tartare sauce",
     Dessert: "Cheesecake with Mix Berries Compote",
-    Cost: "£25.00",
     Hotel: "lionhotel",
   },
   {
     Name: "Jenny Heaney",
     Starter: "No starter",
-    Main: "Classic Dishes: Beef Lasagne - Dressed leaves, chips & garlic bread - £15.00",
+    Main: "Classic Dishes: Beef Lasagne - Dressed leaves, chips & garlic bread - £14.95",
     Dessert: "No dessert",
-    Cost: "£15.00",
     Hotel: "nanhoronhotel",
   },
   {
@@ -329,15 +278,13 @@ const sheetData = [
     Starter: "No starter",
     Main: "Scampi & Chips - With mushy peas and tartare sauce - £17.95",
     Dessert: "Tiramisu - Coffee, sponge and cream dessert - £6.95",
-    Cost: "£24.90",
     Hotel: "bullinn",
   },
   {
     Name: "Ian Ferrer ",
-    Starter: "Creamy Garlic Mushrooms, Sourdough bread - £8.50",
-    Main: "Steak Rump served with tomato, mushroom, chips, peppercorn sauce - £24.00",
+    Starter: "Creamy Garlic Mushrooms, Sourdough bread £8.50",
+    Main: "Steak Rump served with tomato, mushroom, chips, peppercorn sauce - £24",
     Dessert: "Sweet Potato cake, caramel sauce - £8.50",
-    Cost: "£41.00",
     Hotel: "themanor1",
   },
   {
@@ -345,15 +292,13 @@ const sheetData = [
     Starter: "Lightly fried whitebait served with burnt lemon & tartar dip",
     Main: "Seafood Tagliatelle simmered in Bisque with prawns, squids & mussels served with lemon, Urfa Chilli, chives & Parmesan",
     Dessert: "No dessert",
-    Cost: "£25.00",
     Hotel: "lionhotel",
   },
   {
     Name: "Ian Ferrer ",
-    Starter: "Shredded Duck Bon Bons - Hoisin mayo & sticky dressing - £9.00",
-    Main: "Classic Dishes: Nanhoron Tikka Curry - Chicken, Served with rice, naan, mango chutney - £16.00",
+    Starter: "Shredded Duck Bon Bons - Hoisin mayo & sticky dressing - £8.95",
+    Main: "Classic Dishes: Nanhoron Tikka Curry - Chicken, Served with rice, naan, mango chutney - £15.95",
     Dessert: "No dessert",
-    Cost: "£25.00",
     Hotel: "nanhoronhotel",
   },
   {
@@ -361,15 +306,13 @@ const sheetData = [
     Starter: "Spicy Meatballs – With a roast tomato sauce, Parmesan and rocket - £8.95",
     Main: "The Bull’s Buffalo Chicken Burger - With smoked cheese, ranch slaw and fries - £17.95 + House Slaw - £3.50",
     Dessert: "Penderyn Whisky & Chocolate Basque Cheesecake - With Chantilly cream - £7.95",
-    Cost: "£38.35",
     Hotel: "bullinn",
   },
   {
     Name: "Claire Ferrer",
     Starter: "No starter",
-    Main: "Homemade beef lasagne, Garlic bread - £18.00",
+    Main: "Homemade beef lasagne, Garlic bread - £18",
     Dessert: "No dessert",
-    Cost: "£18.00",
     Hotel: "themanor1",
   },
   {
@@ -377,15 +320,13 @@ const sheetData = [
     Starter: "Lightly fried whitebait served with burnt lemon & tartar dip",
     Main: "Seafood Tagliatelle simmered in Bisque with prawns, squids & mussels served with lemon, Urfa Chilli, chives & Parmesan",
     Dessert: "No dessert",
-    Cost: "£25.00",
     Hotel: "lionhotel",
   },
   {
     Name: "Claire Ferrer",
     Starter: "Thai Bass Fishcakes - With sweet chilli & coriander salad - £8.95",
-    Main: "Special Dishes: Crispy 1/2 Roast Duck - With orange sauce - £22.50",
+    Main: "Special Dishes: Crispy 1/2 Roast Duck - With orange sauce - £21.95",
     Dessert: "No dessert",
-    Cost: "£31.45",
     Hotel: "nanhoronhotel",
   },
   {
@@ -393,15 +334,13 @@ const sheetData = [
     Starter: "No starter",
     Main: "Oven-Roasted Pheasant & Black Pudding Bon Bon - With potato fondant, vegetables and whisky sauce - £18.95 + Side Salad - £3.50",
     Dessert: "No dessert",
-    Cost: "£22.45",
     Hotel: "bullinn",
   },
   {
     Name: "Martyn  Leighton",
-    Starter: "Creamy Garlic Mushrooms, Sourdough bread - £8.50",
+    Starter: "Creamy Garlic Mushrooms, Sourdough bread £8.50",
     Main: "Steak & Ale Pie with chips, sticky red cabbage, gravy - £17.50",
     Dessert: "No dessert",
-    Cost: "£26.00",
     Hotel: "themanor1",
   },
   {
@@ -409,15 +348,13 @@ const sheetData = [
     Starter: "No starter",
     Main: "Butter chicken in a rich & silky makhani sauce served with saffron flavored basmati rice & poppadum",
     Dessert: "Sticky Toffee Pudding with Custard",
-    Cost: "£25.00",
     Hotel: "lionhotel",
   },
   {
     Name: "Martyn  Leighton",
-    Starter: "Creamy Garlic Mushrooms (V) - Crusty bread & butter - £8.00",
-    Main: "Light Bites: Peppered Steak Loaded Fries - With slow cooked steak in a creamy peppercorn sauce - £13.00",
+    Starter: "Creamy Garlic Mushrooms (V) - Crusty bread & butter - £7.95",
+    Main: "Light Bites: Peppered Steak Loaded Fries - With slow cooked steak in a creamy peppercorn sauce - £12.95",
     Dessert: "No dessert",
-    Cost: "£21.00",
     Hotel: "nanhoronhotel",
   },
   {
@@ -425,7 +362,6 @@ const sheetData = [
     Starter: "Cod & Lemon Fishcake - With parsley sauce - £8.95",
     Main: "Lamb Hot Pot Pie & Mint Gravy - With chips and vegetables - £18.95",
     Dessert: "Tiramisu - Coffee, sponge and cream dessert - £6.95",
-    Cost: "£34.85",
     Hotel: "bullinn",
   },
   {
@@ -433,7 +369,6 @@ const sheetData = [
     Starter: "No starter",
     Main: "Chicken Pie with mash, sticky red cabbage, gravy - £17.50",
     Dessert: "No dessert",
-    Cost: "£17.50",
     Hotel: "themanor1",
   },
   {
@@ -441,7 +376,6 @@ const sheetData = [
     Starter: "No starter",
     Main: "Beer battered Cod & Chips served with chips, mushy peas, lemon wedge & tartare sauce",
     Dessert: "Sticky Toffee Pudding with Custard",
-    Cost: "£25.00",
     Hotel: "lionhotel",
   },
   {
@@ -449,7 +383,6 @@ const sheetData = [
     Starter: "No starter",
     Main: "Classic Dishes: Hunters Chicken Burger - Crispy chicken, bacon, cheese & BBQ sauce with coleslaw, hand cut chips - £14.95",
     Dessert: "Eton Mess - Crushed meringue, mixed fruit & fresh cream - £7.95",
-    Cost: "£22.90",
     Hotel: "nanhoronhotel",
   },
   {
@@ -457,7 +390,6 @@ const sheetData = [
     Starter: "No starter",
     Main: "Cumberland Sausage & Mash - With vegetables and gravy - £17.95",
     Dessert: "Cheese Board - With biscuits, fruit and chutney - £12.95",
-    Cost: "£30.90",
     Hotel: "bullinn",
   },
   {
@@ -465,7 +397,6 @@ const sheetData = [
     Starter: "No starter",
     Main: "Beer battered cod, chips, peas - £18.50",
     Dessert: "No dessert",
-    Cost: "£18.50",
     Hotel: "themanor1",
   },
   {
@@ -473,15 +404,13 @@ const sheetData = [
     Starter: "No starter",
     Main: "Seafood Tagliatelle simmered in Bisque with prawns, squids & mussels served with lemon, Urfa Chilli, chives & Parmesan",
     Dessert: "Sticky Toffee Pudding with Custard",
-    Cost: "£25.00",
     Hotel: "lionhotel",
   },
   {
     Name: "Kevin Marriott ",
     Starter: "No starter",
-    Main: "Special Dishes: Pan Roasted Wild Local Seabass  - white wine & mussels sauce - £22.00",
+    Main: "Special Dishes: Pan Roasted Wild Local Seabass  - white wine & mussels sauce - £21.95",
     Dessert: "No dessert",
-    Cost: "£22.00",
     Hotel: "nanhoronhotel",
   },
   {
@@ -489,7 +418,6 @@ const sheetData = [
     Starter: "No starter",
     Main: "Chicken Supreme with Chasseur Sauce - With mashed potato and vegetables - £18.95",
     Dessert: "Rhubarb & Stem Ginger Crumble (V) - With vanilla ice cream - £7.95",
-    Cost: "£26.90",
     Hotel: "bullinn",
   },
   {
@@ -497,7 +425,6 @@ const sheetData = [
     Starter: "No starter",
     Main: "Steak & Ale Pie with chips, sticky red cabbage, gravy - £17.50",
     Dessert: "No dessert",
-    Cost: "£17.50",
     Hotel: "themanor1",
   },
   {
@@ -505,15 +432,13 @@ const sheetData = [
     Starter: "No starter",
     Main: "Beer battered Cod & Chips served with chips, mushy peas, lemon wedge & tartare sauce",
     Dessert: "Cheesecake with Mix Berries Compote",
-    Cost: "£25.00",
     Hotel: "lionhotel",
   },
   {
     Name: "Heather Marriott ",
     Starter: "No starter",
-    Main: "Special Dishes: Pan Roasted Wild Local Seabass  - white wine & mussels sauce - £22.00",
+    Main: "Special Dishes: Pan Roasted Wild Local Seabass  - white wine & mussels sauce - £21.95",
     Dessert: "No dessert",
-    Cost: "£22.00",
     Hotel: "nanhoronhotel",
   },
   {
@@ -521,7 +446,6 @@ const sheetData = [
     Starter: "Beetroot Hummus (VG) - With warm flatbread - £7.95",
     Main: "Scampi & Chips - With mushy peas and tartare sauce - £17.95",
     Dessert: "Rhubarb & Stem Ginger Crumble (V) - With vanilla ice cream - £7.95",
-    Cost: "£33.85",
     Hotel: "bullinn",
   },
   {
@@ -529,7 +453,6 @@ const sheetData = [
     Starter: "No starter",
     Main: "Sweet potato roulade with a tomato & herb sauce, and seasonal veg - £16.50",
     Dessert: "Crumble of the week, with custard and pouring cream - £10.50",
-    Cost: "£27.00",
     Hotel: "themanor1",
   },
   {
@@ -537,16 +460,14 @@ const sheetData = [
     Starter: "No starter",
     Main: "Tadka Dal (Red Lentil Curry) A flavorful and hearty dish, made with red lentils, simmered in mild spices, tempered with onions, garlic and cumin. Served with saffron flavored basmati rice & Poppadum",
     Dessert: "Sticky Toffee Pudding with Custard",
-    Cost: "£25.00",
     Hotel: "lionhotel",
   },
   {
     Name: "Paul Nathan",
     Starter: "No starter",
-    Main: "Classic Dishes: Vegetable Lasagne (V) - Dressed leaves, chips & garlic bread - £15.00",
+    Main: "Classic Dishes: Vegetable Lasagne (V) - Dressed leaves, chips & garlic bread - £14.95",
     Dessert:
       "Double Chocolate Brownie - Warm Brownie served with signature chocolate sauce & vanilla ice cream - £7.95",
-    Cost: "£22.95",
     Hotel: "nanhoronhotel",
   },
   {
@@ -554,7 +475,6 @@ const sheetData = [
     Starter: "No starter",
     Main: "Leek, Mushroom & Lentil Shepherds Pie (VG) - With mashed potato and vegetables  - £16.95",
     Dessert: "Rhubarb & Stem Ginger Crumble (V) - With vanilla ice cream - £7.95",
-    Cost: "£24.90",
     Hotel: "bullinn",
   },
 ];
@@ -621,10 +541,6 @@ function updateOutput() {
 
     document.getElementById(`${prefix}H`).innerHTML = entry
       ? `<div class="menu-row"><div class="category-label">🍰 Dessert:</div><div class="food-item">${entry.Dessert}</div></div>`
-      : "";
-
-    document.getElementById(`${prefix}I`).innerHTML = entry
-      ? `<div class="menu-row"><div class="category-label">Total Cost:</div><div class="food-item">${entry.Cost}</div></div>`
       : "";
   });
 }

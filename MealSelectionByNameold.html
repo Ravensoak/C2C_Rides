@@ -1,5 +1,6 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
   <head>
     <!-- =========================================================
       BASIC META / PAGE INFO
@@ -11,15 +12,16 @@
     <!-- =========================================================
       ICON + THEME COLOUR
     ========================================================== -->
-    <link rel="icon" href="graphics/favicon-32x32.png" type="image/png" />
-    <meta name="theme-color" content="#1f2a36" />
+    <link rel="icon" href="graphics/favicon-32x32.png" type="image/png">
+    <meta name="theme-color" content="#1f2a36">
 
     <!-- =========================================================
       STYLESHEETS
     ========================================================== -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/mealsbyname.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mealsbyname.css">
+    
   </head>
 
   <body>
@@ -28,7 +30,11 @@
         HEADER (Logo) + NAV (Loaded dynamically)
       ========================================================== -->
       <div class="pagelogo-container">
-        <img src="/graphics/c2cRIDESlogoblack.png" alt="C2C Ride Logo" class="pagelogo" />
+        <img
+          src="/graphics/c2cRIDESlogoblack.png"
+          alt="C2C Ride Logo"
+          class="pagelogo"
+        />
       </div>
       <!-- =========================================================
       NAVIGATION PLACEHOLDER (Loaded dynamically)
@@ -40,25 +46,25 @@
       PAGE TITLE + INTRO
     ========================================================== -->
     <div class="title-with-lines">
-      <!-- <hr class="fade-in delay-1"> -->
-      <hr />
+    <!-- <hr class="fade-in delay-1"> -->
+    <hr>
       <h1>Meal Choice - Name</h1>
-      <hr />
+    <hr>
     </div>
 
     <p class="centered-summary">
-      Until meal choices have been sent out and recieved, the data in the following list is ficticious, but it will give
-      you an idea on what will be presented.
+      Until meal choices have been sent out and recieved, the data in the following list is ficticious, but it will give you an idea on what will be presented.
     </p>
-
+  
     <!-- =========================================================
     NAME SELECTOR + MEAL TABLE
     ========================================================== -->
     <div class="controls">
       <select id="nameSelector">
-        <option value="" disabled selected style="font-style: italic">Select name</option>
+        <option value="" disabled selected style="font-style: italic;">Select name</option>
       </select>
-      <!--<select id="nameSelector" onchange="updateOutput()"></select>-->
+    <!--<select id="nameSelector" onchange="updateOutput()"></select>-->
+   
     </div>
 
     <div class="grid hidden">
@@ -67,7 +73,6 @@
         <p id="themanor1F"></p>
         <p id="themanor1G"></p>
         <p id="themanor1H"></p>
-        <p id="themanor1I"></p>
       </div>
 
       <div class="output" id="LionHotelBox">
@@ -75,7 +80,6 @@
         <p id="lionhotelF"></p>
         <p id="lionhotelG"></p>
         <p id="lionhotelH"></p>
-        <p id="lionhotelI"></p>
       </div>
 
       <div class="output" id="NanhoronHotelBox">
@@ -83,7 +87,6 @@
         <p id="nanhoronhotelF"></p>
         <p id="nanhoronhotelG"></p>
         <p id="nanhoronhotelH"></p>
-        <p id="nanhoronhotelI"></p>
       </div>
 
       <div class="output" id="BullInnBox">
@@ -91,8 +94,8 @@
         <p id="bullinnF"></p>
         <p id="bullinnG"></p>
         <p id="bullinnH"></p>
-        <p id="bullinnI"></p>
       </div>
+
     </div>
 
     <!-- =========================================================
@@ -105,11 +108,12 @@
     ========================================================== -->
     <button id="refreshButton" title="Refresh">🔄</button>
 
-    <!-- =========================================================
+ <!-- =========================================================
       PAGE SCRIPTS
       (defer = loads after HTML parsing, safer for DOM elements)
       ========================================================== -->
     <script src="js/mealsbyname.js" defer></script>
     <script src="js/site.js" defer></script>
+
   </body>
 </html>
