@@ -1,6 +1,5 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  
   <head>
     <!-- =========================================================
       BASIC META / PAGE INFO
@@ -12,16 +11,15 @@
     <!-- =========================================================
       ICON + THEME COLOUR
     ========================================================== -->
-    <link rel="icon" href="graphics/favicon-32x32.png" type="image/png">
-    <meta name="theme-color" content="#1f2a36">
+    <link rel="icon" href="graphics/favicon-32x32.png" type="image/png" />
+    <meta name="theme-color" content="#1f2a36" />
 
-     <!-- =========================================================
+    <!-- =========================================================
       STYLESHEETS
     ========================================================== -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/mealsbyhotel.css" />
-    
   </head>
 
   <body>
@@ -30,11 +28,7 @@
         HEADER (Logo) + NAV (Loaded dynamically)
       ========================================================== -->
       <div class="pagelogo-container">
-        <img
-          src="/graphics/c2cRIDESlogoblack.png"
-          alt="C2C Ride Logo"
-          class="pagelogo"
-        />
+        <img src="/graphics/c2cRIDESlogoblack.png" alt="C2C Ride Logo" class="pagelogo" />
       </div>
       <!-- =========================================================
       NAVIGATION PLACEHOLDER (Loaded dynamically)
@@ -46,21 +40,19 @@
       PAGE TITLE + INTRO
     ========================================================== -->
     <div class="title-with-lines">
-      <hr>
-        <h1>Meal Choice - Hotel</h1>
-      <hr>
-    </div>  
+      <hr />
+      <h1>Meal Choice - Hotel</h1>
+      <hr />
+    </div>
 
-    <p class="centered-summary">
-        Until meal choices have been sent out and recieved, the data in the following list is ficticious, but it will give you an idea on what will be presented.
-    </p>
+    <p class="centered-summary">Select a hotel to see all meal choices:</p>
 
     <!-- =========================================================
     HOTEL SELECTOR + MEAL TABLE
     ========================================================== -->
     <div class="controls">
       <select id="hotelSelector">
-        <option value="" disabled selected style="font-style: italic;">Select a Hotel</option>
+        <option value="" disabled selected style="font-style: italic">Select a Hotel</option>
         <option value="hotelA">3rd June - The Manor</option>
         <option value="hotelB">4th June - The Lion Hotel</option>
         <option value="hotelC">5th June - Nanhoron Arms Hotel</option>
@@ -86,6 +78,5 @@
       ========================================================== -->
     <script src="js/mealsbyhotel.js" defer></script>
     <script src="js/site.js" defer></script>
-   
   </body>
 </html>
