@@ -88,6 +88,18 @@ header p {
 .full-width-button {
   grid-column: 1 / -1;
 }
+
+.donate-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.donate-logo {
+  height: 30px;
+  width: auto;
+}
 /* =========================================================
   ANIMATIONS
 ========================================================== */
