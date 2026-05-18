@@ -107,9 +107,9 @@ const hotelData = {
   hotelB: [
     {
       name: "David Olney",
-      starter: "Crispy onion & corn bites served with mango mole",
-      main: "Lion’s Hot Chicken Burger with gherkins, balsamic onions, Tomato, Lettuce and Chef’ special sauce",
-      dessert: "No dessert",
+      starter: "No starter",
+      main: "Beer battered Cod & Chips served with chips, mushy peas, lemon wedge & tartare sauce",
+      dessert: "Sticky Toffee Pudding with Custard",
     },
     {
       name: "Laurie Peach",

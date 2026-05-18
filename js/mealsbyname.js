@@ -21,9 +21,9 @@ const sheetData = [
   },
   {
     Name: "David Olney",
-    Starter: "Crispy onion & corn bites served with mango mole",
-    Main: "Lion’s Hot Chicken Burger with gherkins, balsamic onions, Tomato, Lettuce and Chef’ special sauce",
-    Dessert: "No dessert",
+    Starter: "No starter",
+    Main: "Beer battered Cod & Chips served with chips, mushy peas, lemon wedge & tartare sauce",
+    Dessert: "Sticky Toffee Pudding with Custard",
     Cost: "£25.00",
     Hotel: "lionhotel",
   },
