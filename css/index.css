@@ -94,8 +94,13 @@ header p {
   align-items: center;
   justify-content: center;
   gap: 12px;
+  background-color: yellow;
+  color: #000;
+  font-weight: bold;
 }
-
+.donate-btn:hover {
+  background: yellowgreen;
+}
 .donate-logo {
   height: 30px;
   width: auto;
