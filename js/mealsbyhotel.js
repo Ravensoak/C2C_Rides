@@ -103,6 +103,12 @@ const hotelData = {
       main: "Sweet potato roulade with a tomato & herb sauce, and seasonal veg - £16.50",
       dessert: "Crumble of the week, with custard and pouring cream - £10.50",
     },
+    {
+      name: "Carole Griffiths",
+      starter: "No starter",
+      main: "Ham & Leek Pie with mash, sticky red cabbage, gravy - £17.50",
+      dessert: "No dessert",
+    },
   ],
   hotelB: [
     {
@@ -205,6 +211,12 @@ const hotelData = {
       name: "Paul Nathan",
       starter: "No starter",
       main: "Tadka Dal (Red Lentil Curry) A flavorful and hearty dish, made with red lentils, simmered in mild spices, tempered with onions, garlic and cumin. Served with saffron flavored basmati rice & Poppadum",
+      dessert: "Sticky Toffee Pudding with Custard",
+    },
+    {
+      name: "Carole Griffiths",
+      starter: "No starter",
+      main: "Beer battered Cod & Chips served with chips, mushy peas, lemon wedge & tartare sauce",
       dessert: "Sticky Toffee Pudding with Custard",
     },
   ],
@@ -313,6 +325,12 @@ const hotelData = {
       dessert:
         "Double Chocolate Brownie - Warm Brownie served with signature chocolate sauce & vanilla ice cream - £7.95",
     },
+    {
+      name: "Carole Griffiths",
+      starter: "No starter",
+      main: "Classic Dishes: Nanhoron Tikka Curry - Chicken, Served with rice, naan, mango chutney - £15.95",
+      dessert: "No dessert",
+    },
   ],
   hotelD: [
     {
@@ -415,6 +433,12 @@ const hotelData = {
       name: "Paul Nathan",
       starter: "No starter",
       main: "Leek, Mushroom & Lentil Shepherds Pie (VG) - With mashed potato and vegetables  - £16.95",
+      dessert: "Rhubarb & Stem Ginger Crumble (V) - With vanilla ice cream - £7.95",
+    },
+    {
+      name: "Carole Griffiths",
+      starter: "No starter",
+      main: "Cumberland Sausage & Mash - With vegetables and gravy - £17.95",
       dessert: "Rhubarb & Stem Ginger Crumble (V) - With vanilla ice cream - £7.95",
     },
   ],

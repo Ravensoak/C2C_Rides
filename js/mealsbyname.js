@@ -557,6 +557,38 @@ const sheetData = [
     Cost: "£24.90",
     Hotel: "bullinn",
   },
+  {
+    Name: "Carole Griffiths",
+    Starter: "No starter",
+    Main: "Ham & Leek Pie with mash, sticky red cabbage, gravy - £17.50",
+    Dessert: "No dessert",
+    Cost: "£17.50",
+    Hotel: "themanor1",
+  },
+  {
+    Name: "Carole Griffiths",
+    Starter: "No starter",
+    Main: "Beer battered Cod & Chips served with chips, mushy peas, lemon wedge & tartare sauce",
+    Dessert: "Sticky Toffee Pudding with Custard",
+    Cost: "£25.00",
+    Hotel: "lionhotel",
+  },
+  {
+    Name: "Carole Griffiths",
+    Starter: "No starter",
+    Main: "Classic Dishes: Nanhoron Tikka Curry - Chicken, Served with rice, naan, mango chutney - £15.95",
+    Dessert: "No dessert",
+    Cost: "£15.95",
+    Hotel: "nanhoronhotel",
+  },
+  {
+    Name: "Carole Griffiths",
+    Starter: "No starter",
+    Main: "Cumberland Sausage & Mash - With vegetables and gravy - £17.95",
+    Dessert: "Rhubarb & Stem Ginger Crumble (V) - With vanilla ice cream - £7.95",
+    Cost: "£25.90",
+    Hotel: "bullinn",
+  },
 ];
 
 /* =========================================================
