@@ -31,8 +31,9 @@ select {
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.2rem;
+  gap: 1rem;
   padding: 0 1rem; /* mobile padding */
+  margin-bottom: 1rem;
 }
 
 /* Responsive: switch to multi‑column layout on wider screens */
