@@ -10,6 +10,8 @@
   padding: 10px;
   max-width: 1200px;
   width: 100%;
+  padding: 0 1rem; /* mobile padding */
+  margin-bottom: 1rem;
 }
 
 /* Loading / error messages shown inside the container */
