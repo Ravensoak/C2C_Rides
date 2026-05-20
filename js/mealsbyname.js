@@ -589,6 +589,38 @@ const sheetData = [
     Cost: "£25.90",
     Hotel: "bullinn",
   },
+  {
+    Name: "David Griffiths",
+    Starter: "No starter",
+    Main: "Ham & Leek Pie with mash, sticky red cabbage, gravy - £17.50",
+    Dessert: "No dessert",
+    Cost: "£17.50",
+    Hotel: "themanor1",
+  },
+  {
+    Name: "David Griffiths",
+    Starter: "Lightly fried whitebait served with burnt lemon & tartar dip",
+    Main: "Beer battered Cod & Chips served with chips, mushy peas, lemon wedge & tartare sauce",
+    Dessert: "No dessert",
+    Cost: "£25.00",
+    Hotel: "lionhotel",
+  },
+  {
+    Name: "David Griffiths",
+    Starter: "No starter",
+    Main: "Classic Dishes: Nanhoron Tikka Curry - Chicken, Served with rice, naan, mango chutney - £15.95",
+    Dessert: "No dessert",
+    Cost: "£15.95",
+    Hotel: "nanhoronhotel",
+  },
+  {
+    Name: "David Griffiths",
+    Starter: "Spicy Meatballs – With a roast tomato sauce, Parmesan and rocket - £8.95",
+    Main: "Classic Cheese & Bacon Burger - With burger sauce, salad, coleslaw and fries - £17.95",
+    Dessert: "No dessert",
+    Cost: "£26.90",
+    Hotel: "bullinn",
+  },
 ];
 
 /* =========================================================

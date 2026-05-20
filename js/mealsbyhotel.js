@@ -109,6 +109,12 @@ const hotelData = {
       main: "Ham & Leek Pie with mash, sticky red cabbage, gravy - £17.50",
       dessert: "No dessert",
     },
+    {
+      name: "David Griffiths",
+      starter: "No starter",
+      main: "Ham & Leek Pie with mash, sticky red cabbage, gravy - £17.50",
+      dessert: "No dessert",
+    },
   ],
   hotelB: [
     {
@@ -218,6 +224,12 @@ const hotelData = {
       starter: "No starter",
       main: "Beer battered Cod & Chips served with chips, mushy peas, lemon wedge & tartare sauce",
       dessert: "Sticky Toffee Pudding with Custard",
+    },
+    {
+      name: "David Griffiths",
+      starter: "Lightly fried whitebait served with burnt lemon & tartar dip",
+      main: "Beer battered Cod & Chips served with chips, mushy peas, lemon wedge & tartare sauce",
+      dessert: "No dessert",
     },
   ],
   hotelC: [
@@ -331,6 +343,12 @@ const hotelData = {
       main: "Classic Dishes: Nanhoron Tikka Curry - Chicken, Served with rice, naan, mango chutney - £15.95",
       dessert: "No dessert",
     },
+    {
+      name: "David Griffiths",
+      starter: "No starter",
+      main: "Classic Dishes: Nanhoron Tikka Curry - Chicken, Served with rice, naan, mango chutney - £15.95",
+      dessert: "No dessert",
+    },
   ],
   hotelD: [
     {
@@ -440,6 +458,12 @@ const hotelData = {
       starter: "No starter",
       main: "Cumberland Sausage & Mash - With vegetables and gravy - £17.95",
       dessert: "Rhubarb & Stem Ginger Crumble (V) - With vanilla ice cream - £7.95",
+    },
+    {
+      name: "David Griffiths",
+      starter: "Spicy Meatballs – With a roast tomato sauce, Parmesan and rocket - £8.95",
+      main: "Classic Cheese & Bacon Burger - With burger sauce, salad, coleslaw and fries - £17.95",
+      dessert: "No dessert",
     },
   ],
 };
