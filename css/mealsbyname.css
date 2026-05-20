@@ -32,12 +32,14 @@ select {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.2rem;
+  padding: 0 1rem; /* mobile padding */
 }
 
 /* Responsive: switch to multi‑column layout on wider screens */
 @media (min-width: 600px) {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 0; /* optional: remove padding on larger screens */
   }
 }
 
