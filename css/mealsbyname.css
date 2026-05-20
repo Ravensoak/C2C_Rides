@@ -32,7 +32,7 @@ select {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  padding: 0 1rem; /* mobile padding */
+  padding: 0 0.5rem; /* mobile padding */
   margin-bottom: 1rem;
 }
 
