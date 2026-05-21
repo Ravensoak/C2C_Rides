@@ -10,7 +10,7 @@
   padding: 10px;
   max-width: 1200px;
   width: 100%;
-  margin: 0 auto 1rem; /* ensures centering */
+
   margin-bottom: 1rem;
 }
 
@@ -71,33 +71,25 @@
   RESPONSIVE RULES
 ========================================================== */
 
-/* Mobile: force 2-column layout 
-@media (max-width: 500px) {
+/* Mobile: force 1-column layout */
+@media (max-width: 600px) {
   .hotel-container {
-    grid-template-columns: repeat(2, 1fr);
-
+    grid-template-columns: 1fr; /* single column */
     gap: 12px;
-    padding: 0 1rem; 
+    padding: 0 1rem; /* guaranteed side padding */
+    margin: 0 auto; /* keeps it centred */
+  }
+  /* THIS is the missing piece */
+  .hotel-container > * {
+    min-width: 0;
   }
 
   .hotel-card {
     padding: 10px;
-  }
-
-  .hotel-card h3 {
-    font-size: 1rem;
+    min-width: 0; /* prevents overflow */
   }
 
   .hotel-card p {
     font-size: 0.9rem;
-  }
-}*/
-
-/* Ultra-narrow: fallback to single column */
-@media (max-width: 600px) {
-  .hotel-container {
-    grid-template-columns: 1fr;
-    padding-left: 5px;
-    padding-right: 5px;
   }
 }
