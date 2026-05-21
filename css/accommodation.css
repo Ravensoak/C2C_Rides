@@ -93,10 +93,3 @@
     font-size: 0.9rem;
   }
 }
-
-/* Ultra-narrow: fallback to single column */
-@media (max-width: 320px) {
-  .hotel-container {
-    grid-template-columns: 1fr;
-  }
-}
