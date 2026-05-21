@@ -82,6 +82,7 @@
 
   .hotel-card {
     padding: 10px;
+    min-width: 0; /* prevents overflow */
   }
 
   .hotel-card p {
