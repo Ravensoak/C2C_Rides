@@ -72,9 +72,10 @@
 ========================================================== */
 
 /* Mobile: force 2-column layout */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .hotel-container {
     grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
 
     gap: 12px;
     padding: 0 1rem; /* mobile padding */
