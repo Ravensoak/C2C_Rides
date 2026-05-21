@@ -71,13 +71,17 @@
   RESPONSIVE RULES
 ========================================================== */
 
-/* Mobile: force 2-column layout */
+/* Mobile: force 1-column layout */
 @media (max-width: 600px) {
   .hotel-container {
     grid-template-columns: 1fr; /* single column */
     gap: 12px;
     padding: 0 1rem; /* guaranteed side padding */
     margin: 0 auto; /* keeps it centred */
+  }
+  /* THIS is the missing piece */
+  .hotel-container > * {
+    min-width: 0;
   }
 
   .hotel-card {
