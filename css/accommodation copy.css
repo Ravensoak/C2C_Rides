@@ -71,13 +71,13 @@
   RESPONSIVE RULES
 ========================================================== */
 
-/* Mobile: force 2-column layout 
+/* Mobile: force 2-column layout */
 @media (max-width: 500px) {
   .hotel-container {
     grid-template-columns: repeat(2, 1fr);
 
     gap: 12px;
-    padding: 0 1rem; 
+    padding: 0 1rem; /* mobile padding */
   }
 
   .hotel-card {
@@ -91,13 +91,11 @@
   .hotel-card p {
     font-size: 0.9rem;
   }
-}*/
+}
 
 /* Ultra-narrow: fallback to single column */
-@media (max-width: 600px) {
+@media (max-width: 320px) {
   .hotel-container {
     grid-template-columns: 1fr;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 }
