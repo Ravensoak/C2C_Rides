@@ -10,7 +10,7 @@
   padding: 10px;
   max-width: 1200px;
   width: 100%;
-
+  margin: 0 auto 1rem; /* ensures centering */
   margin-bottom: 1rem;
 }
 
@@ -97,7 +97,7 @@
 @media (max-width: 600px) {
   .hotel-container {
     grid-template-columns: 1fr;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
