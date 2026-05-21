@@ -78,7 +78,10 @@
     grid-template-columns: 1fr;
 
     gap: 12px;
-    padding: 1rem; /* mobile padding */
+    padding: 0 1rem; /* mobile padding */
+    padding-left: 1rem; /* mobile padding */
+    padding-right: 1rem; /* mobile padding */
+  }
   }
 
   .hotel-card {
