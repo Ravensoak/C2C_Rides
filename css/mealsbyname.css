@@ -75,6 +75,20 @@ select {
   align-items: center;
   gap: 0.4rem;
   text-align: left;
+
+  position: relative;
+  padding-bottom: 0.6rem; /* space above divider */
+  margin-bottom: 0.6rem; /* space below divider */
+}
+
+.output p:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: 0;
+  height: 1px;
+  background: #e5e7eb;
 }
 
 .card-title {
