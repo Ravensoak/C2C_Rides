@@ -91,6 +91,14 @@ select {
   background: #e5e7eb;
 }
 
+.output p img,
+.output p svg,
+.output p i {
+  height: 1em; /* matches the text height */
+  width: auto; /* keeps aspect ratio */
+  flex-shrink: 0; /* prevents squashing */
+}
+
 .card-title {
   position: relative;
   display: block; /* important: makes the underline span the card width */
