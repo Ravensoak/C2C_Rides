@@ -77,6 +77,23 @@ select {
   text-align: left;
 }
 
+.card-title {
+  position: relative;
+  display: block; /* important: makes the underline span the card width */
+  padding-bottom: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.card-title::after {
+  content: "";
+  position: absolute;
+  left: 0; /* aligns with card padding */
+  right: 0; /* aligns with card padding */
+  bottom: 0;
+  height: 1.5px;
+  background: #9ca3af;
+}
+
 /* ---------------------------------------------------------
    MENU ROWS (Starter / Main / Dessert)
 --------------------------------------------------------- */
