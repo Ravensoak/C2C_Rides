@@ -138,27 +138,23 @@ select {
   margin-bottom: 0.4rem;
 }
 
-/* Category label (Starter / Main / Dessert / Total) */
+/* Category label (Starter / Main / Dessert) */
 .category-label {
   font-weight: bold;
-  font-size: 0.95rem; /* match .food-item size */
+  font-size: 0.9rem;
   color: black;
-  display: flex; /* align emoji + text together */
-  align-items: center; /* vertically align with food text */
-  gap: 0.3rem; /* space between emoji and label text */
-  line-height: 1.2;
+  display: inline-block;
+  margin-right: 0.3rem;
 }
 
-/* Scale the emoji so it visually matches the text height */
-.category-label::first-letter {
-  font-size: 1.2em; /* adjust to taste: 1.1–1.3em */
+.category-label::before {
+  margin-right: 0.3rem;
 }
 
 /* Meal text */
 .food-item {
   font-size: 0.95rem;
   color: var(--text-color);
-  line-height: 1.2;
 }
 
 /* ---------------------------------------------------------
