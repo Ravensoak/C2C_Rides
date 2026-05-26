@@ -108,6 +108,17 @@ select {
   background: #9ca3af;
 }
 
+.total-line {
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8rem;
+  padding-top: 0.6rem;
+  border-top: 2px solid #d1d5db; /* subtle divider */
+  color: var(--primary-color);
+}
+
 /* ---------------------------------------------------------
    MENU ROWS (Starter / Main / Dessert)
 --------------------------------------------------------- */
