@@ -16,7 +16,9 @@ h1 {
   border-radius: 4px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .accordion-item.active {
@@ -55,7 +57,9 @@ h1 {
 .accordion-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.3s ease;
+  transition:
+    max-height 0.4s ease,
+    padding 0.3s ease;
   padding: 0 1.5rem;
   background: #fff;
   border-radius: 0 0 4px 4px;
@@ -78,19 +82,27 @@ h1 {
   color: #555;
 }
 
-
 .accordion {
   margin-left: 0;
   margin-right: 0;
 }
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center; /* vertically centres icon + text */
+  gap: 6px; /* space between icon and text */
   text-decoration: none;
   text-align: center;
 
-  background: var(--accent);
+  background: darkblue;
   color: #fff;
 
   padding: 0.4rem;
   border-radius: 8px;
   font-size: 1rem;
+}
+
+.media-links {
+  display: flex;
+  gap: 12px; /* space between buttons */
+  flex-wrap: wrap; /* allows wrapping on small screens */
+}
