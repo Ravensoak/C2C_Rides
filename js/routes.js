@@ -8,26 +8,21 @@
   LOAD AND PROCESS ROUTE DATA FOR EACH DAY
 ========================================================== */
 const routeData = {
-1: [
-  {
-    img: 'pictures/Day1-Short.png',
-    name: 'Short Route',
-    //distance: '12 km',//
-    //elevation: '150 m',//
-    description: `
+  1: [
+    {
+      img: "pictures/Day1-Short.png",
+      name: "Short Route",
+      //distance: '12 km',//
+      //elevation: '150 m',//
+      description: `
       <p>Choose this route if you want a more relaxed cycling pace with less distance and climbing.</p>
-      <p>The route makes its way to Betws-y-Coed and follows quiet country lanes to Capel Curig, offering a gentle introduction to the dramatic landscapes ahead. From Capel Curig, the journey turns toward Snowdon (Yr Wyddfa), whose imposing summit dominates the horizon — weather permitting!</p>
-      <p>At the Llanberis junction, the route descends Snowdon’s southern slopes and enters the picturesque village of Beddgelert, known for its welcoming cafés and rich folklore. If time allows, a visit to Gelert’s grave provides a poignant glimpse into one of Wales’s most enduring fables. Continuing south, the path traces the Welsh Highland Railway and the scenic river valley to Nantmor, before leaving the main road and heading toward Garreg.<br>
-      Just beyond, the RSPB reserve offers a chance to observe nesting ospreys from its viewing gallery — subject to seasonal return.</p>
-      <p>Upon reaching Tremadog, riders may opt for a brief detour into Porthmadog or continue directly to Criccieth. The town greets visitors with sweeping views of its coastal charm and the striking silhouette of Criccieth Castle overlooking the bay.</p>
+      <p>Using quiet country lanes, this route makes its way towards Wensleydale through the beautiful old town of Leyburn where there is an option for a cafe stop. It leaves Leyburn through Wensleydale onto Askrigg (fictional name: Darrowby) which is famous for the primary filming location of the orginal BBC TV Series 'All Creatures Great and Small'. Carrying on from here the route takes the relatively flat and direct valley route to our overnight stay in Hawes.</p>
       <span>Possible cafe stops are:</span>
         <ul>
-          <li>10 miles - Betws-Y-Coed</li>
-          <li>12.5 miles – Ty Hyll Tearoom (The Ugly House)</li>
-          <li>15 miles – Caffi Siabod</li>
-          <li>24 miles – Caffi Gwynant</li>
-          <li>27 miles - Beddgelert</li>
-          <li>37 miles - Porthmadog</li>
+          <li>17 miles - Leyburn</li>
+          <li>29 miles - Askrigg</li>
+          
+          
         </ul>
         <div class="thumbnail-gallery">
           <img src="pictures/Beddgelert.jpg" alt="Beddgelert" onclick="openLightbox(this)">
@@ -35,28 +30,22 @@ const routeData = {
           <img src="pictures/Criccieth.jpg" alt="Criccieth" onclick="openLightbox(this)">
         </div>
     `,
-    link: 'https://ridewithgps.com/routes/52509283'
-  },
-  {
-    img: 'pictures/Day1-Medium.png',
-    name: 'Medium Route',
-    //distance: '8 km',//
-    //elevation: '200 m',//
-    description: `
-      <p>This route is similar to the short route but diverts to Porthmadog, Borth-y-Gest and Morfa Bychan</p>
-      <p>The route makes its way to Betws-y-Coed and follows quiet country lanes to Capel Curig, offering a gentle introduction to the dramatic landscapes ahead. From Capel Curig, the journey turns toward Snowdon (Yr Wyddfa), whose imposing summit dominates the horizon — weather permitting!</p>
-      <p>At the Llanberis junction, the route descends Snowdon’s southern slopes and enters the picturesque village of Beddgelert, known for its welcoming cafés and rich folklore. If time allows, a visit to Gelert’s grave provides a poignant glimpse into one of Wales’s most enduring fables. Continuing south, the path traces the Welsh Highland Railway and the scenic river valley to Nantmor, before leaving the main road and heading toward Garreg.</p> 
-      <p>From this point, the route diverges from the shorter variant, passing through Penrhyndeudraeth and joining the cycle path across the Cob into Porthmadog. Ascending through the back streets, the route reaches the picturesque cove of Borth-y-Gest. A short stepped descent leads to the shoreline, where the path circles the cove reaching a panoramic viewpoint. From here, the route turns west toward Morfa Bychan and Black Rock Sands, following quiet country lanes with sweeping coastal views before rejoining the main road.</p>
-      <p>The final stretch leads to Criccieth, where riders are rewarded with a stunning view of the town and its iconic castle overlooking the sea.</p>
+      link: "https://ridewithgps.com/routes/52509283",
+    },
+    {
+      img: "pictures/Day1-Medium.png",
+      name: "Medium Route",
+      //distance: '8 km',//
+      //elevation: '200 m',//
+      description: `
+    
+      <p>Choose this route if you want a manageable distance and elevation gain.</p>
+      <p>The route makes its way to the historic market town of Richmond using quiet country lanes. It is then a fairly flat route to the remote village of Reeth where the medium and long routes diverge. This route carries on through the Swaledale valley before ascending the iconic Oxnop climb back into Wensleydale and onto Askrigg (fictional name: Darrowby) which is famous for the primary filming loaction of the orginal BBC TV Series 'All Creatures Great and Small'. Carrying on from here the route takes the  relatively flat and direct valley route to our overnight stay in Hawes.</p>
       <span>Possible cafe stops are:</span>
         <ul>
-          <li>11 miles - Betws-Y-Coed</li>
-          <li>14 miles – Ty Hyll Tearoom (The Ugly House)</li>
-          <li>16.5 miles – Caffi Siabod</li>
-          <li>25.5 miles – Caffi Gwynant</li>
-          <li>28.5 miles - Beddgelert</li>
-          <li>39 miles - Porthmadog</li>
-          <li>40 miles - Seaview Cafe Bistro & Coffee Lounge, Borth-y-Gest</li>
+          <li>21 miles - Richmond</li>
+          <li>32 miles - Reeth</li>
+          <li>45 miles - Askrigg</li>
         </ul>
         <div class="thumbnail-gallery">
           <img src="pictures/Beddgelert.jpg" alt="Beddgelert" onclick="openLightbox(this)">
@@ -64,28 +53,23 @@ const routeData = {
           <img src="pictures/Criccieth.jpg" alt="Criccieth" onclick="openLightbox(this)">
         </div>
     `,
-    link: 'https://ridewithgps.com/routes/51176598'
-  },
-  {
-    img: 'pictures/Day1-Long.png',
-    name: 'Long Route',
-    //distance: '5 km',//
-    //elevation: '300 m',//
+      link: "https://ridewithgps.com/routes/51176598",
+    },
+    {
+      img: "pictures/Day1-Long.png",
+      name: "Long Route",
+      //distance: '5 km',//
+      //elevation: '300 m',//
       description: `
-      <p>This route is similar to the medium route but diverts to Llanberis and rides around the East, North and West sides of Snowdon.</p>
-      <p>This route makes its way to Betws-y-Coed and follows quiet country lanes to Capel Curig, offering a gentle introduction into the heart of Snowdonia. From here, the path turns toward Snowdon (Yr Wyddfa), whose dramatic summit dominates the horizon — weather permitting!</p>
-      <p>At the Llanberis junction, the route leaves the medium version and climbs through the eastern approach to the Llanberis Pass before descending into the village of Llanberis, where several cafés provide a welcome break. The journey then skirts the northern and western flanks of Snowdon, passing through Rhyd-Ddu and continuing on to Beddgelert, another charming village with ample café options. If time allows, a visit to Gelert’s grave offers a poignant insight into one of Wales’s most enduring fables. From Beddgelert, the route follows the Welsh Highland Railway and the scenic river valley to Nantmor, before leaving the main road and heading toward Garreg.</p>
-      <p>After passing through Penrhyndeudraeth, the route joins the cycle path across the Cob embankment into Porthmadog. A short climb through the back streets leads to the picturesque cove of Borth-y-Gest. A stepped descent brings you to the shoreline, where the path loops around the cove to a panoramic viewpoint. The route then turns west toward Morfa Bychan and Black Rock Sands, following quiet country lanes with sweeping coastal vistas before rejoining the main road.</p>
-      <p>The final stretch leads to Criccieth, where riders are rewarded with a stunning view of the town and its iconic castle overlooking the sea.</p>
+      <p>This route is similar to the medium route with a loop extension to Tan Hill</p>
+      <p>The route makes its way to the historic market town of Richmond using quiet country lanes. It is then a fairly flat route to the remote village of Reeth where this route now diverges from the medium route. This route climbs up Tan Hill to one of the highest points in Yorkshire past the famous snow-in pub of the same name before a nice decent into Swaledale. The route then ascends the famous Oxnop climb back into Wensleydale and onto Askrigg (fictional name: Darrowby) which is famous for the primary filming loaction of the orginal BBC TV Series 'All Creatures Great and Small'. Carrying on from here the route takes the  relatively flat and direct valley route to our overnight stay in Hawes.</p>
+      
       <span>Possible cafe stops are:</span>
         <ul>
-          <li>13 miles - Betws-Y-Coed</li>
-          <li>16 miles – Ty Hyll Tearoom (The Ugly House)</li>
-          <li>18.5 miles – Caffi Siabod</li>
-          <li>30 miles – Pantri, Llanberis</li>
-          <li>44.5 miles - Beddgelert</li>
-          <li>55 miles - Porthmadog</li>
-          <li>56 miles - Seaview Cafe Bistro & Coffee Lounge, Borth-y-Gest</li>
+          <li>25 miles - Richmond</li>
+          <li>35 miles - Reeth</li>
+          <li>53 miles - Thwaite</li>
+          <li>60 miles - Askrigg</li>
         </ul>
         <div class="thumbnail-gallery">
           <img src="pictures/LlanberisPass.jpg" alt="Llanberis Pass" onclick="openLightbox(this)">
@@ -93,15 +77,15 @@ const routeData = {
           <img src="pictures/Criccieth.jpg" alt="Criccieth" onclick="openLightbox(this)">
         </div> 
     `,
-    link: 'https://ridewithgps.com/routes/51657762'
-  }
-],
-2: [
-  {
-    img: 'pictures/Day2-Short.png',
-    name: 'Short Route',
-    //distance: '10 km',//
-    //elevation: '100 m',//
+      link: "https://ridewithgps.com/routes/51657762",
+    },
+  ],
+  2: [
+    {
+      img: "pictures/Day2-Short.png",
+      name: "Short Route",
+      //distance: '10 km',//
+      //elevation: '100 m',//
       description: `
       <p>Choose this route if you want a more relaxed cycling pace with less distance and climbing.</p>
       <p>The route heads towards Llanystumdwy, where riders can visit the David Lloyd George Museum and his gravesite - an iconic UK Prime Minister from the early part of the 20th century. From here, the journey continues along quiet country lanes toward Mynytho, gradually revealing sweeping views of the Llŷn Peninsula and the distant Snowdon mountain range. A descent brings you to the dramatic coastline of Hell’s Mouth, followed by a challenging ascent to the village of Rhiw. The climb is well worth the effort, offering panoramic views across the bay toward Sarn Bach, and culminating in a long, rewarding descent into the remote and picturesque village of Aberdaron. Several cafés flank the bridge, making it an ideal spot to pause and reflect on how different this place might have been had it become the primary port to Ireland instead of Holyhead.</p>
@@ -119,13 +103,13 @@ const routeData = {
           <img src="pictures/Porthdinllaen.jpg" alt="Porth Dinllaen" onclick="openLightbox(this)">
         </div>
     `,
-    link: 'https://ridewithgps.com/routes/52509467'
-  },
-  {
-    img: 'pictures/Day2-Medium.png',
-    name: 'Medium Route',
-    //distance: '15 km',//
-    //elevation: '80 m',//
+      link: "https://ridewithgps.com/routes/52509467",
+    },
+    {
+      img: "pictures/Day2-Medium.png",
+      name: "Medium Route",
+      //distance: '15 km',//
+      //elevation: '80 m',//
       description: `
       <p>This route is similar to the short route but diverts to the village of Abersoch.</p>
       <p>The route heads towards Llanystumdwy, where you can visit the David Lloyd George Museum and his gravesite — an iconic UK Prime Minister from the early part of the 20th century. From there, it follows quiet country lanes toward Mynytho, gradually revealing sweeping views across the Llŷn Peninsula and the Snowdon mountain range.</p>
@@ -147,13 +131,13 @@ const routeData = {
           <img src="pictures/Porthdinllaen.jpg" alt="Porth Dinllaen" onclick="openLightbox(this)">
         </div>
     `,
-    link: 'https://ridewithgps.com/routes/51176700'
-  },
-  {
-    img: 'pictures/Day2-Long.png',
-    name: 'Long Route',
-    //distance: '6 km',//
-    //elevation: '50 m',//
+      link: "https://ridewithgps.com/routes/51176700",
+    },
+    {
+      img: "pictures/Day2-Long.png",
+      name: "Long Route",
+      //distance: '6 km',//
+      //elevation: '50 m',//
       description: `
       <p>This route is similar to the medium route but with a few detours including a ride to the sea front in the town of Pwllheli.</p>
       <p>The route heads towards Llanystumdwy, where you can visit the David Lloyd George Museum and his gravesite — an iconic UK Prime Minister from the early part of the 20th century. From here, the path diverges from the medium route, following quiet country lanes to Pwllheli for a scenic ride along the seafront. The journey then continues toward Mynytho, revealing expansive views across the Llŷn Peninsula and the Snowdon mountain range. Rejoining the medium route, the descent leads into the coastal village of Abersoch, a popular stop with several cafés. At the 30-mile mark, there’s an optional detour to a beachfront café—ideal for a relaxing break with sea views.</p>
@@ -174,15 +158,15 @@ const routeData = {
           <img src="pictures/Porthdinllaen.jpg" alt="Porth Dinllaen" onclick="openLightbox(this)">
         </div>
     `,
-    link: 'https://ridewithgps.com/routes/52012568'
-  }
-],
-3: [
-  {
-    img: 'pictures/Day3-Short.png',
-    name: 'Short Route',
-    //distance: '10 km',//
-    //elevation: '100 m',//
+      link: "https://ridewithgps.com/routes/52012568",
+    },
+  ],
+  3: [
+    {
+      img: "pictures/Day3-Short.png",
+      name: "Short Route",
+      //distance: '10 km',//
+      //elevation: '100 m',//
       description: `
       <p>Choose this route if you want a more relaxed cycling pace with less distance and climbing.</p>
       <p>The route begins with a steady climb out of Nefyn to the village of Llithfaen, where expansive views across the Llŷn Peninsula reward the effort. From there, it descends into Llanaelhaearn before continuing along quiet country lanes and a scenic stretch of disused railway line en route to Pen-y-groes.</p>
@@ -201,13 +185,13 @@ const routeData = {
           <img src="pictures/BeaumarisCastle.jpg" alt="Beaumaris" onclick="openLightbox(this)">
         </div> 
     `,
-    link: 'https://ridewithgps.com/routes/51176741'
-  },
-  {
-    img: 'pictures/Day3-Medium.png',
-    name: 'Medium Route',
-    //distance: '15 km',//
-    //elevation: '80 m',//
+      link: "https://ridewithgps.com/routes/51176741",
+    },
+    {
+      img: "pictures/Day3-Medium.png",
+      name: "Medium Route",
+      //distance: '15 km',//
+      //elevation: '80 m',//
       description: `
       <p>This route is similar to the short route but has an extra few miles after Beaumaris where it carries on to Trwyn Penmon Point before returning to the accommodation in Beaumaris.The route begins with a steady climb out of Nefyn to the village of Llithfaen, where expansive views across the Llŷn Peninsula reward the ascent. From there, it descends into Llanaelhaearn before continuing along quiet country lanes and a scenic stretch of disused railway line en route to Pen-y-groes.</p>
       <p>A short detour from the main cycle route leads to Pant Du Vineyard and Cafe — an ideal stop for refreshments before rejoining the route and continuing toward Caernarfon. Here, the path loops around the town’s iconic castle and follows dedicated cycle paths along the shoreline and marina, offering a relaxed and picturesque ride toward Bangor.</p>
@@ -225,13 +209,13 @@ const routeData = {
           <img src="pictures/TrwynPenmonPoint.jpg" alt="Trwyn Penmon Point" onclick="openLightbox(this)">
         </div>
     `,
-    link: 'https://ridewithgps.com/routes/52661668'
-  },
-  {
-    img: 'pictures/Day3-Long.png',
-    name: 'Long Route',
-    //distance: '6 km',//
-    //elevation: '50 m',//
+      link: "https://ridewithgps.com/routes/52661668",
+    },
+    {
+      img: "pictures/Day3-Long.png",
+      name: "Long Route",
+      //distance: '6 km',//
+      //elevation: '50 m',//
       description: `
       <p>This route is similar to the medium route but leaves the cycle path shortly after Pen-y-groes to ride the coastal route into Caernarfon. It also does a slightly longer route to Trwyn Penmon Point after Beaumaris.</p>
       <p>The route begins with a steady climb out of Nefyn to the village of Llithfaen, where expansive views across the Llŷn Peninsula offer a striking start to the day. From there, it descends into Llanaelhaearn before continuing along quiet country lanes and a scenic stretch of disused railway line en route to Pen-y-groes.</p>
@@ -250,15 +234,15 @@ const routeData = {
           <img src="pictures/TrwynPenmonPoint.jpg" alt="Trwyn Penmon Point" onclick="openLightbox(this)">
         </div>
     `,
-    link: 'https://ridewithgps.com/routes/52662124'
-  }
-],
-4: [
-  {
-    img: 'pictures/Day4-Short.png',
-    name: 'Short Route',
-    //distance: '10 km',//
-    //elevation: '100 m',//
+      link: "https://ridewithgps.com/routes/52662124",
+    },
+  ],
+  4: [
+    {
+      img: "pictures/Day4-Short.png",
+      name: "Short Route",
+      //distance: '10 km',//
+      //elevation: '100 m',//
       description: `
       <p>Choose this route if you want to get back to the hotel / car for an earlier drive back home. If time is tight, there is the option in Conwy to miss the Llandudno / Great Orme part of the route and head directly back to the hotel.</p>
       <p>The route departs from Beaumaris and retraces its path toward Bangor, crossing the Menai Bridge once more before joining designated cycle lanes en route to Conwy. After 14 miles, there is a short diversion to Aber Falls Distillery Visitor Centre before rejoining the route. At 20 miles the route diverts into Penmaenmawr for a welcome cafe stop or you have the option to carry on the cyclepath to Conwy. This section of the ride is particularly engaging, weaving across the North Wales Expressway via bridges and skirting around tunnels — a dynamic stretch that blends infrastructure with natural beauty. The approach into Conwy along the coast is especially scenic, offering expansive views of the castle before crossing the bridge and continuing towards Llandudno.</p>
@@ -276,13 +260,13 @@ const routeData = {
           <img src="pictures/GreatOrme.jpg" alt="Great Orme" onclick="openLightbox(this)">
         </div>
     `,
-    link: 'https://ridewithgps.com/routes/51176763'
-  },
-  {
-    img: 'pictures/Day4-Medium.png',
-    name: 'Medium Route',
-    //distance: '15 km',//
-    //elevation: '80 m',//
+      link: "https://ridewithgps.com/routes/51176763",
+    },
+    {
+      img: "pictures/Day4-Medium.png",
+      name: "Medium Route",
+      //distance: '15 km',//
+      //elevation: '80 m',//
       description: `
       <p>This route is similar to the short route but has an extra few miles after Conwy to ride adjacent to Llandudno promenade. Also, after returning across Conwy bridge, it leaves the main road to take some quiet country lanes back to the hotel.</p>
       <p>The route departs from Beaumaris and retraces its path toward Bangor, crossing the Menai Bridge once more before joining designated cycle lanes en route to Conwy. After 14 miles, there is a short diversion to Aber Falls Distillery Visitor Centre before rejoining the route. At 20 miles the route diverts into Penmaenmawr for a welcome cafe stop or you have the option to carry on the cyclepath to Conwy. This section of the ride is particularly engaging, weaving across the North Wales Expressway via bridges and skirting around tunnels — a dynamic stretch that blends infrastructure with natural beauty. The approach into Conwy along the coast is especially scenic, offering expansive views of the castle before crossing the bridge and continuing towards Llandudno.</p>
@@ -301,13 +285,13 @@ const routeData = {
           <img src="pictures/GreatOrme.jpg" alt="Great Orme" onclick="openLightbox(this)">
         </div>
     `,
-    link: 'https://ridewithgps.com/routes/52661645'
-  },
-  {
-    img: 'pictures/Day4-Long.png',
-    name: 'Long Route',
-    //distance: '6 km',//
-    //elevation: '50 m',//
+      link: "https://ridewithgps.com/routes/52661645",
+    },
+    {
+      img: "pictures/Day4-Long.png",
+      name: "Long Route",
+      //distance: '6 km',//
+      //elevation: '50 m',//
       description: `
       <p>This route is similar to the medium route but after Conwy has an extra excursion to Colwyn Bay and an optional detour to the cable car station at the top of the great Orme. Also, after returning to Conwy, it follows the east side of the estuary to take some quiet country lanes back to the hotel.</p>
       <p>The route departs from Beaumaris and retraces its path toward Bangor, crossing the Menai Bridge once more before joining designated cycle lanes en route to Conwy. After 14 miles, there is a short diversion to Aber Falls Distillery Visitor Centre before rejoining the route. At 20 miles the route diverts into Penmaenmawr for a welcome cafe stop or you have the option to carry on the cyclepath to Conwy. This section of the ride is particularly engaging, weaving across the North Wales Expressway via bridges and skirting around tunnels — a dynamic stretch that blends infrastructure with natural beauty. The approach into Conwy along the coast is especially scenic, offering expansive views of the castle before crossing the bridge and continuing towards Llandudno.</p>
@@ -326,9 +310,9 @@ const routeData = {
           <img src="pictures/GreatOrmeCableCar.jpg" alt="Great Orme cable car station" onclick="openLightbox(this)">
         </div> 
     `,
-    link: 'https://ridewithgps.com/routes/52662119'
-  }
-]
+      link: "https://ridewithgps.com/routes/52662119",
+    },
+  ],
 };
 
 const selector = document.getElementById("daySelector");
@@ -432,7 +416,7 @@ function openLightbox(img) {
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightbox-img");
   const caption = document.getElementById("lightbox-caption");
-  
+
   lightboxImg.src = img.src;
   caption.textContent = img.alt;
   lightbox.classList.add("active");
