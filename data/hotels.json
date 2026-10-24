@@ -1,11 +1,11 @@
 [
   {
-    "name": "The Manor",
-    "image": "pictures/The-Manor.jpg",
+    "name": "Black Swan Pub, Hotel & Restaurant",
+    "image": "pictures/The Black Swan.jpeg",
     "alt": "The Manor, Conwy",
-    "address": "Gorse Hill Caravan Park, Trefriw Road, Conwy, LL32 8HJ",
-    "description": "An elegant 19th-century manor house, which has been exquisitely restored with a wonderful contemporary feel whilst maintaining most of its original features, and now incorporates a hand full of luxurious bedrooms all with high quality en-suites .",
-    "url": "https://www.themanorconwy.co.uk/"
+    "address": "Fearby, Ripon HG4 4NF",
+    "description": "This casual 17th-century stone pub with rooms is 2 miles from the market town of Masham.",
+    "url": "https://blackswan-masham.co.uk/"
   },
   {
     "name": "Caer Rhur Hall Hotel",
@@ -16,27 +16,11 @@
     "url": "https://caerrhun.co.uk/the-hotel"
   },
   {
-    "name": "The Lion Hotel",
-    "image": "pictures/The-Lion-Hotel.png",
+    "name": "Premier Inn Skipton North (Gargrave) hotel",
+    "image": "pictures/Premier Inn - Gargrave.webp",
     "alt": "The Lion Hotel, Criccieth",
-    "address": "Y Maes, Criccieth, Gwynedd LL52 0AA",
-    "description": "Dating back to the 18th century, the 'Inn on the Green' is the ideal base for touring the Llyn Peninsula. Three generations over forty years have cherished the Lion Hotel. We are famous for our welcoming atmosphere created by care, consideration and a genuine desire to offer everything the modern visitor requires.",
-    "url": "https://www.lionhotelcriccieth.co.uk"
-  },
-  {
-    "name": "The Nanhoron Arms",
-    "image": "pictures/Nanhoron-Hotel.png",
-    "alt": "The Nanhoron Arms, Nefyn",
-    "address": "St Davids Road, Nefyn, Pwllheli, Gwynedd LL53 6EA",
-    "description": "A family-friendly hotel near the beach, offering hearty meals and a relaxed atmosphere on the Llyn Peninsula.",
-    "url": "https://www.nanhoronhotel.com"
-  },
-   {
-    "name": "The Bull's Head Inn",
-    "image": "pictures/Bull-Inn.png",
-    "alt": "The Bull's Head Inn, Beaumaris",
-    "address": "Castle Street, Beaumaris, Anglesey LL58 8AP",
-    "description": "A Grade II-listed inn with centuries of history, offering stylish rooms and seasonal Welsh cuisine.",
-    "url": "https://www.inncollectiongroup.com/bulls-head-inn"
+    "address": "Hellifield Rd, Gargrave, Skipton BD23 3NB",
+    "description": "Watch the world drift by at Premier Inn Hotel Skipton North (Gargrave), right next to the scenic Leeds to Liverpool canal in the quiet village of Gargrave. ",
+    "url": "https://www.premierinn.com/gb/en/hotels/england/north-yorkshire/skipton/skipton-north-gargrave.html?cid=GLBC_SKIANC"
   }
 ]
