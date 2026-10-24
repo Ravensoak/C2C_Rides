@@ -15,23 +15,41 @@ const routeData = {
       //distance: '12 km',//
       //elevation: '150 m',//
       description: `
-      <p>Choose this route if you want a more relaxed cycling pace with less distance and climbing.</p>
+      <p>Choose this route if you want a more relaxed cycling pace with less distance and limited climbing.</p>
       <p>Using quiet country lanes, this route makes its way towards Wensleydale through the beautiful old town of Leyburn where there is an option for a cafe stop. It leaves Leyburn through Wensleydale onto Askrigg (fictional name: Darrowby) which is famous for the primary filming location of the orginal BBC TV Series 'All Creatures Great and Small'. Carrying on from here the route takes the relatively flat and direct valley route to our overnight stay in Hawes.</p>
-      <span>Possible cafe stops are:</span>
-        <ul>
-          <li>17 miles - Leyburn</li>
-          <li>29 miles - Askrigg</li>
-          
-          
-        </ul>
+      
+        
+        <div class="cafe-card">
+          <h5>Cafés En-Route:</h5>
+
+          <div class="cafe-entry">
+            <p class="cafe-name">
+             <span>Chambers Coffee House</span>
+
+              <a
+                href="https://www.google.co.uk/maps/place/Chambers+Coffee+House/@54.3096066,-1.8287549,19z/data=!3m2!4b1!5s0x487c1bbf35a76789:0x9859c97d8a84da97!4m6!3m5!1s0x487c1bbf3510a2e9:0x9fd807bc69b8ab91!8m2!3d54.3096066!4d-1.8287549!16s%2Fg%2F1vvyxm_1?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noopener"
+                class="cafe-link"
+              >
+                View Map
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+             </p>
+
+             <p>📍 Leyburn</p>
+             <p>🚴 Distance: 18.5 miles</p>
+          </div>
+        </div>
         <div class="thumbnail-gallery">
-          <img src="pictures/Beddgelert.jpg" alt="Beddgelert" onclick="openLightbox(this)">
-          <img src="pictures/Gelert.jpg" alt="Gelerts Grave" onclick="openLightbox(this)">
-          <img src="pictures/Criccieth.jpg" alt="Criccieth" onclick="openLightbox(this)">
+          <img src="pictures/Leyburn.jpeg" alt="Leyburn" onclick="openLightbox(this)">
+          <img src="pictures/Askrigg.jpeg" alt="Askrigg" onclick="openLightbox(this)">
+          <img src="pictures/Wensleydale.jpeg" alt="Wensleydale" onclick="openLightbox(this)">
         </div>
     `,
       link: "https://ridewithgps.com/routes/52509283",
     },
+
     {
       img: "pictures/Day1-Medium.png",
       name: "Medium Route",
@@ -40,17 +58,96 @@ const routeData = {
       description: `
     
       <p>Choose this route if you want a manageable distance and elevation gain.</p>
-      <p>The route makes its way to the historic market town of Richmond using quiet country lanes. It is then a fairly flat route to the remote village of Reeth where the medium and long routes diverge. This route carries on through the Swaledale valley before ascending the iconic Oxnop climb back into Wensleydale and onto Askrigg (fictional name: Darrowby) which is famous for the primary filming loaction of the orginal BBC TV Series 'All Creatures Great and Small'. Carrying on from here the route takes the  relatively flat and direct valley route to our overnight stay in Hawes.</p>
-      <span>Possible cafe stops are:</span>
-        <ul>
-          <li>21 miles - Richmond</li>
-          <li>32 miles - Reeth</li>
-          <li>45 miles - Askrigg</li>
-        </ul>
+      <p>The route makes its way to the historic market town of Richmond using quiet country lanes. It is then a fairly flat route to the remote village of Reeth where the medium and long routes diverge. This route carries on through the Swaledale valley before ascending the iconic Oxnop climb back into Wensleydale and onto Askrigg (fictional name: Darrowby) which is famous for the primary filming loaction of the orginal BBC TV Series 'All Creatures Great and Small'. Carrying on from here the route takes the relatively flat and direct valley route to our overnight stay in Hawes.</p>
+      
+        
+        <div class="cafe-card">
+          <h5>Cafés En-Route:</h5>
+
+          <div class="cafe-entry">
+            <p class="cafe-name">
+             <span>The Little Drummer Boy</span>
+
+              <a
+                href="https://www.google.co.uk/maps/place/The+Little+Drummer+Boy+Tearoom/@54.4037837,-1.7402928,19z/data=!4m6!3m5!1s0x487c1f38a29b90bd:0x4c7fb2cb3e5b95e9!8m2!3d54.4037837!4d-1.7391019!16s%2Fg%2F11mv9v8f_c?entry=tts&g_ep=EgoyMDI2MDkyOC4wIPu8ASoASAFQAw%3D%3D&skid=6c14c762-d5bc-4ded-9dd5-e667c91c97d9"
+                target="_blank"
+                rel="noopener"
+                class="cafe-link"
+                >
+                View Map
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </p>
+
+            <p>📍 Richmond</p>
+            <p>🚴 Distance: 22.5 miles</p>
+          </div>
+        
+
+          <div class="cafe-entry">
+            <p class="cafe-name">
+             <span>Dales Bike Centre Cafe & Cakery</span>
+
+              <a
+                href="https://www.google.co.uk/maps/place/Dales+Bike+Centre/@54.3846248,-1.931957,18z/data=!4m9!3m8!1s0x487c1799c4040277:0x3fee480a3ad4e417!5m2!4m1!1i2!8m2!3d54.3848575!4d-1.9305501!16s%2Fg%2F1tdm_1c2?entry=tts&g_ep=EgoyMDI2MDkzMC4wIPu8ASoASAFQAw%3D%3D&skid=7518b111-6f75-4cb4-b937-966d6af8eebc"
+                target="_blank"
+                rel="noopener"
+                class="cafe-link"
+                >
+                View Map
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </p>
+
+            <p>📍 Reeth</p>
+            <p>🚴 Distance: 33 miles</p>
+          </div>
+       
+
+          <div class="cafe-entry">
+            <p class="cafe-name">
+             <span>Ghyllfoot Tearoom & Bistro</span>
+
+              <a
+                href="https://www.google.co.uk/maps/place/Ghyllfoot+Tearoom+%26+Bistro/@54.3797855,-2.0763643,18.25z/data=!4m6!3m5!1s0x487c150698d7ff9d:0x1ce5db0d7e72198!8m2!3d54.3795141!4d-2.0763124!16s%2Fg%2F1tgdbzjv?entry=tts&g_ep=EgoyMDI2MDkzMC4wIPu8ASoASAFQAw%3D%3D&skid=c398526f-8b57-459a-9930-a10e32342edc"
+                target="_blank"
+                rel="noopener"
+                class="cafe-link"
+                >
+                View Map
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </p>
+
+            <p>📍 Gunnerside</p>
+            <p>🚴 Distance: 39.5 miles</p>
+          </div>
+        
+
+          <div class="cafe-entry">
+            <p class="cafe-name">
+             <span>The Bake-Well, Market Place</span>
+
+              <a
+                href="https://www.google.co.uk/maps/place/The+Bake-Well,+Market+Place/@54.3148843,-2.080941,19.75z/data=!4m6!3m5!1s0x487c13cbb4c4aaad:0xc7416a5380fd49bc!8m2!3d54.3150452!4d-2.0808585!16s%2Fg%2F11jvr35zrd?entry=tts&g_ep=EgoyMDI2MDkzMC4wIPu8ASoASAFQAw%3D%3D&skid=0018e463-cb64-44f3-ab62-4bfb18bf635a"
+                target="_blank"
+                rel="noopener"
+                class="cafe-link"
+                >
+                View Map
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </p>
+
+            <p>📍 Askrigg</p>
+            <p>🚴 Distance: 46.5 miles</p>
+          </div>
+        </div>
+
         <div class="thumbnail-gallery">
-          <img src="pictures/Beddgelert.jpg" alt="Beddgelert" onclick="openLightbox(this)">
-          <img src="pictures/BorthyGest.jpg" alt="Borth y Gest" onclick="openLightbox(this)">
-          <img src="pictures/Criccieth.jpg" alt="Criccieth" onclick="openLightbox(this)">
+          <img src="pictures/Richmond.jpeg" alt="Richmond" onclick="openLightbox(this)">
+          <img src="pictures/Swaledale.jpeg" alt="Swaledale" onclick="openLightbox(this)">
+          <img src="pictures/Oxnop.webp" alt="Oxnop" onclick="openLightbox(this)">
         </div>
     `,
       link: "https://ridewithgps.com/routes/51176598",
@@ -62,19 +159,73 @@ const routeData = {
       //elevation: '300 m',//
       description: `
       <p>This route is similar to the medium route with a loop extension to Tan Hill</p>
-      <p>The route makes its way to the historic market town of Richmond using quiet country lanes. It is then a fairly flat route to the remote village of Reeth where this route now diverges from the medium route. This route climbs up Tan Hill to one of the highest points in Yorkshire past the famous snow-in pub of the same name before a nice decent into Swaledale. The route then ascends the famous Oxnop climb back into Wensleydale and onto Askrigg (fictional name: Darrowby) which is famous for the primary filming loaction of the orginal BBC TV Series 'All Creatures Great and Small'. Carrying on from here the route takes the  relatively flat and direct valley route to our overnight stay in Hawes.</p>
+      <p>The route makes its way to the historic market town of Richmond using quiet country lanes. It is then a fairly flat route to the remote village of Reeth where this route now diverges from the medium route. This route climbs up Tan Hill to one of the highest points in Yorkshire past the famous snow-in pub of the same name before a nice decent into Swaledale. The route then ascends the famous Oxnop climb back into Wensleydale and onto Askrigg (fictional name: Darrowby) which is famous for the primary filming loaction of the orginal BBC TV Series 'All Creatures Great and Small'. Carrying on from here the route takes the relatively flat and direct valley route to our overnight stay in Hawes.</p>
       
-      <span>Possible cafe stops are:</span>
-        <ul>
-          <li>25 miles - Richmond</li>
-          <li>35 miles - Reeth</li>
-          <li>53 miles - Thwaite</li>
-          <li>60 miles - Askrigg</li>
-        </ul>
+      
+        
+        <div class="cafe-card">
+          <h5>Cafés En-Route:</h5>
+
+          <div class="cafe-entry">
+            <p class="cafe-name">
+             <span>The Little Drummer Boy</span>
+
+              <a
+                href="https://www.google.co.uk/maps/place/The+Little+Drummer+Boy+Tearoom/@54.4037837,-1.7402928,19z/data=!4m6!3m5!1s0x487c1f38a29b90bd:0x4c7fb2cb3e5b95e9!8m2!3d54.4037837!4d-1.7391019!16s%2Fg%2F11mv9v8f_c?entry=tts&g_ep=EgoyMDI2MDkyOC4wIPu8ASoASAFQAw%3D%3D&skid=6c14c762-d5bc-4ded-9dd5-e667c91c97d9"
+                target="_blank"
+                rel="noopener"
+                class="cafe-link"
+                >
+                View Map
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </p>
+
+            <p>📍 Richmond</p>
+            <p>🚴 Distance: 22.5 miles</p>
+          </div>
+
+          <div class="cafe-entry">
+            <p class="cafe-name">
+             <span>Dales Bike Centre Cafe & Cakery</span>
+
+              <a
+                href="https://www.google.co.uk/maps/place/Dales+Bike+Centre/@54.3846248,-1.931957,18z/data=!4m9!3m8!1s0x487c1799c4040277:0x3fee480a3ad4e417!5m2!4m1!1i2!8m2!3d54.3848575!4d-1.9305501!16s%2Fg%2F1tdm_1c2?entry=tts&g_ep=EgoyMDI2MDkzMC4wIPu8ASoASAFQAw%3D%3D&skid=7518b111-6f75-4cb4-b937-966d6af8eebc"
+                target="_blank"
+                rel="noopener"
+                class="cafe-link"
+                >
+                View Map
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </p>
+
+            <p>📍 Reeth</p>
+            <p>🚴 Distance: 33 miles</p>
+          </div>
+          <div class="cafe-entry">
+            <p class="cafe-name">
+             <span>Muker Village Store & Teashop</span>
+
+              <a
+                href="https://www.google.co.uk/maps/place/Muker+Village+Store+%26+Teashop/@54.3762204,-2.1406597,17z/data=!4m6!3m5!1s0x4887e655433af71f:0x396125c6c394ee3e!8m2!3d54.3763694!4d-2.1408211!16s%2Fg%2F1tl8k87k?entry=tts&g_ep=EgoyMDI2MDkzMC4wIPu8ASoASAFQAw%3D%3D&skid=b66aebce-47c6-4092-8032-ebdf5340e31b"
+                target="_blank"
+                rel="noopener"
+                class="cafe-link"
+                >
+                View Map
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </p>
+
+            <p>📍 Muker</p>
+            <p>🚴 Distance: 52 miles</p>
+          </div>
+        </div>
         <div class="thumbnail-gallery">
-          <img src="pictures/LlanberisPass.jpg" alt="Llanberis Pass" onclick="openLightbox(this)">
-          <img src="pictures/BorthyGest.jpg" alt="Borth y Gest" onclick="openLightbox(this)">
-          <img src="pictures/Criccieth.jpg" alt="Criccieth" onclick="openLightbox(this)">
+          <img src="pictures/Richmond.jpeg" alt="Richmond" onclick="openLightbox(this)">
+          <img src="pictures/Swaledale.jpeg" alt="Swaledale" onclick="openLightbox(this)">
+          <img src="pictures/Tan Hill.jpeg" alt="Tan Hill" onclick="openLightbox(this)">
         </div> 
     `,
       link: "https://ridewithgps.com/routes/51657762",
@@ -88,15 +239,35 @@ const routeData = {
       //elevation: '100 m',//
       description: `
       <p>Choose this route if you want a more relaxed cycling pace with less distance and climbing.</p>
-      <p>The route heads towards Llanystumdwy, where riders can visit the David Lloyd George Museum and his gravesite - an iconic UK Prime Minister from the early part of the 20th century. From here, the journey continues along quiet country lanes toward Mynytho, gradually revealing sweeping views of the Llŷn Peninsula and the distant Snowdon mountain range. A descent brings you to the dramatic coastline of Hell’s Mouth, followed by a challenging ascent to the village of Rhiw. The climb is well worth the effort, offering panoramic views across the bay toward Sarn Bach, and culminating in a long, rewarding descent into the remote and picturesque village of Aberdaron. Several cafés flank the bridge, making it an ideal spot to pause and reflect on how different this place might have been had it become the primary port to Ireland instead of Holyhead.</p>
-      <p>After a short climb out of Aberdaron, the route resumes along peaceful country lanes, with uninterrupted sea views to the left as it winds through Tudweiliog and onward to Morfa Nefyn. At the 40-mile mark, a brief detour leads across the golf course to Porth Dinllaen, home to the renowned Ty Coch In — an iconic beachside pub nestled in a stunning coastal setting.</p>
-      <p>The final leg returns to Morfa Nefyn and follows the main road to the hotel in Nefyn, completing a route rich in coastal charm and unforgettable views.</p>
+      <p>The route heads out West from Hawes - one of England's higest market towns and the home of Yorkshire Wensleydale Cheese. Most of the days climbing is done in the first few miles, resulting in a farily flat ride to the finish. After passing through Settle it skirts the Yorkshire Dales over gentle rolling countryside towards our overnight stay in Gargrave.</p>
       <span>Possible cafe stops are:</span>
         <ul>
           <li>23 miles - Aberdaron</li>
           <li>36 miles - Cwt Tatws Cafe and Shop</li>
           <li>41 miles - Ty Coch Inn, Porth Dinllaen</li>
         </ul>
+        <div class="cafe-card">
+          <h5>Cafés En-Route:</h5>
+
+          <div class="cafe-entry">
+            <p class="cafe-name">
+             <span>Chambers Coffee House</span>
+
+              <a
+            href="https://www.google.co.uk/maps/place/Chambers+Coffee+House/@54.3096066,-1.8287549,19z/data=!3m2!4b1!5s0x487c1bbf35a76789:0x9859c97d8a84da97!4m6!3m5!1s0x487c1bbf3510a2e9:0x9fd807bc69b8ab91!8m2!3d54.3096066!4d-1.8287549!16s%2Fg%2F1vvyxm_1?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener"
+            class="cafe-link"
+          >
+            View Map
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </p>
+
+        <p>📍 Leyburn</p>
+        <p>🚴 Distance: 18.5 miles</p>
+      </div>
+    </div>
         <div class="thumbnail-gallery">
           <img src="pictures/Mynytho.jpg" alt="Mynytho" onclick="openLightbox(this)">
           <img src="pictures/Aberdaron.jpg" alt="Aberdaron" onclick="openLightbox(this)">
@@ -111,12 +282,8 @@ const routeData = {
       //distance: '15 km',//
       //elevation: '80 m',//
       description: `
-      <p>This route is similar to the short route but diverts to the village of Abersoch.</p>
-      <p>The route heads towards Llanystumdwy, where you can visit the David Lloyd George Museum and his gravesite — an iconic UK Prime Minister from the early part of the 20th century. From there, it follows quiet country lanes toward Mynytho, gradually revealing sweeping views across the Llŷn Peninsula and the Snowdon mountain range.</p>
-      <p>Departing from the shorter variant, the route descends into the coastal village of Abersoch, a lively spot with several cafés. At the 20-mile mark, there’s an optional detour to a beachfront café — perfect for a scenic refreshment stop.</p>
-      <p>Leaving Abersoch, the route continues via Sarn Bach and winds through peaceful lanes skirting the dramatic coastline of Hell’s Mouth. This leads to the formidable climb up to the village of Rhiw. The effort is rewarded with panoramic views across the bay toward Sarn Bach, followed by a long, exhilarating descent into the remote and picturesque village of Aberdaron. Several cafés line both sides of the bridge, offering a chance to pause and reflect on how different this place might have been had it, rather than Holyhead, become the main port to Ireland.</p>
-      <p>A short climb out of Aberdaron leads to more quiet lanes, with uninterrupted sea views to the left as the route continues through Tudweiliog and on to Morfa Nefyn. At the 49-mile mark, a short excursion across the golf course brings you to Porth Dinllaen, home to the iconic Ty Coch Inn — one of the most famous beachside pubs in the UK.</p>
-      <p>The final stretch returns to Morfa Nefyn and follows the main road back to the hotel in Nefyn, completing a route rich in coastal charm and unforgettable views.</p>
+      <p>Choose this route if you want a manageable distance and elevation gain.</p>
+      <p>The route heads out West from Hawes - one of England's higest market towns and the home of Yorkshire Wensleydale Cheese. After the initial set of climbing you reach open expanses of moorland and are rewarded with a spectacular view of the Ribblehead Viaduct. From here we head towards the picturesque market town of Settle before deviating north with a gradient but avoiding Settle Hill!. After the ascent the route takes us throught the village of Malham passing through spectacular limesone landsacpaes with a glimpse of the famous Malham Cove.From here it a relativelay flat route to our overnight stay in Gargrave</p>
       <span>Possible cafe stops are:</span>
         <ul>
           <li>19.5 miles - Just Mary's Cafe, Abersoch</li>
@@ -125,6 +292,28 @@ const routeData = {
           <li>43 miles - Cwt Tatws Cafe and Shop</li>
           <li>48 miles - Ty Coch Inn, Porth Dinllaen</li>
         </ul>
+        <div class="cafe-card">
+          <h5>Cafés En-Route:</h5>
+
+          <div class="cafe-entry">
+            <p class="cafe-name">
+             <span>Chambers Coffee House</span>
+
+              <a
+            href="https://www.google.co.uk/maps/place/Chambers+Coffee+House/@54.3096066,-1.8287549,19z/data=!3m2!4b1!5s0x487c1bbf35a76789:0x9859c97d8a84da97!4m6!3m5!1s0x487c1bbf3510a2e9:0x9fd807bc69b8ab91!8m2!3d54.3096066!4d-1.8287549!16s%2Fg%2F1vvyxm_1?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener"
+            class="cafe-link"
+          >
+            View Map
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </p>
+
+        <p>📍 Leyburn</p>
+        <p>🚴 Distance: 18.5 miles</p>
+      </div>
+    </div>
         <div class="thumbnail-gallery">
           <img src="pictures/Abersoch.jpg" alt="Abersoch" onclick="openLightbox(this)">
           <img src="pictures/Aberdaron.jpg" alt="Aberdaron" onclick="openLightbox(this)">
@@ -152,6 +341,28 @@ const routeData = {
           <li>54 miles - Cwt Tatws Cafe and Shop</li>
           <li>62 miles - Ty Coch Inn, Porth Dinllaen</li>
         </ul>
+        <div class="cafe-card">
+          <h5>Cafés En-Route:</h5>
+
+          <div class="cafe-entry">
+            <p class="cafe-name">
+             <span>Chambers Coffee House</span>
+
+              <a
+            href="https://www.google.co.uk/maps/place/Chambers+Coffee+House/@54.3096066,-1.8287549,19z/data=!3m2!4b1!5s0x487c1bbf35a76789:0x9859c97d8a84da97!4m6!3m5!1s0x487c1bbf3510a2e9:0x9fd807bc69b8ab91!8m2!3d54.3096066!4d-1.8287549!16s%2Fg%2F1vvyxm_1?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener"
+            class="cafe-link"
+          >
+            View Map
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </p>
+
+        <p>📍 Leyburn</p>
+        <p>🚴 Distance: 18.5 miles</p>
+      </div>
+    </div>
         <div class="thumbnail-gallery">
           <img src="pictures/Abersoch.jpg" alt="Abersoch" onclick="openLightbox(this)">
           <img src="pictures/Aberdaron.jpg" alt="Aberdaron" onclick="openLightbox(this)">
@@ -179,6 +390,28 @@ const routeData = {
           <li>31.5 miles - Llofft, Y Felinheli</li>
           <li>32 miles – The Swellies, Y Felinheli</li>
         </ul>
+        <div class="cafe-card">
+          <h5>Cafés En-Route:</h5>
+
+          <div class="cafe-entry">
+            <p class="cafe-name">
+             <span>Chambers Coffee House</span>
+
+              <a
+            href="https://www.google.co.uk/maps/place/Chambers+Coffee+House/@54.3096066,-1.8287549,19z/data=!3m2!4b1!5s0x487c1bbf35a76789:0x9859c97d8a84da97!4m6!3m5!1s0x487c1bbf3510a2e9:0x9fd807bc69b8ab91!8m2!3d54.3096066!4d-1.8287549!16s%2Fg%2F1vvyxm_1?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener"
+            class="cafe-link"
+          >
+            View Map
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </p>
+
+        <p>📍 Leyburn</p>
+        <p>🚴 Distance: 18.5 miles</p>
+      </div>
+    </div>
         <div class="thumbnail-gallery">
           <img src="pictures/CaernarfonCastle.jpg" alt="Caernarfon" onclick="openLightbox(this)">
           <img src="pictures/MenaiBridge.jpg" alt="Menai Bridge" onclick="openLightbox(this)">

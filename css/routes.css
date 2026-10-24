@@ -288,3 +288,94 @@
   max-width: 90vw;
   line-height: 1.4;
 }
+
+.cafe-card {
+  border: 1px solid #ddd;
+  padding: 6px 10px 10px; /* smaller top padding */
+  border-radius: 8px;
+  margin-top: 8px;
+  background: #fafafa;
+  padding-left: 8px; /* indent text + button */
+}
+
+.cafe-card h5 {
+  margin: 0 0 6px 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-left: 4px; /* subtle indent */
+}
+
+.cafe-card p {
+  font-size: 0.85rem; /* smaller text */
+  line-height: 1.2; /* tighter spacing */
+  margin: 4px 0; /* reduce vertical gaps */
+  padding-left: 8px; /* indent text + button */
+}
+
+/* =========================================================
+   CAFÉ CARD
+========================================================= */
+
+/* =========================================================
+   CAFÉ CARD
+========================================================= */
+
+.cafe-card .cafe-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  margin: 2px 0 6px 0;
+  padding-left: 12px;
+
+  color: #0b3d2e;
+}
+
+.cafe-card .cafe-name span {
+  font-weight: 700;
+}
+
+/* =========================================================
+   CAFÉ MAP LINK
+========================================================= */
+
+.cafe-card .cafe-link {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #005fa3;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.cafe-card .cafe-link:hover {
+  color: #004b82;
+  text-decoration: underline;
+}
+
+.cafe-card .cafe-link i {
+  font-size: 0.65rem;
+  margin-left: 2px;
+}
+
+/* =========================================================
+   CAFÉ ENTRY SEPARATOR
+========================================================= */
+
+/* Separator underneath each café */
+.cafe-card .cafe-entry {
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Remove separator from the final café */
+.cafe-card .cafe-entry:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
