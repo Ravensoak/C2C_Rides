@@ -7,14 +7,7 @@
     "description": "This casual 17th-century stone pub with rooms is 2 miles from the market town of Masham.",
     "url": "https://blackswan-masham.co.uk/"
   },
-  {
-    "name": "Caer Rhur Hall Hotel",
-    "image": "pictures/Caer-Rhun-Hotel.jpg",
-    "alt": "Caer Rhur Hall Hotel, Conwy",
-    "address": "Caer Rhun Hall Hotel, Conwy LL32 8HX",
-    "description": "Caer Rhun Hall is a hidden gem nestled in the enchanting landscape of Snowdonia, North Wales. This Victorian manor house offers an unforgettable blend of historic charm, modern luxury and impeccable service.",
-    "url": "https://caerrhun.co.uk/the-hotel"
-  },
+
   {
     "name": "Premier Inn Skipton North (Gargrave) hotel",
     "image": "pictures/Premier Inn - Gargrave.webp",
