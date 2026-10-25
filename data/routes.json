@@ -1,0 +1,102 @@
+{
+  "1": [
+    {
+      "img": "pictures/Day1-Short.png",
+      "name": "Short Route",
+      "description": [
+        "Choose this route if you want a more relaxed cycling pace with less distance and limited climbing.",
+        "Using quiet country lanes, this route makes its way towards Wensleydale through the beautiful old town of Leyburn where there is an option for a cafe stop. It leaves Leyburn through Wensleydale onto Aysgarth where you'll get a glimpse of the famous Aysgarth Falls. From here we head to Askrigg (fictional name: Darrowby) which is famous for the primary filming location of the orginal BBC TV Series 'All Creatures Great and Small'. Carrying on from here the route takes the relatively flat and direct valley route to our overnight stay in Hawes."
+      ],
+      "link": "https://ridewithgps.com/routes/57245813"
+    },
+    {
+      "img": "pictures/Day1-Medium.png",
+      "name": "Medium Route",
+      "description": [
+        "Choose this route if you want a manageable distance and elevation gain.",
+        "The route makes its way to the historic market town of Richmond using quiet country lanes. After a circling the castle, it is then a fairly flat route to the remote village of Reeth where the medium and long routes diverge. This route carries on through the Swaledale valley through Gunnerside before ascending the iconic Oxnop Scar climb. You are then rewarded with a beautiful descent back into Wensleydale and onto Askrigg (fictional name: Darrowby) which is famous for the primary filming loaction of the orginal BBC TV Series 'All Creatures Great and Small'. Carrying on from here the route takes the relatively flat and direct valley route to our overnight stay in Hawes."
+      ],
+      "link": "https://ridewithgps.com/routes/57354697"
+    },
+    {
+      "img": "pictures/Day1-Long.png",
+      "name": "Long Route",
+      "description": [
+        "This route is similar to the medium route with a loop extension to Tan Hill",
+        "The route makes its way to the historic market town of Richmond using quiet country lanes. After a circling the castle, it is then a fairly flat route to the remote village of Reeth where the medium and long routes then diverge. This route climbs up Tan Hill to one of the highest points in Yorkshire past the famous snow-in pub of the same name before a nice decent into Swaledale. The route then ascends the famous Oxnop climb back into Wensleydale and onto Askrigg (fictional name: Darrowby) which is famous for the primary filming loaction of the orginal BBC TV Series 'All Creatures Great and Small'. Carrying on from here the route takes the relatively flat and direct valley route to our overnight stay in Hawes."
+      ],
+      "link": "https://ridewithgps.com/routes/57354853"
+    }
+  ],
+  "2": [
+    {
+      "img": "pictures/Day2-Short.png",
+      "name": "Short Route",
+      "description": [
+        "Choose this route if you want a more relaxed cycling pace with less distance and climbing.",
+        "The route heads out West from Hawes - one of England's higest market towns and the home of Yorkshire Wensleydale Cheese. After the initial set of climbing you reach open expanses of moorland and are rewarded with a spectacular view of the Ribblehead Viaduct. From here we head towards the picturesque market town of Settle before skirting the Yorkshire Dales over gentle rolling countryside towards our overnight stay in Gargrave."
+      ],
+      "link": "https://ridewithgps.com/routes/57392939"
+    },
+    {
+      "img": "pictures/Day2-Medium.png",
+      "name": "Medium Route",
+      "description": [
+        "Choose this route if you want a ride with a manageable distance and elevation gain.",
+        "The route heads out West from Hawes - one of England's higest market towns and the home of Yorkshire Wensleydale Cheese. After the initial set of climbing you reach open expanses of moorland and are rewarded with a spectacular view of the Ribblehead Viaduct. From here we head for Ingleton before turning towards the picturesque market town of Settle before deviating north with a gradient but avoiding Settle Hill!. After the ascent the route takes us throught the village of Malham passing through spectacular limesone landscapes with a glimpse of the famous Malham Cove. From here it a relativelay flat route to our overnight stay in Gargrave"
+      ],
+      "link": "https://ridewithgps.com/routes/55336408"
+    },
+    {
+      "img": "pictures/Day2-Long.png",
+      "name": "Long Route",
+      "description": [
+        "This route is similar to the medium route but with a small detour soon after leaving Hawes",
+        "The route heads out West from Hawes - one of England's higest market towns and the home of Yorkshire Wensleydale Cheese. After the initial set of climbing you reach open expanses of moorland before heading West and descending into the village of Dent. The route then climbs White Shaw Moss - a very steep climb on a gated road before desending into Ingleton. From here we head towards the picturesque market town of Settle before deviating north with a gradient but avoiding Settle Hill!. After the ascent the route takes us throught the village of Malham passing through spectacular limesone landscapes with a glimpse of the famous Malham Cove. From here it a relativelay flat route to our overnight stay in Gargrave"
+      ],
+      "link": "https://ridewithgps.com/routes/57245952"
+    }
+  ],
+  "3": [
+    {
+      "img": "pictures/Day3-Short.png",
+      "name": "Short Route",
+      "description": [
+        "Choose this route if you want a more relaxed cycling pace with less distance and climbing.",
+        "A beautiful ride through the rolling countryside of the Yorkshire Dales, leaving Gargrave and heading towards the picturesque village of Burnsall, nestled beside the River Wharfe. Continue through the scenic valleys to Pateley Bridge, a charming market town in Nidderdale, before visiting the magnificent Fountains Abbey, where atmospheric medieval ruins sit within a stunning historic landscape. The route then passes through Ripon, with its impressive cathedral and traditional market square, before finishing back at our hotel near Masham, a welcoming market town famous for its brewing heritage. A varied day of peaceful country lanes, historic landmarks and classic Yorkshire scenery."
+      ],
+      "link": "https://ridewithgps.com/routes/57245736"
+    },
+    {
+      "img": "pictures/Day3-Medium.png",
+      "name": "Medium Route",
+      "description": [
+        "Choose this route if you want a ride with a manageable distance and elevation gain.",
+        "A beautiful ride through the rolling countryside of the Yorkshire Dales, leaving Gargrave and heading towards the picturesque village of Burnsall, nestled beside the River Wharfe. Continue through the scenic valleys to Pateley Bridge, a charming market town in Nidderdale, before visiting the magnificent Fountains Abbey, where atmospheric medieval ruins sit within a stunning historic landscape. The route then passes through Ripon, with its impressive cathedral and traditional market square, before finishing back at our hotel near Masham, a welcoming market town famous for its brewing heritage. A varied day of peaceful country lanes, historic landmarks and classic Yorkshire scenery"
+      ],
+      "link": "https://ridewithgps.com/routes/53768800"
+    },
+    {
+      "img": "pictures/Day3-Long.png",
+      "name": "Long Route",
+      "description": [
+        "This route is similar to the medium route but leaves the cycle path shortly after Pen-y-groes to ride the coastal route into Caernarfon. It also does a slightly longer route to Trwyn Penmon Point after Beaumaris.",
+        "A beautiful ride through the rolling countryside of the Yorkshire Dales, leaving Gargrave and heading towards the picturesque village of Burnsall, nestled beside the River Wharfe. Continue through the scenic valleys to Pateley Bridge, a charming market town in Nidderdale, before visiting the magnificent Fountains Abbey, where atmospheric medieval ruins sit within a stunning historic landscape. The route then passes through Ripon, with its impressive cathedral and traditional market square, before finishing back at our hotel near Masham, a welcoming market town famous for its brewing heritage. A varied day of peaceful country lanes, historic landmarks and classic Yorkshire scenery"
+      ],
+      "link": "https://ridewithgps.com/routes/55336377"
+    }
+  ],
+  "_commented_out_day_4": [
+    {
+      "img": "pictures/Day4-Long.png",
+      "name": "Long Route",
+      "description": [
+        "This route is similar to the medium route but after Conwy has an extra excursion to Colwyn Bay and an optional detour to the cable car station at the top of the great Orme. Also, after returning to Conwy, it follows the east side of the estuary to take some quiet country lanes back to the hotel.",
+        "The route departs from Beaumaris and retraces its path toward Bangor, crossing the Menai Bridge once more before joining designated cycle lanes en route to Conwy. After 14 miles, there is a short diversion to Aber Falls Distillery Visitor Centre before rejoining the route. At 20 miles the route diverts into Penmaenmawr for a welcome cafe stop or you have the option to carry on the cyclepath to Conwy. This section of the ride is particularly engaging, weaving across the North Wales Expressway via bridges and skirting around tunnels â€” a dynamic stretch that blends infrastructure with natural beauty. The approach into Conwy along the coast is especially scenic, offering expansive views of the castle before crossing the bridge and continuing towards Llandudno.",
+        "From Conwy, the route continues northeast toward Colwyn Bay and onward to Llandudno. For those seeking an extra challenge, thereâ€™s an optional excursion up the steep climb to the cable car station, offering panoramic views from the summit.",
+        "The path then loops around the Great Orme, revealing dramatic coastal cliffs and sweeping sea vistas. The final leg returns along quiet country lanes on the eastern side of the estuary, concluding the ride back to the hotel."
+      ],
+      "link": "https://ridewithgps.com/routes/52662119"
+    }
+  ]
+}
