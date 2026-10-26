@@ -370,7 +370,7 @@ const routeExtras = {
         </p>
 
         <p>📍 Ingleton</p>
-        <p>🚴 Distance: 24.56 miles</p>
+        <p>🚴 Distance: 24.5 miles</p>
       </div>
       <div class="cafe-entry">
             <p class="cafe-name">
@@ -422,19 +422,13 @@ const routeExtras = {
   3: {
     "Short Route": {
       cafes: `
-<span>Possible cafe stops are:</span>
-        <ul>
-          <li>19.5 miles – Pant Du Vineyard and Cafe, Penygroes</li>
-          <li>27.5 miles – Caffi Ty Winsh Café, Caernarfon</li>
-          <li>31.5 miles - Llofft, Y Felinheli</li>
-          <li>32 miles – The Swellies, Y Felinheli</li>
-        </ul>
+
 <div class="cafe-card">
           <h5>Cafés En-Route:</h5>
 
           <div class="cafe-entry">
             <p class="cafe-name">
-             <span>Chambers Coffee House</span>
+             <span>Wharfe View Tea Room</span>
 
               <a
             href="https://www.google.co.uk/maps/place/Chambers+Coffee+House/@54.3096066,-1.8287549,19z/data=!3m2!4b1!5s0x487c1bbf35a76789:0x9859c97d8a84da97!4m6!3m5!1s0x487c1bbf3510a2e9:0x9fd807bc69b8ab91!8m2!3d54.3096066!4d-1.8287549!16s%2Fg%2F1vvyxm_1?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
@@ -447,58 +441,162 @@ const routeExtras = {
           </a>
         </p>
 
-        <p>📍 Leyburn</p>
-        <p>🚴 Distance: 18.5 miles</p>
+        <p>📍 Burnsall</p>
+        <p>🚴 Distance: 10 miles</p>
+      </div>
+      <div class="cafe-entry">
+            <p class="cafe-name">
+             <span>Wildings Riverside Cafe</span>
+
+              <a
+            href="https://www.google.co.uk/maps/place/Wildings+Riverside+Cafe/@54.0832896,-1.7567267,119a,75y,140.15h,76.96t/data=!3m10!1e1!3m8!1sdErh5xx_tSfr57Z0DCg2KA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D13.040000000000006%26panoid%3DdErh5xx_tSfr57Z0DCg2KA%26yaw%3D140.15!7i16384!8i8192!9m2!1b1!2i37!4m7!3m6!1s0x487c00bc805f3789:0xee0fa92744435b15!8m2!3d54.0854999!4d-1.7603356!10e5!16s%2Fg%2F1tkrlb_x?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener"
+            class="cafe-link"
+          >
+            View Map
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </p>
+
+        <p>📍 Pateley Bridge</p>
+        <p>🚴 Distance: 20.5 miles</p>
       </div>
     </div>
       `.trim(),
       gallery: `
 <div class="thumbnail-gallery">
-          <img src="pictures/CaernarfonCastle.jpg" alt="Caernarfon" onclick="openLightbox(this)">
-          <img src="pictures/MenaiBridge.jpg" alt="Menai Bridge" onclick="openLightbox(this)">
-          <img src="pictures/BeaumarisCastle.jpg" alt="Beaumaris" onclick="openLightbox(this)">
+          <img src="pictures/Burnsall.jpeg" alt="Burnsall" onclick="openLightbox(this)">
+          <img src="pictures/Fountains Abbey.jpg" alt="Fountains Abbey" onclick="openLightbox(this)">
+    
         </div>
       `.trim(),
     },
     "Medium Route": {
       cafes: `
-<span>Possible cafe stops are:</span>
-        <ul>
-          <li>19.5 miles – Pant Du Vineyard and Cafe, Penygroes</li>
-          <li>27.5 miles – Caffi Ty Winsh Café, Caernarfon</li>
-          <li>31.5 miles - Llofft, Y Felinheli</li>
-          <li>32 miles – The Swellies, Y Felinheli</li>
-        </ul>
+<div class="cafe-card">
+          <h5>Cafés En-Route:</h5>
+
+          <div class="cafe-entry">
+            <p class="cafe-name">
+             <span>Wharfe View Tea Room</span>
+
+              <a
+            href="https://www.google.co.uk/maps/place/Chambers+Coffee+House/@54.3096066,-1.8287549,19z/data=!3m2!4b1!5s0x487c1bbf35a76789:0x9859c97d8a84da97!4m6!3m5!1s0x487c1bbf3510a2e9:0x9fd807bc69b8ab91!8m2!3d54.3096066!4d-1.8287549!16s%2Fg%2F1vvyxm_1?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener"
+            class="cafe-link"
+          >
+            View Map
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </p>
+
+        <p>📍 Burnsall</p>
+        <p>🚴 Distance: 10 miles</p>
+      </div>
+      <div class="cafe-entry">
+            <p class="cafe-name">
+             <span>Wildings Riverside Cafe</span>
+
+              <a
+            href="https://www.google.co.uk/maps/place/Wildings+Riverside+Cafe/@54.0832896,-1.7567267,119a,75y,140.15h,76.96t/data=!3m10!1e1!3m8!1sdErh5xx_tSfr57Z0DCg2KA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D13.040000000000006%26panoid%3DdErh5xx_tSfr57Z0DCg2KA%26yaw%3D140.15!7i16384!8i8192!9m2!1b1!2i37!4m7!3m6!1s0x487c00bc805f3789:0xee0fa92744435b15!8m2!3d54.0854999!4d-1.7603356!10e5!16s%2Fg%2F1tkrlb_x?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener"
+            class="cafe-link"
+          >
+            View Map
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </p>
+
+        <p>📍 Pateley Bridge</p>
+        <p>🚴 Distance: 20.5 miles</p>
+      </div>
+       <div class="cafe-entry">
+            <p class="cafe-name">
+             <span>Fountains Abbey Visitor Centre</span>
+
+              <a
+            href="https://www.google.co.uk/maps/place/Visitor+Centre+(Fountains+Abbey)/@54.1126886,-1.5849399,17z/data=!4m6!3m5!1s0x487eab77375930a7:0xe137ec9c5ab624a7!8m2!3d54.1130725!4d-1.5846447!16s%2Fg%2F1ptz164l4?entry=tts&g_ep=EgoyMDI2MTAyMC4wIPu8ASoASAFQAw%3D%3D&skid=fe1aa1f1-0e89-486c-a3dc-41d232365f27"
+            target="_blank"
+            rel="noopener"
+            class="cafe-link"
+          >
+            View Map
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </p>
+
+        <p>📍 Fountains Abbey</p>
+        <p>🚴 Distance: 32.5 miles</p>
+      </div>
+    </div>
       `.trim(),
       gallery: `
 <div class="thumbnail-gallery">
-          <img src="pictures/CaernarfonCastle.jpg" alt="Caernarfon" onclick="openLightbox(this)">
-          <img src="pictures/BeaumarisCastle.jpg" alt="Beaumaris" onclick="openLightbox(this)">
-          <img src="pictures/TrwynPenmonPoint.jpg" alt="Trwyn Penmon Point" onclick="openLightbox(this)">
+          <img src="pictures/Burnsall.jpeg" alt="Burnsall" onclick="openLightbox(this)">
+          <img src="pictures/Fountains Abbey.jpg" alt="Fountains Abbey" onclick="openLightbox(this)">
+          <img src="pictures/Ripon Cathedral.jpeg" alt="Ripon Cathedral" onclick="openLightbox(this)">
         </div>
       `.trim(),
     },
     "Long Route": {
       cafes: `
-<span>Possible cafe stops are:</span>
-        <ul>
-          <li>19.5 miles – Pant Du Vineyard and Cafe, Penygroes</li>
-          <li>30.5 miles – Caffi Ty Winsh Café, Caernarfon</li>
-          <li>34.5 miles - Llofft, Y Felinheli</li>
-          <li>35 miles – The Swellies, Y Felinheli</li>
-        </ul>
+
+        
+        <div class="cafe-card">
+          <h5>Cafés En-Route:</h5>
+
+          <div class="cafe-entry">
+            <p class="cafe-name">
+             <span>Wharfe View Tea Room</span>
+
+              <a
+            href="https://www.google.co.uk/maps/place/Chambers+Coffee+House/@54.3096066,-1.8287549,19z/data=!3m2!4b1!5s0x487c1bbf35a76789:0x9859c97d8a84da97!4m6!3m5!1s0x487c1bbf3510a2e9:0x9fd807bc69b8ab91!8m2!3d54.3096066!4d-1.8287549!16s%2Fg%2F1vvyxm_1?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener"
+            class="cafe-link"
+          >
+            View Map
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </p>
+
+        <p>📍 Burnsall</p>
+        <p>🚴 Distance: 17 miles</p>
+      </div>
+       <div class="cafe-entry">
+            <p class="cafe-name">
+             <span>Fountains Abbey Visitor Centre</span>
+
+              <a
+            href="https://www.google.co.uk/maps/place/Visitor+Centre+(Fountains+Abbey)/@54.1126886,-1.5849399,17z/data=!4m6!3m5!1s0x487eab77375930a7:0xe137ec9c5ab624a7!8m2!3d54.1130725!4d-1.5846447!16s%2Fg%2F1ptz164l4?entry=tts&g_ep=EgoyMDI2MTAyMC4wIPu8ASoASAFQAw%3D%3D&skid=fe1aa1f1-0e89-486c-a3dc-41d232365f27"
+            target="_blank"
+            rel="noopener"
+            class="cafe-link"
+          >
+            View Map
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </p>
+
+        <p>📍 Fountains Abbey</p>
+        <p>🚴 Distance: 39 miles</p>
+      </div>
+    </div>
       `.trim(),
       gallery: `
 <div class="thumbnail-gallery">
-          <img src="pictures/CaernarfonCastle.jpg" alt="Caernarfon" onclick="openLightbox(this)">
-          <img src="pictures/BeaumarisCastle.jpg" alt="Beaumaris" onclick="openLightbox(this)">
-          <img src="pictures/TrwynPenmonPoint.jpg" alt="Trwyn Penmon Point" onclick="openLightbox(this)">
+          <img src="pictures/Bolton Abbey.jpeg" alt="Bolton Abbey" onclick="openLightbox(this)">
+          <img src="pictures/Bardon Tower.jpg" alt="Bardon Tower" onclick="openLightbox(this)">
+          <img src="pictures/Burnsall.jpeg" alt="Burnsall" onclick="openLightbox(this)">
         </div>
       `.trim(),
     },
   },
   4: {
-    "Short Route": {
+    "Bonus Route": {
       cafes: `
 <span>Possible cafe stops are:</span>
         <ul>
@@ -513,42 +611,6 @@ const routeExtras = {
           <img src="pictures/MenaiBridge.jpg" alt="Menai Bridge" onclick="openLightbox(this)">
           <img src="pictures/Conwy.jpg" alt="Conwy" onclick="openLightbox(this)">
           <img src="pictures/GreatOrme.jpg" alt="Great Orme" onclick="openLightbox(this)">
-        </div>
-      `.trim(),
-    },
-    "Medium Route": {
-      cafes: `
-<span>Possible cafe stops are:</span>
-        <ul>
-          <li>15 miles – Aber Falls Distillery Visitor Centre & Cafe, Abergwyngregyn</li>
-          <li>20.8 miles – Penbakes Bakery and Cafe/Bistro, Penmaenmawr</li>
-          <li>26 miles – Conwy</li>
-          <li>35 miles – Llandudno</li>
-        </ul>
-      `.trim(),
-      gallery: `
-<div class="thumbnail-gallery">
-          <img src="pictures/MenaiBridge.jpg" alt="Menai Bridge" onclick="openLightbox(this)">
-          <img src="pictures/Conwy.jpg" alt="Conwy" onclick="openLightbox(this)">
-          <img src="pictures/GreatOrme.jpg" alt="Great Orme" onclick="openLightbox(this)">
-        </div>
-      `.trim(),
-    },
-    "Long Route": {
-      cafes: `
-<span>Possible cafe stops are:</span>
-        <ul>
-          <li>15 miles – Aber Falls Distillery Visitor Centre & Cafe, Abergwyngregyn</li>
-          <li>20.8 miles – Penbakes Bakery and Cafe/Bistro, Penmaenmawr</li>
-          <li>26 miles – Conwy</li>
-          <li>36 miles – Llandudno</li>
-        </ul>
-      `.trim(),
-      gallery: `
-<div class="thumbnail-gallery">
-          <img src="pictures/MenaiBridge.jpg" alt="Menai Bridge" onclick="openLightbox(this)">
-          <img src="pictures/Conwy.jpg" alt="Conwy" onclick="openLightbox(this)">
-          <img src="pictures/GreatOrmeCableCar.jpg" alt="Great Orme cable car station" onclick="openLightbox(this)">
         </div>
       `.trim(),
     },
