@@ -88,12 +88,20 @@
   ],
   "4": [
     {
-      "img": "pictures/Day4-Loop.png",
-      "name": "Bonus Route",
+      "img": "pictures/Day4-Loop1.png",
+      "name": "Bonus Loop 1",
       "description": [
         "For those riders who want to extend their riding in this area, this is an extra loop for  heading East over flatter terrain."
       ],
       "link": "https://ridewithgps.com/routes/55336498?via=Qyz_JJBo64L1OI84xoYs8Q"
+    },
+    {
+      "img": "pictures/Day4-Loop2.png",
+      "name": "Bonus Loop 2",
+      "description": [
+        "For those riders who want to extend their riding in this area, this is an extra loop for  heading West over hillier terrain."
+      ],
+      "link": "https://ridewithgps.com/routes/57693278?via=QXr__5xR6JDGhrTnSRITQA"
     }
   ]
 }

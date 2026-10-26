@@ -596,21 +596,69 @@ const routeExtras = {
     },
   },
   4: {
-    "Bonus Route": {
+    "Bonus Loop 1": {
       cafes: `
-<span>Possible cafe stops are:</span>
-        <ul>
-          <li>15 miles – Aber Falls Distillery Visitor Centre & Cafe, Abergwyngregyn</li>
-          <li>20.8 miles – Penbakes Bakery and Cafe/Bistro, Penmaenmawr</li>
-          <li>26 miles – Conwy</li>
-          <li>30.5 miles – Llandudno</li>
-        </ul>
+<div class="cafe-card">
+          <h5>Cafés En-Route:</h5>
+
+          <div class="cafe-entry">
+            <p class="cafe-name">
+             <span>Plenty Boroughbridge</span>
+
+              <a
+            href="https://www.google.co.uk/maps/place/Plenty+Boroughbridge/@54.0937912,-1.3972162,17.25z/data=!4m6!3m5!1s0x487eb33cbbed2cab:0x35c866f85758362f!8m2!3d54.0942107!4d-1.3956901!16s%2Fg%2F11d_wmlj3w?entry=tts&g_ep=EgoyMDI2MTAyMC4wIPu8ASoASAFQAw%3D%3D&skid=fae98631-620f-40c3-8556-2c141a29ae87"
+            target="_blank"
+            rel="noopener"
+            class="cafe-link"
+          >
+            View Map
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </p>
+
+        <p>📍 Boroughbridge</p>
+        <p>🚴 Distance: 22.5 miles</p>
+      </div>
+       
+    </div>
       `.trim(),
       gallery: `
-<div class="thumbnail-gallery">
-          <img src="pictures/MenaiBridge.jpg" alt="Menai Bridge" onclick="openLightbox(this)">
-          <img src="pictures/Conwy.jpg" alt="Conwy" onclick="openLightbox(this)">
-          <img src="pictures/GreatOrme.jpg" alt="Great Orme" onclick="openLightbox(this)">
+        <div class="thumbnail-gallery">
+          <img src="pictures/Ripon Cathedral.jpeg" alt="Ripon Cathedral" onclick="openLightbox(this)">
+          
+        </div>
+      `.trim(),
+    },
+    "Bonus Loop 2": {
+      cafes: `
+<div class="cafe-card">
+          <h5>Cafés En-Route:</h5>
+
+          <div class="cafe-entry">
+            <p class="cafe-name">
+             <span>Mill Race Teashop</span>
+
+              <a
+            href="https://www.google.co.uk/maps/place/Mill+Race+Teashop/@54.2923282,-1.9907126,16z/data=!4m6!3m5!1s0x487c1174c0f09401:0x297ca7c538196a0a!8m2!3d54.2931899!4d-1.9846237!16s%2Fg%2F1tczk0rw?entry=tts&g_ep=EgoyMDI2MTAxOS4wIPu8ASoASAFQAw%3D%3D&skid=1e459acf-5f2b-481a-8673-5085cacb74e0"
+            target="_blank"
+            rel="noopener"
+            class="cafe-link"
+          >
+            View Map
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </p>
+
+        <p>📍 Aysgarth</p>
+        <p>🚴 Distance: 17 miles</p>
+      </div>
+       
+    </div>
+      `.trim(),
+      gallery: `
+        <div class="thumbnail-gallery">
+          <img src="pictures/Aysgarth Falls.jpeg" alt="Aysgarth Falls" onclick="openLightbox(this)">
+         
         </div>
       `.trim(),
     },
