@@ -65,7 +65,10 @@
 }
 
 .hotel-results {
-  margin: 0 1rem 1rem;
+  width: calc(100% - 2rem);
+  max-width: 1100px;
+  box-sizing: border-box;
+  margin: 0 auto 1rem;
   overflow-x: auto;
 }
 

@@ -12,12 +12,23 @@ select:focus {
 /* Core table container */
 table {
   width: 100%;
+  table-layout: fixed;
   margin: 0 auto;
   border-collapse: collapse;
   background-color: #fff;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#tableContainer th:first-child,
+#tableContainer td:first-child {
+  width: 22%;
+}
+
+#tableContainer th:not(:first-child),
+#tableContainer td:not(:first-child) {
+  width: 26%;
 }
 
 /* Shared cell styling */
