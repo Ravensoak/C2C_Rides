@@ -1,10 +1,10 @@
 [
   {
     "Name": "David Olney",
-    "Starter": "Creamy Garlic Mushrooms, Sourdough bread - £8.50",
-    "Main": "Cheese \u0026 Potato Pie with chips, sticky red cabbage, gravy - £17.50",
+    "Starter": "Creamy Garlic Mushrooms, Sourdough bread - \u00A38.50",
+    "Main": "Cheese \u0026 Potato Pie with chips, sticky red cabbage, gravy - \u00A317.50",
     "Dessert": "No dessert",
-    "Cost": "£26.00",
+    "Cost": "\u00A326.00",
     "Venue": "venue1"
   },
   {
@@ -12,31 +12,31 @@
     "Starter": "No starter",
     "Main": "Beer battered Cod \u0026 Chips served with chips, mushy peas, lemon wedge \u0026 tartare sauce",
     "Dessert": "Sticky Toffee Pudding with Custard",
-    "Cost": "£25.00",
+    "Cost": "\u00A325.00",
     "Venue": "venue2"
   },
   {
     "Name": "David Olney",
-    "Starter": "Creamy Garlic Mushrooms (V) - Crusty bread \u0026 butter - £8.00",
-    "Main": "Light Bites: Peppered Steak Loaded Fries - With slow cooked steak in a creamy peppercorn sauce - £13.00",
-    "Dessert": "Banoffee Belgian Waffle - Belgian Wafle topped with bananas, signature toffee sauce \u0026 honeycomb ice cream - £7.95",
-    "Cost": "£28.95",
+    "Starter": "Creamy Garlic Mushrooms (V) - Crusty bread \u0026 butter - \u00A38.00",
+    "Main": "Light Bites: Peppered Steak Loaded Fries - With slow cooked steak in a creamy peppercorn sauce - \u00A313.00",
+    "Dessert": "Banoffee Belgian Waffle - Belgian Wafle topped with bananas, signature toffee sauce \u0026 honeycomb ice cream - \u00A37.95",
+    "Cost": "\u00A328.95",
     "Venue": "venue3"
   },
   {
     "Name": "David Olney",
-    "Starter": "Potato Skins (V) – With cheese, garlic sauce and crispy onions - £7.95",
-    "Main": "Steak \u0026 Ale Pie - With chips and vegetables - £18.95",
+    "Starter": "Potato Skins (V) \u2013 With cheese, garlic sauce and crispy onions - \u00A37.95",
+    "Main": "Steak \u0026 Ale Pie - With chips and vegetables - \u00A318.95",
     "Dessert": "No dessert",
-    "Cost": "£26.90",
+    "Cost": "\u00A326.90",
     "Venue": "venue4"
   },
   {
     "Name": "Laurie Peach",
     "Starter": "No starter",
-    "Main": "Steak \u0026 Ale Pie with mash, sticky red cabbage, gravy - £17.50",
-    "Dessert": "Chocolate Brownie, with Ice Cream - £8.50",
-    "Cost": "£26.00",
+    "Main": "Steak \u0026 Ale Pie with mash, sticky red cabbage, gravy - \u00A317.50",
+    "Dessert": "Chocolate Brownie, with Ice Cream - \u00A38.50",
+    "Cost": "\u00A326.00",
     "Venue": "venue1"
   },
   {
@@ -44,63 +44,63 @@
     "Starter": "No starter",
     "Main": "Beer battered Cod \u0026 Chips served with chips, mushy peas, lemon wedge \u0026 tartare sauce",
     "Dessert": "Sticky Toffee Pudding with Custard",
-    "Cost": "£25.00",
+    "Cost": "\u00A325.00",
     "Venue": "venue2"
   },
   {
     "Name": "Laurie Peach",
     "Starter": "No starter",
-    "Main": "Classic Dishes: Beef Lasagne - Dressed leaves, chips \u0026 garlic bread - £15.00",
-    "Dessert": "Lemon Posset - Creamy Lemon dessert with shortbread biscuit and berries - £7.95",
-    "Cost": "£22.95",
+    "Main": "Classic Dishes: Beef Lasagne - Dressed leaves, chips \u0026 garlic bread - \u00A315.00",
+    "Dessert": "Lemon Posset - Creamy Lemon dessert with shortbread biscuit and berries - \u00A37.95",
+    "Cost": "\u00A322.95",
     "Venue": "venue3"
   },
   {
     "Name": "Laurie Peach",
     "Starter": "No starter",
-    "Main": "Chicken Supreme with Chasseur Sauce - With mashed potato and vegetables - £18.95",
-    "Dessert": "Tiramisu - Coffee, sponge and cream dessert - £6.95",
-    "Cost": "£25.90",
+    "Main": "Chicken Supreme with Chasseur Sauce - With mashed potato and vegetables - \u00A318.95",
+    "Dessert": "Tiramisu - Coffee, sponge and cream dessert - \u00A36.95",
+    "Cost": "\u00A325.90",
     "Venue": "venue4"
   },
   {
     "Name": "Christine Bell",
     "Starter": "No starter",
-    "Main": "Sweet potato roulade with a tomato \u0026 herb sauce, and seasonal veg - £16.50",
+    "Main": "Sweet potato roulade with a tomato \u0026 herb sauce, and seasonal veg - \u00A316.50",
     "Dessert": "No dessert",
-    "Cost": "£16.50",
+    "Cost": "\u00A316.50",
     "Venue": "venue1"
   },
   {
     "Name": "Christine Bell",
-    "Starter": "Chef’s Soup of the Day",
+    "Starter": "Chef\u2019s Soup of the Day",
     "Main": "Tadka Dal (Red Lentil Curry) A flavorful and hearty dish, made with red lentils, simmered in mild spices, tempered with onions, garlic and cumin. Served with saffron flavored basmati rice \u0026 Poppadum",
     "Dessert": "No dessert",
-    "Cost": "£25.00",
+    "Cost": "\u00A325.00",
     "Venue": "venue2"
   },
   {
     "Name": "Christine Bell",
     "Starter": "No starter",
-    "Main": "Special Dishes: Pan Fried Salmon - With tomatoes, garlic, chilli \u0026 coriander - £20.00 + Seasonal Side Salad (VG) - £4.50",
+    "Main": "Special Dishes: Pan Fried Salmon - With tomatoes, garlic, chilli \u0026 coriander - \u00A320.00 + Seasonal Side Salad (VG) - \u00A34.50",
     "Dessert": "No dessert",
-    "Cost": "£24.50",
+    "Cost": "\u00A324.50",
     "Venue": "venue3"
   },
   {
     "Name": "Christine Bell",
-    "Starter": "Soup of the Day (V) – With bread and butter - £6.95",
-    "Main": "Thai Green Vegetable Curry (V) - With steamed rice and flatbread - £15.95 + New Potatoes - £4.50, Tenderstem Brocoli \u0026 honeyed carrots - £3.50",
+    "Starter": "Soup of the Day (V) \u2013 With bread and butter - \u00A36.95",
+    "Main": "Thai Green Vegetable Curry (V) - With steamed rice and flatbread - \u00A315.95 + New Potatoes - \u00A34.50, Tenderstem Brocoli \u0026 honeyed carrots - \u00A33.50",
     "Dessert": "No dessert",
-    "Cost": "£30.90",
+    "Cost": "\u00A330.90",
     "Venue": "venue4"
   },
   {
     "Name": "Beverly Smithers",
-    "Starter": "Classic Prawn Cocktail, Marie Rose Sauce, Rye Bread - £11.00",
-    "Main": "Chicken Pie with mash, sticky red cabbage, gravy - £17.50",
+    "Starter": "Classic Prawn Cocktail, Marie Rose Sauce, Rye Bread - \u00A311.00",
+    "Main": "Chicken Pie with mash, sticky red cabbage, gravy - \u00A317.50",
     "Dessert": "No dessert",
-    "Cost": "£28.50",
+    "Cost": "\u00A328.50",
     "Venue": "venue1"
   },
   {
@@ -108,31 +108,31 @@
     "Starter": "Lightly fried whitebait served with burnt lemon \u0026 tartar dip",
     "Main": "Beer battered Cod \u0026 Chips served with chips, mushy peas, lemon wedge \u0026 tartare sauce",
     "Dessert": "No dessert",
-    "Cost": "£25.00",
+    "Cost": "\u00A325.00",
     "Venue": "venue2"
   },
   {
     "Name": "Beverly Smithers",
-    "Starter": "Thai Bass Fishcakes - With sweet chilli \u0026 coriander salad - £8.95",
-    "Main": "Special Dishes: Pan Fried Salmon - With tomatoes, garlic, chilli \u0026 coriander - £20.00",
+    "Starter": "Thai Bass Fishcakes - With sweet chilli \u0026 coriander salad - \u00A38.95",
+    "Main": "Special Dishes: Pan Fried Salmon - With tomatoes, garlic, chilli \u0026 coriander - \u00A320.00",
     "Dessert": "No dessert",
-    "Cost": "£28.95",
+    "Cost": "\u00A328.95",
     "Venue": "venue3"
   },
   {
     "Name": "Beverly Smithers",
-    "Starter": "Pheasant \u0026 Mushroom Pate - With toasted sourdough - £8.95",
-    "Main": "Cod \u0026 Lemon Fishcakes - With pea and bacon salad - £18.95 + Tenderstem Brocoli \u0026 honeyed carrots - £3.50",
-    "Dessert": "Coconut \u0026 Vanilla Panna Cotta - With pineapple salsa - £7.95",
-    "Cost": "£39.35",
+    "Starter": "Pheasant \u0026 Mushroom Pate - With toasted sourdough - \u00A38.95",
+    "Main": "Cod \u0026 Lemon Fishcakes - With pea and bacon salad - \u00A318.95 + Tenderstem Brocoli \u0026 honeyed carrots - \u00A33.50",
+    "Dessert": "Coconut \u0026 Vanilla Panna Cotta - With pineapple salsa - \u00A37.95",
+    "Cost": "\u00A339.35",
     "Venue": "venue4"
   },
   {
     "Name": "Janice Clowes ",
-    "Starter": "Hummus, flatbread, and olives - £7.50",
-    "Main": "Steak \u0026 Ale Pie with mash, sticky red cabbage, gravy - £17.50",
+    "Starter": "Hummus, flatbread, and olives - \u00A37.50",
+    "Main": "Steak \u0026 Ale Pie with mash, sticky red cabbage, gravy - \u00A317.50",
     "Dessert": "No dessert",
-    "Cost": "£25.00",
+    "Cost": "\u00A325.00",
     "Venue": "venue1"
   },
   {
@@ -140,23 +140,23 @@
     "Starter": "No starter",
     "Main": "Seafood Tagliatelle simmered in Bisque with prawns, squids \u0026 mussels served with lemon, Urfa Chilli, chives \u0026 Parmesan",
     "Dessert": "Sticky Toffee Pudding with Custard",
-    "Cost": "£25.00",
+    "Cost": "\u00A325.00",
     "Venue": "venue2"
   },
   {
     "Name": "Janice Clowes ",
-    "Starter": "Thai Bass Fishcakes - With sweet chilli \u0026 coriander salad - £8.95",
-    "Main": "Light Bites: Peppered Steak Loaded Fries - With slow cooked steak in a creamy peppercorn sauce - £13.00",
+    "Starter": "Thai Bass Fishcakes - With sweet chilli \u0026 coriander salad - \u00A38.95",
+    "Main": "Light Bites: Peppered Steak Loaded Fries - With slow cooked steak in a creamy peppercorn sauce - \u00A313.00",
     "Dessert": "No dessert",
-    "Cost": "£21.95",
+    "Cost": "\u00A321.95",
     "Venue": "venue3"
   },
   {
     "Name": "Janice Clowes ",
-    "Starter": "Chicken Caesar Croquettes - With salad and Parmesan - £7.95",
-    "Main": "Lamb Hot Pot Pie \u0026 Mint Gravy - With mashed potato and vegetables - £18.95",
-    "Dessert": "Rhubarb \u0026 Stem Ginger Crumble (V) - With custard - £7.95",
-    "Cost": "£34.85",
+    "Starter": "Chicken Caesar Croquettes - With salad and Parmesan - \u00A37.95",
+    "Main": "Lamb Hot Pot Pie \u0026 Mint Gravy - With mashed potato and vegetables - \u00A318.95",
+    "Dessert": "Rhubarb \u0026 Stem Ginger Crumble (V) - With custard - \u00A37.95",
+    "Cost": "\u00A334.85",
     "Venue": "venue4"
   },
   {
@@ -164,7 +164,7 @@
     "Starter": "No starter",
     "Main": "No main",
     "Dessert": "No dessert",
-    "Cost": "£0.00",
+    "Cost": "\u00A30.00",
     "Venue": "venue1"
   },
   {
@@ -172,23 +172,23 @@
     "Starter": "No starter",
     "Main": "Beer battered Cod \u0026 Chips served with chips, mushy peas, lemon wedge \u0026 tartare sauce",
     "Dessert": "Cheesecake with Mix Berries Compote",
-    "Cost": "£25.00",
+    "Cost": "\u00A325.00",
     "Venue": "venue2"
   },
   {
     "Name": "Roy clarke",
     "Starter": "No starter",
-    "Main": "Classic Dishes: Nanhoron Tikka Curry - Chicken, Served with rice, naan, mango chutney - £16.00",
-    "Dessert": "Lemon Posset - Creamy Lemon dessert with shortbread biscuit and berries - £7.95",
-    "Cost": "£23.95",
+    "Main": "Classic Dishes: Nanhoron Tikka Curry - Chicken, Served with rice, naan, mango chutney - \u00A316.00",
+    "Dessert": "Lemon Posset - Creamy Lemon dessert with shortbread biscuit and berries - \u00A37.95",
+    "Cost": "\u00A323.95",
     "Venue": "venue3"
   },
   {
     "Name": "Roy clarke",
     "Starter": "No starter",
-    "Main": "Lamb Hot Pot Pie \u0026 Mint Gravy - With chips and vegetables - £18.95",
-    "Dessert": "Rhubarb \u0026 Stem Ginger Crumble (V) - With vanilla ice cream - £7.95",
-    "Cost": "£26.90",
+    "Main": "Lamb Hot Pot Pie \u0026 Mint Gravy - With chips and vegetables - \u00A318.95",
+    "Dessert": "Rhubarb \u0026 Stem Ginger Crumble (V) - With vanilla ice cream - \u00A37.95",
+    "Cost": "\u00A326.90",
     "Venue": "venue4"
   },
   {
@@ -196,7 +196,7 @@
     "Starter": "No starter",
     "Main": "No main",
     "Dessert": "No dessert",
-    "Cost": "£0.00",
+    "Cost": "\u00A30.00",
     "Venue": "venue1"
   },
   {
@@ -204,63 +204,63 @@
     "Starter": "No starter",
     "Main": "Beer battered Cod \u0026 Chips served with chips, mushy peas, lemon wedge \u0026 tartare sauce",
     "Dessert": "Cheesecake with Mix Berries Compote",
-    "Cost": "£25.00",
+    "Cost": "\u00A325.00",
     "Venue": "venue2"
   },
   {
     "Name": "Theresa Jennings",
     "Starter": "No starter",
-    "Main": "Classic Dishes: Steak \u0026 Local Ale Pie - With puff pastry top \u0026 served with peas and chips - £16.00",
-    "Dessert": "Lemon Posset - Creamy Lemon dessert with shortbread biscuit and berries - £7.95",
-    "Cost": "£23.95",
+    "Main": "Classic Dishes: Steak \u0026 Local Ale Pie - With puff pastry top \u0026 served with peas and chips - \u00A316.00",
+    "Dessert": "Lemon Posset - Creamy Lemon dessert with shortbread biscuit and berries - \u00A37.95",
+    "Cost": "\u00A323.95",
     "Venue": "venue3"
   },
   {
     "Name": "Theresa Jennings",
     "Starter": "No starter",
-    "Main": "Cod \u0026 Lemon Fishcakes - With pea and bacon salad - £18.95",
-    "Dessert": "Rhubarb \u0026 Stem Ginger Crumble (V) - With vanilla ice cream - £7.95",
-    "Cost": "£26.90",
+    "Main": "Cod \u0026 Lemon Fishcakes - With pea and bacon salad - \u00A318.95",
+    "Dessert": "Rhubarb \u0026 Stem Ginger Crumble (V) - With vanilla ice cream - \u00A37.95",
+    "Cost": "\u00A326.90",
     "Venue": "venue4"
   },
   {
     "Name": "Ryan Lovatt",
-    "Starter": "Creamy Garlic Mushrooms, Sourdough bread - £8.50",
-    "Main": "Homemade beef lasagne, Garlic bread - £18.00",
+    "Starter": "Creamy Garlic Mushrooms, Sourdough bread - \u00A38.50",
+    "Main": "Homemade beef lasagne, Garlic bread - \u00A318.00",
     "Dessert": "No dessert",
-    "Cost": "£26.50",
+    "Cost": "\u00A326.50",
     "Venue": "venue1"
   },
   {
     "Name": "Ryan Lovatt",
-    "Starter": "Chef’s Soup of the Day",
+    "Starter": "Chef\u2019s Soup of the Day",
     "Main": "Butter chicken in a rich \u0026 silky makhani sauce served with saffron flavored basmati rice \u0026 poppadum",
     "Dessert": "Cheesecake with Mix Berries Compote",
-    "Cost": "£30.00",
+    "Cost": "\u00A330.00",
     "Venue": "venue2"
   },
   {
     "Name": "Ryan Lovatt",
-    "Starter": "Creamy Garlic Mushrooms (V) - Crusty bread \u0026 butter - £8.00",
-    "Main": "Classic Dishes: House Burger - Double beef, cheese, pickles, lettuce, burger sauce, coleslaw, hand-cut chips - £15.00",
+    "Starter": "Creamy Garlic Mushrooms (V) - Crusty bread \u0026 butter - \u00A38.00",
+    "Main": "Classic Dishes: House Burger - Double beef, cheese, pickles, lettuce, burger sauce, coleslaw, hand-cut chips - \u00A315.00",
     "Dessert": "No dessert",
-    "Cost": "£23.00",
+    "Cost": "\u00A323.00",
     "Venue": "venue3"
   },
   {
     "Name": "Ryan Lovatt",
-    "Starter": "Pheasant \u0026 Mushroom Pate - With toasted sourdough - £8.95",
-    "Main": "Steak \u0026 Ale Pie - With mashed potato and vegetables - £18.95 + Onion Rings - £4.50",
+    "Starter": "Pheasant \u0026 Mushroom Pate - With toasted sourdough - \u00A38.95",
+    "Main": "Steak \u0026 Ale Pie - With mashed potato and vegetables - \u00A318.95 + Onion Rings - \u00A34.50",
     "Dessert": "No dessert",
-    "Cost": "£32.40",
+    "Cost": "\u00A332.40",
     "Venue": "venue4"
   },
   {
     "Name": "Anthony Heaney",
     "Starter": "No starter",
-    "Main": "Steak Rump served with tomato, mushroom, chips, garlic butter sauce - £24.00",
-    "Dessert": "Sticky Toffee Pudding with Custard - £9.00",
-    "Cost": "£33.00",
+    "Main": "Steak Rump served with tomato, mushroom, chips, garlic butter sauce - \u00A324.00",
+    "Dessert": "Sticky Toffee Pudding with Custard - \u00A39.00",
+    "Cost": "\u00A333.00",
     "Venue": "venue1"
   },
   {
@@ -268,31 +268,31 @@
     "Starter": "No starter",
     "Main": "Beer battered Cod \u0026 Chips served with chips, mushy peas, lemon wedge \u0026 tartare sauce",
     "Dessert": "Cheesecake with Mix Berries Compote",
-    "Cost": "£25.00",
+    "Cost": "\u00A325.00",
     "Venue": "venue2"
   },
   {
     "Name": "Anthony Heaney",
-    "Starter": "Creamy Garlic Mushrooms (V) - Crusty bread \u0026 butter - £8.00",
-    "Main": "Special Dishes: Chicken Supreme - stuffed with bacon \u0026 cheese, wrapped in parma ham served on a bed of creamed leeks - £19.00",
-    "Dessert": "Eton Mess - Crushed meringue, mixed fruit \u0026 fresh cream - £7.95",
-    "Cost": "£34.95",
+    "Starter": "Creamy Garlic Mushrooms (V) - Crusty bread \u0026 butter - \u00A38.00",
+    "Main": "Special Dishes: Chicken Supreme - stuffed with bacon \u0026 cheese, wrapped in parma ham served on a bed of creamed leeks - \u00A319.00",
+    "Dessert": "Eton Mess - Crushed meringue, mixed fruit \u0026 fresh cream - \u00A37.95",
+    "Cost": "\u00A334.95",
     "Venue": "venue3"
   },
   {
     "Name": "Anthony Heaney",
-    "Starter": "Potato Skins (V) – With cheese, garlic sauce and crispy onions - £7.95",
-    "Main": "Chicken Supreme with Chasseur Sauce - With mashed potato and vegetables - £18.95 + Jacket Potato - £4.50",
-    "Dessert": "Rhubarb \u0026 Stem Ginger Crumble (V) - With custard - £7.95",
-    "Cost": "£39.35",
+    "Starter": "Potato Skins (V) \u2013 With cheese, garlic sauce and crispy onions - \u00A37.95",
+    "Main": "Chicken Supreme with Chasseur Sauce - With mashed potato and vegetables - \u00A318.95 + Jacket Potato - \u00A34.50",
+    "Dessert": "Rhubarb \u0026 Stem Ginger Crumble (V) - With custard - \u00A37.95",
+    "Cost": "\u00A339.35",
     "Venue": "venue4"
   },
   {
     "Name": "Jenny Heaney",
     "Starter": "No starter",
-    "Main": "Steak \u0026 Ale Pie with chips, sticky red cabbage, gravy - £17.50",
+    "Main": "Steak \u0026 Ale Pie with chips, sticky red cabbage, gravy - \u00A317.50",
     "Dessert": "No dessert",
-    "Cost": "£17.50",
+    "Cost": "\u00A317.50",
     "Venue": "venue1"
   },
   {
@@ -300,31 +300,31 @@
     "Starter": "No starter",
     "Main": "Beer battered Cod \u0026 Chips served with chips, mushy peas, lemon wedge \u0026 tartare sauce",
     "Dessert": "Cheesecake with Mix Berries Compote",
-    "Cost": "£25.00",
+    "Cost": "\u00A325.00",
     "Venue": "venue2"
   },
   {
     "Name": "Jenny Heaney",
     "Starter": "No starter",
-    "Main": "Classic Dishes: Beef Lasagne - Dressed leaves, chips \u0026 garlic bread - £15.00",
+    "Main": "Classic Dishes: Beef Lasagne - Dressed leaves, chips \u0026 garlic bread - \u00A315.00",
     "Dessert": "No dessert",
-    "Cost": "£15.00",
+    "Cost": "\u00A315.00",
     "Venue": "venue3"
   },
   {
     "Name": "Jenny Heaney",
     "Starter": "No starter",
-    "Main": "Scampi \u0026 Chips - With mushy peas and tartare sauce - £17.95",
-    "Dessert": "Tiramisu - Coffee, sponge and cream dessert - £6.95",
-    "Cost": "£24.90",
+    "Main": "Scampi \u0026 Chips - With mushy peas and tartare sauce - \u00A317.95",
+    "Dessert": "Tiramisu - Coffee, sponge and cream dessert - \u00A36.95",
+    "Cost": "\u00A324.90",
     "Venue": "venue4"
   },
   {
     "Name": "Ian Ferrer ",
-    "Starter": "Creamy Garlic Mushrooms, Sourdough bread - £8.50",
-    "Main": "Steak Rump served with tomato, mushroom, chips, peppercorn sauce - £24.00",
-    "Dessert": "Sweet Potato cake, caramel sauce - £8.50",
-    "Cost": "£41.00",
+    "Starter": "Creamy Garlic Mushrooms, Sourdough bread - \u00A38.50",
+    "Main": "Steak Rump served with tomato, mushroom, chips, peppercorn sauce - \u00A324.00",
+    "Dessert": "Sweet Potato cake, caramel sauce - \u00A38.50",
+    "Cost": "\u00A341.00",
     "Venue": "venue1"
   },
   {
@@ -332,31 +332,31 @@
     "Starter": "Lightly fried whitebait served with burnt lemon \u0026 tartar dip",
     "Main": "Seafood Tagliatelle simmered in Bisque with prawns, squids \u0026 mussels served with lemon, Urfa Chilli, chives \u0026 Parmesan",
     "Dessert": "No dessert",
-    "Cost": "£25.00",
+    "Cost": "\u00A325.00",
     "Venue": "venue2"
   },
   {
     "Name": "Ian Ferrer ",
-    "Starter": "Shredded Duck Bon Bons - Hoisin mayo \u0026 sticky dressing - £9.00",
-    "Main": "Classic Dishes: Nanhoron Tikka Curry - Chicken, Served with rice, naan, mango chutney - £16.00",
+    "Starter": "Shredded Duck Bon Bons - Hoisin mayo \u0026 sticky dressing - \u00A39.00",
+    "Main": "Classic Dishes: Nanhoron Tikka Curry - Chicken, Served with rice, naan, mango chutney - \u00A316.00",
     "Dessert": "No dessert",
-    "Cost": "£25.00",
+    "Cost": "\u00A325.00",
     "Venue": "venue3"
   },
   {
     "Name": "Ian Ferrer ",
-    "Starter": "Spicy Meatballs – With a roast tomato sauce, Parmesan and rocket - £8.95",
-    "Main": "The Bull’s Buffalo Chicken Burger - With smoked cheese, ranch slaw and fries - £17.95 + House Slaw - £3.50",
-    "Dessert": "Penderyn Whisky \u0026 Chocolate Basque Cheesecake - With Chantilly cream - £7.95",
-    "Cost": "£38.35",
+    "Starter": "Spicy Meatballs \u2013 With a roast tomato sauce, Parmesan and rocket - \u00A38.95",
+    "Main": "The Bull\u2019s Buffalo Chicken Burger - With smoked cheese, ranch slaw and fries - \u00A317.95 + House Slaw - \u00A33.50",
+    "Dessert": "Penderyn Whisky \u0026 Chocolate Basque Cheesecake - With Chantilly cream - \u00A37.95",
+    "Cost": "\u00A338.35",
     "Venue": "venue4"
   },
   {
     "Name": "Claire Ferrer",
     "Starter": "No starter",
-    "Main": "Homemade beef lasagne, Garlic bread - £18.00",
+    "Main": "Homemade beef lasagne, Garlic bread - \u00A318.00",
     "Dessert": "No dessert",
-    "Cost": "£18.00",
+    "Cost": "\u00A318.00",
     "Venue": "venue1"
   },
   {
@@ -364,31 +364,31 @@
     "Starter": "Lightly fried whitebait served with burnt lemon \u0026 tartar dip",
     "Main": "Seafood Tagliatelle simmered in Bisque with prawns, squids \u0026 mussels served with lemon, Urfa Chilli, chives \u0026 Parmesan",
     "Dessert": "No dessert",
-    "Cost": "£25.00",
+    "Cost": "\u00A325.00",
     "Venue": "venue2"
   },
   {
     "Name": "Claire Ferrer",
-    "Starter": "Thai Bass Fishcakes - With sweet chilli \u0026 coriander salad - £8.95",
-    "Main": "Special Dishes: Crispy 1/2 Roast Duck - With orange sauce - £22.50",
+    "Starter": "Thai Bass Fishcakes - With sweet chilli \u0026 coriander salad - \u00A38.95",
+    "Main": "Special Dishes: Crispy 1/2 Roast Duck - With orange sauce - \u00A322.50",
     "Dessert": "No dessert",
-    "Cost": "£31.45",
+    "Cost": "\u00A331.45",
     "Venue": "venue3"
   },
   {
     "Name": "Claire Ferrer",
     "Starter": "No starter",
-    "Main": "Oven-Roasted Pheasant \u0026 Black Pudding Bon Bon - With potato fondant, vegetables and whisky sauce - £18.95 + Side Salad - £3.50",
+    "Main": "Oven-Roasted Pheasant \u0026 Black Pudding Bon Bon - With potato fondant, vegetables and whisky sauce - \u00A318.95 + Side Salad - \u00A33.50",
     "Dessert": "No dessert",
-    "Cost": "£22.45",
+    "Cost": "\u00A322.45",
     "Venue": "venue4"
   },
   {
     "Name": "Martyn  Leighton",
-    "Starter": "Creamy Garlic Mushrooms, Sourdough bread - £8.50",
-    "Main": "Steak \u0026 Ale Pie with chips, sticky red cabbage, gravy - £17.50",
+    "Starter": "Creamy Garlic Mushrooms, Sourdough bread - \u00A38.50",
+    "Main": "Steak \u0026 Ale Pie with chips, sticky red cabbage, gravy - \u00A317.50",
     "Dessert": "No dessert",
-    "Cost": "£26.00",
+    "Cost": "\u00A326.00",
     "Venue": "venue1"
   },
   {
@@ -396,31 +396,31 @@
     "Starter": "No starter",
     "Main": "Butter chicken in a rich \u0026 silky makhani sauce served with saffron flavored basmati rice \u0026 poppadum",
     "Dessert": "Sticky Toffee Pudding with Custard",
-    "Cost": "£25.00",
+    "Cost": "\u00A325.00",
     "Venue": "venue2"
   },
   {
     "Name": "Martyn  Leighton",
-    "Starter": "Creamy Garlic Mushrooms (V) - Crusty bread \u0026 butter - £8.00",
-    "Main": "Light Bites: Peppered Steak Loaded Fries - With slow cooked steak in a creamy peppercorn sauce - £13.00",
+    "Starter": "Creamy Garlic Mushrooms (V) - Crusty bread \u0026 butter - \u00A38.00",
+    "Main": "Light Bites: Peppered Steak Loaded Fries - With slow cooked steak in a creamy peppercorn sauce - \u00A313.00",
     "Dessert": "No dessert",
-    "Cost": "£21.00",
+    "Cost": "\u00A321.00",
     "Venue": "venue3"
   },
   {
     "Name": "Martyn  Leighton",
-    "Starter": "Cod \u0026 Lemon Fishcake - With parsley sauce - £8.95",
-    "Main": "Lamb Hot Pot Pie \u0026 Mint Gravy - With chips and vegetables - £18.95",
-    "Dessert": "Tiramisu - Coffee, sponge and cream dessert - £6.95",
-    "Cost": "£34.85",
+    "Starter": "Cod \u0026 Lemon Fishcake - With parsley sauce - \u00A38.95",
+    "Main": "Lamb Hot Pot Pie \u0026 Mint Gravy - With chips and vegetables - \u00A318.95",
+    "Dessert": "Tiramisu - Coffee, sponge and cream dessert - \u00A36.95",
+    "Cost": "\u00A334.85",
     "Venue": "venue4"
   },
   {
     "Name": "Jane Olney",
     "Starter": "No starter",
-    "Main": "Chicken Pie with mash, sticky red cabbage, gravy - £17.50",
+    "Main": "Chicken Pie with mash, sticky red cabbage, gravy - \u00A317.50",
     "Dessert": "No dessert",
-    "Cost": "£17.50",
+    "Cost": "\u00A317.50",
     "Venue": "venue1"
   },
   {
@@ -428,31 +428,31 @@
     "Starter": "No starter",
     "Main": "Beer battered Cod \u0026 Chips served with chips, mushy peas, lemon wedge \u0026 tartare sauce",
     "Dessert": "Sticky Toffee Pudding with Custard",
-    "Cost": "£25.00",
+    "Cost": "\u00A325.00",
     "Venue": "venue2"
   },
   {
     "Name": "Jane Olney",
     "Starter": "No starter",
-    "Main": "Classic Dishes: Hunters Chicken Burger - Crispy chicken, bacon, cheese \u0026 BBQ sauce with coleslaw, hand cut chips - £14.95",
-    "Dessert": "Eton Mess - Crushed meringue, mixed fruit \u0026 fresh cream - £7.95",
-    "Cost": "£22.90",
+    "Main": "Classic Dishes: Hunters Chicken Burger - Crispy chicken, bacon, cheese \u0026 BBQ sauce with coleslaw, hand cut chips - \u00A314.95",
+    "Dessert": "Eton Mess - Crushed meringue, mixed fruit \u0026 fresh cream - \u00A37.95",
+    "Cost": "\u00A322.90",
     "Venue": "venue3"
   },
   {
     "Name": "Jane Olney",
     "Starter": "No starter",
-    "Main": "Cumberland Sausage \u0026 Mash - With vegetables and gravy - £17.95",
-    "Dessert": "Cheese Board - With biscuits, fruit and chutney - £12.95",
-    "Cost": "£30.90",
+    "Main": "Cumberland Sausage \u0026 Mash - With vegetables and gravy - \u00A317.95",
+    "Dessert": "Cheese Board - With biscuits, fruit and chutney - \u00A312.95",
+    "Cost": "\u00A330.90",
     "Venue": "venue4"
   },
   {
     "Name": "Kevin Marriott ",
     "Starter": "No starter",
-    "Main": "Beer battered cod, chips, peas - £18.50",
+    "Main": "Beer battered cod, chips, peas - \u00A318.50",
     "Dessert": "No dessert",
-    "Cost": "£18.50",
+    "Cost": "\u00A318.50",
     "Venue": "venue1"
   },
   {
@@ -460,31 +460,31 @@
     "Starter": "No starter",
     "Main": "Seafood Tagliatelle simmered in Bisque with prawns, squids \u0026 mussels served with lemon, Urfa Chilli, chives \u0026 Parmesan",
     "Dessert": "Sticky Toffee Pudding with Custard",
-    "Cost": "£25.00",
+    "Cost": "\u00A325.00",
     "Venue": "venue2"
   },
   {
     "Name": "Kevin Marriott ",
     "Starter": "No starter",
-    "Main": "Special Dishes: Pan Roasted Wild Local Seabass  - white wine \u0026 mussels sauce - £22.00",
+    "Main": "Special Dishes: Pan Roasted Wild Local Seabass  - white wine \u0026 mussels sauce - \u00A322.00",
     "Dessert": "No dessert",
-    "Cost": "£22.00",
+    "Cost": "\u00A322.00",
     "Venue": "venue3"
   },
   {
     "Name": "Kevin Marriott ",
     "Starter": "No starter",
-    "Main": "Chicken Supreme with Chasseur Sauce - With mashed potato and vegetables - £18.95",
-    "Dessert": "Rhubarb \u0026 Stem Ginger Crumble (V) - With vanilla ice cream - £7.95",
-    "Cost": "£26.90",
+    "Main": "Chicken Supreme with Chasseur Sauce - With mashed potato and vegetables - \u00A318.95",
+    "Dessert": "Rhubarb \u0026 Stem Ginger Crumble (V) - With vanilla ice cream - \u00A37.95",
+    "Cost": "\u00A326.90",
     "Venue": "venue4"
   },
   {
     "Name": "Heather Marriott ",
     "Starter": "No starter",
-    "Main": "Steak \u0026 Ale Pie with chips, sticky red cabbage, gravy - £17.50",
+    "Main": "Steak \u0026 Ale Pie with chips, sticky red cabbage, gravy - \u00A317.50",
     "Dessert": "No dessert",
-    "Cost": "£17.50",
+    "Cost": "\u00A317.50",
     "Venue": "venue1"
   },
   {
@@ -492,31 +492,31 @@
     "Starter": "No starter",
     "Main": "Beer battered Cod \u0026 Chips served with chips, mushy peas, lemon wedge \u0026 tartare sauce",
     "Dessert": "Cheesecake with Mix Berries Compote",
-    "Cost": "£25.00",
+    "Cost": "\u00A325.00",
     "Venue": "venue2"
   },
   {
     "Name": "Heather Marriott ",
     "Starter": "No starter",
-    "Main": "Special Dishes: Pan Roasted Wild Local Seabass  - white wine \u0026 mussels sauce - £22.00",
+    "Main": "Special Dishes: Pan Roasted Wild Local Seabass  - white wine \u0026 mussels sauce - \u00A322.00",
     "Dessert": "No dessert",
-    "Cost": "£22.00",
+    "Cost": "\u00A322.00",
     "Venue": "venue3"
   },
   {
     "Name": "Heather Marriott ",
-    "Starter": "Beetroot Hummus (VG) - With warm flatbread - £7.95",
-    "Main": "Scampi \u0026 Chips - With mushy peas and tartare sauce - £17.95",
-    "Dessert": "Rhubarb \u0026 Stem Ginger Crumble (V) - With vanilla ice cream - £7.95",
-    "Cost": "£33.85",
+    "Starter": "Beetroot Hummus (VG) - With warm flatbread - \u00A37.95",
+    "Main": "Scampi \u0026 Chips - With mushy peas and tartare sauce - \u00A317.95",
+    "Dessert": "Rhubarb \u0026 Stem Ginger Crumble (V) - With vanilla ice cream - \u00A37.95",
+    "Cost": "\u00A333.85",
     "Venue": "venue4"
   },
   {
     "Name": "Paul Nathan",
     "Starter": "No starter",
-    "Main": "Sweet potato roulade with a tomato \u0026 herb sauce, and seasonal veg - £16.50",
-    "Dessert": "Crumble of the week, with custard and pouring cream - £10.50",
-    "Cost": "£27.00",
+    "Main": "Sweet potato roulade with a tomato \u0026 herb sauce, and seasonal veg - \u00A316.50",
+    "Dessert": "Crumble of the week, with custard and pouring cream - \u00A310.50",
+    "Cost": "\u00A327.00",
     "Venue": "venue1"
   },
   {
@@ -524,31 +524,31 @@
     "Starter": "No starter",
     "Main": "Tadka Dal (Red Lentil Curry) A flavorful and hearty dish, made with red lentils, simmered in mild spices, tempered with onions, garlic and cumin. Served with saffron flavored basmati rice \u0026 Poppadum",
     "Dessert": "Sticky Toffee Pudding with Custard",
-    "Cost": "£25.00",
+    "Cost": "\u00A325.00",
     "Venue": "venue2"
   },
   {
     "Name": "Paul Nathan",
     "Starter": "No starter",
-    "Main": "Classic Dishes: Vegetable Lasagne (V) - Dressed leaves, chips \u0026 garlic bread - £15.00",
-    "Dessert": "Double Chocolate Brownie - Warm Brownie served with signature chocolate sauce \u0026 vanilla ice cream - £7.95",
-    "Cost": "£22.95",
+    "Main": "Classic Dishes: Vegetable Lasagne (V) - Dressed leaves, chips \u0026 garlic bread - \u00A315.00",
+    "Dessert": "Double Chocolate Brownie - Warm Brownie served with signature chocolate sauce \u0026 vanilla ice cream - \u00A37.95",
+    "Cost": "\u00A322.95",
     "Venue": "venue3"
   },
   {
     "Name": "Paul Nathan",
     "Starter": "No starter",
-    "Main": "Leek, Mushroom \u0026 Lentil Shepherds Pie (VG) - With mashed potato and vegetables  - £16.95",
-    "Dessert": "Rhubarb \u0026 Stem Ginger Crumble (V) - With vanilla ice cream - £7.95",
-    "Cost": "£24.90",
+    "Main": "Leek, Mushroom \u0026 Lentil Shepherds Pie (VG) - With mashed potato and vegetables  - \u00A316.95",
+    "Dessert": "Rhubarb \u0026 Stem Ginger Crumble (V) - With vanilla ice cream - \u00A37.95",
+    "Cost": "\u00A324.90",
     "Venue": "venue4"
   },
   {
     "Name": "Carole Griffiths",
     "Starter": "No starter",
-    "Main": "Ham \u0026 Leek Pie with mash, sticky red cabbage, gravy - £17.50",
+    "Main": "Ham \u0026 Leek Pie with mash, sticky red cabbage, gravy - \u00A317.50",
     "Dessert": "No dessert",
-    "Cost": "£17.50",
+    "Cost": "\u00A317.50",
     "Venue": "venue1"
   },
   {
@@ -556,31 +556,31 @@
     "Starter": "No starter",
     "Main": "Beer battered Cod \u0026 Chips served with chips, mushy peas, lemon wedge \u0026 tartare sauce",
     "Dessert": "Sticky Toffee Pudding with Custard",
-    "Cost": "£25.00",
+    "Cost": "\u00A325.00",
     "Venue": "venue2"
   },
   {
     "Name": "Carole Griffiths",
     "Starter": "No starter",
-    "Main": "Classic Dishes: Nanhoron Tikka Curry - Chicken, Served with rice, naan, mango chutney - £15.95",
+    "Main": "Classic Dishes: Nanhoron Tikka Curry - Chicken, Served with rice, naan, mango chutney - \u00A315.95",
     "Dessert": "No dessert",
-    "Cost": "£15.95",
+    "Cost": "\u00A315.95",
     "Venue": "venue3"
   },
   {
     "Name": "Carole Griffiths",
     "Starter": "No starter",
-    "Main": "Cumberland Sausage \u0026 Mash - With vegetables and gravy - £17.95",
-    "Dessert": "Rhubarb \u0026 Stem Ginger Crumble (V) - With vanilla ice cream - £7.95",
-    "Cost": "£25.90",
+    "Main": "Cumberland Sausage \u0026 Mash - With vegetables and gravy - \u00A317.95",
+    "Dessert": "Rhubarb \u0026 Stem Ginger Crumble (V) - With vanilla ice cream - \u00A37.95",
+    "Cost": "\u00A325.90",
     "Venue": "venue4"
   },
   {
     "Name": "David Griffiths",
     "Starter": "No starter",
-    "Main": "Ham \u0026 Leek Pie with mash, sticky red cabbage, gravy - £17.50",
+    "Main": "Ham \u0026 Leek Pie with mash, sticky red cabbage, gravy - \u00A317.50",
     "Dessert": "No dessert",
-    "Cost": "£17.50",
+    "Cost": "\u00A317.50",
     "Venue": "venue1"
   },
   {
@@ -588,23 +588,23 @@
     "Starter": "Lightly fried whitebait served with burnt lemon \u0026 tartar dip",
     "Main": "Beer battered Cod \u0026 Chips served with chips, mushy peas, lemon wedge \u0026 tartare sauce",
     "Dessert": "No dessert",
-    "Cost": "£25.00",
+    "Cost": "\u00A325.00",
     "Venue": "venue2"
   },
   {
     "Name": "David Griffiths",
     "Starter": "No starter",
-    "Main": "Classic Dishes: Nanhoron Tikka Curry - Chicken, Served with rice, naan, mango chutney - £15.95",
+    "Main": "Classic Dishes: Nanhoron Tikka Curry - Chicken, Served with rice, naan, mango chutney - \u00A315.95",
     "Dessert": "No dessert",
-    "Cost": "£15.95",
+    "Cost": "\u00A315.95",
     "Venue": "venue3"
   },
   {
     "Name": "David Griffiths",
-    "Starter": "Spicy Meatballs – With a roast tomato sauce, Parmesan and rocket - £8.95",
-    "Main": "Classic Cheese \u0026 Bacon Burger - With burger sauce, salad, coleslaw and fries - £17.95",
+    "Starter": "Spicy Meatballs \u2013 With a roast tomato sauce, Parmesan and rocket - \u00A38.95",
+    "Main": "Classic Cheese \u0026 Bacon Burger - With burger sauce, salad, coleslaw and fries - \u00A317.95",
     "Dessert": "No dessert",
-    "Cost": "£26.90",
+    "Cost": "\u00A326.90",
     "Venue": "venue4"
   }
 ]

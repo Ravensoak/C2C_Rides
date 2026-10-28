@@ -9,8 +9,8 @@
     Each hotel contains an array of guest meal selections
 ========================================================== */
 
-const hotelData = {
-  hotelA: [
+const venueData = {
+  venue1: [
     {
       name: "David Olney",
       starter: "Creamy Garlic Mushrooms, Sourdough bread £8.50",
@@ -104,7 +104,7 @@ const hotelData = {
       dessert: "Crumble of the week, with custard and pouring cream - £10.50",
     },
   ],
-  hotelB: [
+  venue2: [
     {
       name: "David Olney",
       starter: "Crispy onion & corn bites served with mango mole",
@@ -208,7 +208,7 @@ const hotelData = {
       dessert: "Sticky Toffee Pudding with Custard",
     },
   ],
-  hotelC: [
+  venue3: [
     {
       name: "David Olney",
       starter: "Creamy Garlic Mushrooms (V) - Crusty bread & butter - £7.95",
@@ -314,7 +314,7 @@ const hotelData = {
         "Double Chocolate Brownie - Warm Brownie served with signature chocolate sauce & vanilla ice cream - £7.95",
     },
   ],
-  hotelD: [
+  venue4: [
     {
       name: "David Olney",
       starter: "Potato Skins (V) – With cheese, garlic sauce and crispy onions - £7.95",
@@ -504,7 +504,7 @@ function createGuestRow(guest) {
 
 function renderHotelTable(hotelKey) {
   currentHotel = hotelKey;
-  let guests = [...hotelData[hotelKey]];
+  let guests = [...venueData[hotelKey]];
 
   // Apply sorting if active
   if (currentSort.key) {
