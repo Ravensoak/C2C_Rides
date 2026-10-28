@@ -47,32 +47,31 @@ function updateOutput() {
   // Filter all entries for the selected person
   const entries = sheetData.filter((e) => e.Name === selected);
 
-  // Mapping of hotel keys to DOM ID prefixes
-  const hotels = {
-    themanor1: "themanor1",
-    lionhotel: "lionhotel",
-    nanhoronhotel: "nanhoronhotel",
-    bullinn: "bullinn",
-    themanor2: "themanor2", // included for completeness
+  // Mapping of hotel keys to the venue field IDs
+  const venues = {
+    venue1: { venue: "venue1", fields: ["venue1starter", "venue1main", "venue1dessert", "venue1cost"] },
+    venue2: { venue: "venue2", fields: ["venue2starter", "venue2main", "venue2dessert", "venue2cost"] },
+    venue3: { venue: "venue3", fields: ["venue3starter", "venue3main", "venue3dessert", "venue3cost"] },
+    venue4: { venue: "venue4", fields: ["venue4starter", "venue4main", "venue4dessert", "venue4cost"] },
   };
 
   // Render meal rows for each hotel
-  Object.entries(hotels).forEach(([hotelName, prefix]) => {
-    const entry = entries.find((e) => e.Hotel === hotelName);
+  Object.values(venues).forEach(({ venue, fields }) => {
+    const entry = entries.find((e) => e.Venue === venue);
 
-    document.getElementById(`${prefix}F`).innerHTML = entry
+    document.getElementById(fields[0]).innerHTML = entry
       ? `<div class="menu-row"><div class="category-label">🥗 Starter:</div><div class="food-item">${entry.Starter}</div></div>`
       : "";
 
-    document.getElementById(`${prefix}G`).innerHTML = entry
+    document.getElementById(fields[1]).innerHTML = entry
       ? `<div class="menu-row"><div class="category-label">🍽️ Main:</div><div class="food-item">${entry.Main}</div></div>`
       : "";
 
-    document.getElementById(`${prefix}H`).innerHTML = entry
+    document.getElementById(fields[2]).innerHTML = entry
       ? `<div class="menu-row"><div class="category-label">🍰 Dessert:</div><div class="food-item">${entry.Dessert}</div></div>`
       : "";
 
-    document.getElementById(`${prefix}I`).innerHTML = entry
+    document.getElementById(fields[3]).innerHTML = entry
       ? `<div class="menu-row"><div class="category-label">Total Cost:</div><div class="food-item">${entry.Cost}</div></div>`
       : "";
   });
