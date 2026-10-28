@@ -79,3 +79,10 @@ function updateOutput() {
 
 // Trigger update when user selects a name
 nameSelector.addEventListener("change", updateOutput);
+
+nameSelector.addEventListener("change", () => {
+  if (nameSelector.value) {
+    hotelSelector.value = "";
+    tableContainer.innerHTML = "";
+  }
+});

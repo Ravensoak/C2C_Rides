@@ -142,9 +142,9 @@ th:hover {
   background-size: 12px;
 
   cursor: pointer;
-  width: 250px;       /* fixed width */
+  width: 100%;
   max-width: 100%;    /* prevents overflow */
-  padding: 8px;       /* improved appearance */
+  padding: 8px 2.25rem 8px 0.75rem; /* reserve room for the dropdown arrow */
 }
 
 /* Hover state */

@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/lightbox.css" />
     <link rel="stylesheet" href="css/meals.css" />
+    <link rel="stylesheet" href="css/mealsbyname.css" />
+    <link rel="stylesheet" href="css/mealsbyhotel.css" />
   </head>
 
   <body>
@@ -81,16 +83,66 @@
     </div>-->
 
     <!-- =========================================================
-      FIND EXPLANATION AND BUTTONS
+      FIND EXPLANATION AND SELECTORS
     ========================================================== -->
     <p class="centered-summary">
-      Once all meal options have been sent out and received back, use the buttons below to see your meal choice.
+      Once all meal options have been sent out and received back, use the selectors below to see your meal choice.
     </p>
 
-    <div class="button-container">
-      <a href="/mealselectionbyname" class="menu-button">Find by Name</a>
-      <a href="/mealselectionbyhotel" class="menu-button">Find by Hotel</a>
+    <div class="meal-finder-grid">
+      <section class="meal-finder" aria-label="Find meal by name">
+        <div class="controls">
+          <label for="nameSelector">Find a guest</label>
+          <select id="nameSelector" aria-label="Select name">
+            <option value="" selected>Select a name</option>
+          </select>
+        </div>
+      </section>
+      <section class="meal-finder" aria-label="Find meals by venue">
+        <div class="controls">
+          <label for="hotelSelector">Find a venue</label>
+          <select id="hotelSelector" aria-label="Select hotel">
+            <option value="" selected>Select a venue</option>
+            <option value="venue1">23rd June - Black Swan Pub - Fearby</option>
+            <option value="venue2">24th June - The Lion Hotel - Hawes</option>
+            <option value="venue3">25th June - The Old Swan - Gargrave</option>
+            <option value="venue4">26th June - Black Sheep Brewery - Masham</option>
+          </select>
+        </div>
+      </section>
     </div>
+
+    <div class="grid hidden" id="nameResults" aria-live="polite">
+      <div class="output" id="venue1">
+        <strong class="card-title">Black Swan Pub - Fearby</strong>
+        <p id="venue1starter"></p>
+        <p id="venue1main"></p>
+        <p id="venue1dessert"></p>
+        <p id="venue1cost" class="total-line"></p>
+      </div>
+      <div class="output" id="venue2">
+        <strong class="card-title">The Lion Hotel - Hawes</strong>
+        <p id="venue2starter"></p>
+        <p id="venue2main"></p>
+        <p id="venue2dessert"></p>
+        <p id="venue2cost" class="total-line"></p>
+      </div>
+      <div class="output" id="venue3">
+        <strong class="card-title">The Old Swan - Gargrave</strong>
+        <p id="venue3starter"></p>
+        <p id="venue3main"></p>
+        <p id="venue3dessert"></p>
+        <p id="venue3cost" class="total-line"></p>
+      </div>
+      <div class="output" id="venue4">
+        <strong class="card-title">Black Sheep Brewery - Masham</strong>
+        <p id="venue4starter"></p>
+        <p id="venue4main"></p>
+        <p id="venue4dessert"></p>
+        <p id="venue4cost" class="total-line"></p>
+      </div>
+    </div>
+    <div id="tableContainer" class="hotel-results" aria-live="polite"></div>
 
     <!-- =========================================================
       LIGHTBOX CONTAINER
@@ -118,6 +170,8 @@
       (defer = loads after HTML parsing, safer for DOM elements)
       ========================================================== -->
     <script src="js/meals.js" defer></script>
+    <script src="js/mealsbyname.js" defer></script>
+    <script src="js/mealsbyhotel.js" defer></script>
     <script src="js/site.js" defer></script>
   </body>
 </html>

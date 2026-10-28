@@ -219,9 +219,9 @@ select {
   background-size: 12px;
 
   cursor: pointer;
-  width: 250px; /* fixed width for consistency */
+  width: 100%;
   max-width: 100%; /* prevents overflow on small screens */
-  padding: 8px; /* refined spacing */
+  padding: 8px 2.25rem 8px 0.75rem; /* reserve room for the dropdown arrow */
 }
 
 /* Hover state */

@@ -135,6 +135,11 @@ function renderHotelTable(hotelKey) {
 ========================================================== */
 
 hotelSelector.addEventListener("change", () => {
+  if (hotelSelector.value) {
+    nameSelector.value = "";
+    document.getElementById("nameResults").classList.add("hidden");
+  }
   currentSort = { key: null, direction: "asc" };
-  venueDataPromise.then(() => renderHotelTable(hotelSelector.value));
+  if (hotelSelector.value) venueDataPromise.then(() => renderHotelTable(hotelSelector.value));
+  else tableContainer.innerHTML = "";
 });
