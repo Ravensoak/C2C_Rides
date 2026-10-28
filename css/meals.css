@@ -25,10 +25,10 @@
   display: flex;
   align-items: stretch;
   padding: 1.25rem;
-  background: linear-gradient(145deg, rgba(248, 250, 252, 0.97), rgba(232, 238, 243, 0.97));
-  border: 1px solid rgba(207, 216, 227, 0.9);
+  background: #3498db;
+  border: 1px solid #2980b9;
   border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.14);
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.2);
 }
 
 .meal-finder .controls {
@@ -41,7 +41,7 @@
 
 .meal-finder label {
   margin-bottom: 0.5rem;
-  color: var(--primary-color, #1f2a36);
+  color: #fff;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -50,6 +50,10 @@
   width: 100%;
   max-width: 100%;
   margin: 0;
+}
+
+.meal-finder select option:first-child {
+  font-style: italic;
 }
 
 @media (max-width: 520px) {
