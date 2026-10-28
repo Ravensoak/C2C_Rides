@@ -46,6 +46,7 @@ body {
   /*background: url('Morfa-Nefyn.png') no-repeat center center fixed;*/
   background: url("../pictures/YorkshireDales.jpg") no-repeat center center;
   background-size: cover;
+  background-attachment: fixed;
   background-color: #1f2a36;
   color: var(--text);
   display: flex;
