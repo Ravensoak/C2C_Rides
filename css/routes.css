@@ -201,7 +201,7 @@
 
   .route-card img {
     aspect-ratio: auto;
-    max-height: 60vh;
+    max-height: none;
   }
   .lightbox-content img {
     width: 80vw;
