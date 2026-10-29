@@ -8,6 +8,8 @@
 ========================================================== */
 const refreshBtn = document.getElementById("refreshButton");
 let hideTimer;
+let waitingServiceWorker = null;
+let refreshingForUpdate = false;
 
 if (refreshBtn && window.matchMedia("(display-mode: standalone)").matches) {
   refreshBtn.style.display = "flex";
@@ -122,7 +124,64 @@ loadComponent(
   initNavigationMenu, // callback to run AFTER nav loads
 );
 
+function showAppRefreshOption() {
+  document.querySelectorAll(".app-refresh-menu-item").forEach((item) => {
+    item.hidden = !waitingServiceWorker;
+  });
+}
+
+function activateWaitingServiceWorker() {
+  if (!waitingServiceWorker) return;
+  refreshingForUpdate = true;
+  waitingServiceWorker.postMessage({ type: "SKIP_WAITING" });
+}
+
+function monitorServiceWorkerUpdates() {
+  if (!("serviceWorker" in navigator)) return;
+
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    if (refreshingForUpdate) window.location.reload();
+  });
+
+  navigator.serviceWorker
+    .register("service-worker.js")
+    .then((registration) => {
+      const checkForWaitingWorker = () => {
+        if (registration.waiting && navigator.serviceWorker.controller) {
+          waitingServiceWorker = registration.waiting;
+          showAppRefreshOption();
+        }
+      };
+
+      checkForWaitingWorker();
+      registration.addEventListener("updatefound", () => {
+        const installingWorker = registration.installing;
+        if (!installingWorker) return;
+
+        installingWorker.addEventListener("statechange", () => {
+          if (installingWorker.state === "installed" && navigator.serviceWorker.controller) {
+            waitingServiceWorker = installingWorker;
+            showAppRefreshOption();
+          }
+        });
+      });
+
+      registration.update().catch((error) => console.warn("Could not check for app updates:", error));
+    })
+    .catch((error) => console.warn("Service worker registration failed:", error));
+}
+
+monitorServiceWorkerUpdates();
+
 function initNavigationMenu() {
+  document.querySelectorAll(".app-refresh-menu-item a").forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      activateWaitingServiceWorker();
+    });
+  });
+  showAppRefreshOption();
+
   const toggle = document.querySelector(".menu-toggle");
   const mobileMenu = document.querySelector(".mobile-menu");
   const overlay = document.querySelector(".menu-overlay");
