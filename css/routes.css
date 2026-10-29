@@ -194,9 +194,17 @@
   }
 
   .route-card {
+    flex: none;
     width: 100%;
     max-width: none;
     padding: 10px;
+    height: auto;
+    overflow: visible;
+  }
+
+  .route-card-content {
+    flex: none;
+    height: auto;
   }
 
   .route-card img {
