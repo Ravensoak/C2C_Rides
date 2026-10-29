@@ -44,7 +44,7 @@ select:focus {
 }
 
 #tableContainer th {
-  background: linear-gradient(135deg, #1f3b57, #286b9b);
+  background: linear-gradient(135deg, #2c3e50, #3a5065);
   color: #fff;
   font-weight: 600;
   letter-spacing: 0.025em;
@@ -111,7 +111,7 @@ select:focus {
 
 /* Header hover (indicates sortability) */
 #tableContainer th:hover {
-  background: linear-gradient(135deg, #18334e, #1f5a86);
+  background: linear-gradient(135deg, #1f2a36, #2c3e50);
   cursor: pointer;
 }
 
