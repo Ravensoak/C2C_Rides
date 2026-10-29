@@ -205,6 +205,12 @@
 }
 
 /* === Responsive === */
+@media (min-width: 601px) and (max-width: 900px) {
+  .route-card {
+    flex-basis: calc((100% - 1.5rem) / 3);
+  }
+}
+
 @media (max-width: 600px) {
   .flex-grid {
     flex-direction: column;

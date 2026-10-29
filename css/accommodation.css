@@ -75,6 +75,12 @@
   RESPONSIVE RULES
 ========================================================== */
 
+@media (min-width: 601px) and (max-width: 900px) {
+  .hotel-card {
+    flex-basis: calc((100% - 40px) / 3);
+  }
+}
+
 /* Mobile: force 2-column layout */
 @media (max-width: 600px) {
   .hotel-container {
