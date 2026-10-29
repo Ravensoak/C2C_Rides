@@ -32,6 +32,10 @@
 }
 
 /* === Description truncation + smooth expand/collapse === */
+.centered-summary .route-notice {
+  font-size: 1.1rem;
+}
+
 .description {
   display: -webkit-box;
   -webkit-line-clamp: 4; /* show only 4 lines */
