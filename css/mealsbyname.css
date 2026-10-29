@@ -57,41 +57,33 @@ select {
 --------------------------------------------------------- */
 
 .output {
-  background-color: #fff; /* fallback if CSS variables missing */
-  border: 1px solid var(--card-border);
-  border-radius: 10px;
-  padding: 1rem 1.2rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(180deg, #fff 0%, #fbfdff 100%);
+  border: 1px solid #dbe4ed;
+  border-top: 4px solid #3498db;
+  border-radius: 12px;
+  padding: 1.15rem 1.25rem;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.09);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.output:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.13);
 }
 
 .output strong {
   display: block;
-  font-size: 1.2rem;
-  margin-bottom: 0.6rem;
-  color: var(--primary-color);
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  color: #1f3b57;
 }
 
 .output p {
-  margin: 0.3rem 0;
-  font-size: 0.95rem;
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
+  margin: 0;
+  font-size: 0.93rem;
+  display: block;
   text-align: left;
-
   position: relative;
-  padding-bottom: 0.6rem; /* space above divider */
-  margin-bottom: 0.6rem; /* space below divider */
-}
-
-.output p:not(:last-of-type)::after {
-  content: "";
-  position: absolute;
-  left: 0.5rem;
-  right: 0.5rem;
-  bottom: 0;
-  height: 1px;
-  background: #e5e7eb;
 }
 
 .output p img,
@@ -105,8 +97,8 @@ select {
 .card-title {
   position: relative;
   display: block; /* important: makes the underline span the card width */
-  padding-bottom: 0.4rem;
-  margin-bottom: 0.6rem;
+  padding-bottom: 0.65rem;
+  margin-bottom: 0.75rem;
 }
 
 .card-title::after {
@@ -115,25 +107,18 @@ select {
   left: 0; /* aligns with card padding */
   right: 0; /* aligns with card padding */
   bottom: 0;
-  height: 1.5px;
-  background: #9ca3af;
+  height: 1px;
+  background: #dbe4ed;
 }
 
 .total-line {
-  font-weight: bold;
-  font-size: 1rem;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 0.8rem;
-  padding-top: 0.6rem;
-  padding-left: 0.2rem;
-
-  color: var(--primary-color);
-
-  /* subtle shadow */
-  background: cyan;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
-  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: 0.65rem !important;
+  padding: 0.65rem 0.75rem !important;
+  color: #1f3b57;
+  background: #eef6fc;
+  border-radius: 8px;
 }
 
 /* ---------------------------------------------------------
@@ -142,16 +127,27 @@ select {
 
 .menu-row {
   display: grid;
-  grid-template-columns: 120px 1fr;
+  grid-template-columns: 110px minmax(0, 1fr);
   align-items: start;
-  margin-bottom: 0.4rem;
+  gap: 0.75rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid #edf1f5;
+}
+
+.output p:nth-last-child(2) .menu-row {
+  border-bottom: 0;
+}
+
+.total-line .menu-row {
+  padding: 0;
+  border: 0;
 }
 
 /* Category label (Starter / Main / Dessert / Total) */
 .category-label {
   font-weight: bold;
   font-size: 0.95rem; /* match .food-item size */
-  color: black;
+  color: #526579;
   display: flex; /* align emoji + text together */
   align-items: center; /* vertically align with food text */
   gap: 0.3rem; /* space between emoji and label text */
@@ -166,8 +162,19 @@ select {
 /* Meal text */
 .food-item {
   font-size: 0.95rem;
-  color: var(--text-color);
-  line-height: 1.2;
+  color: #263445;
+  line-height: 1.45;
+}
+
+@media (max-width: 420px) {
+  .output {
+    padding: 1rem;
+  }
+
+  .menu-row {
+    grid-template-columns: 96px minmax(0, 1fr);
+    gap: 0.5rem;
+  }
 }
 
 /* ---------------------------------------------------------
