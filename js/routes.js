@@ -714,11 +714,14 @@ function createRouteCard(route, index, day) {
   card.style.animationDelay = `${index * 0.1}s`;
 
   card.innerHTML = `
-    <img src="${route.img}" alt="${route.name}" />
+    <div class="route-image-wrap">
+      <img src="${route.img}" alt="${route.name}" />
+      <a class="route-image-zoom" href="${route.link}" target="_blank" rel="noopener noreferrer" aria-label="View ${escapeHtml(route.name)} route" title="Open Route">
+        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+      </a>
+    </div>
     <div class="route-card-content">
       <h3>${route.name}</h3>
-      <a href="${route.link}" target="_blank" rel="noopener noreferrer">View Route</a>
-
       <div class="description">${buildRouteDescription(route, day)}</div>
       <span class="more-link" style="display:none;">More</span>
     </div>

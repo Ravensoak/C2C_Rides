@@ -127,6 +127,10 @@
   animation: fadeIn 0.6s ease forwards;
 }
 
+.route-image-wrap {
+  position: relative;
+}
+
 .route-card img {
   width: 100%;
   height: auto;
@@ -134,6 +138,36 @@
   display: block;
   margin: 0 auto;
   border-radius: 8px 8px 0 0; /* top corners only */
+}
+
+.route-image-zoom {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  background: rgba(31, 42, 54, 0.78);
+  color: #fff;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.24);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.route-image-zoom:hover,
+.route-image-zoom:focus-visible {
+  background: var(--accent);
+  transform: scale(1.08);
+}
+
+.route-image-zoom:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
 }
 
 .route-card-content {
