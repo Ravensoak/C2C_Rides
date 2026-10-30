@@ -716,6 +716,15 @@ function createRouteCard(route, index, day) {
   card.innerHTML = `
     <div class="route-image-wrap">
       <img src="${route.img}" alt="${route.name}" />
+      <a
+        href="#"
+        class="map-link route-flythrough"
+        aria-label="3D Fly-through coming soon"
+        onclick="showComingSoon(event)">
+        <!-- YouTube fly-through link, enable when ready: https://youtu.be/vTyXvMCwrkw -->
+        3D Fly-through
+        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+      </a>
       <a class="route-image-zoom" href="${route.link}" target="_blank" rel="noopener noreferrer" aria-label="View ${escapeHtml(route.name)} route" title="Open Route">
         <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
       </a>
@@ -798,10 +807,22 @@ function openLightbox(img) {
   const caption = document.getElementById("lightbox-caption");
 
   lightboxImg.src = img.src;
+  lightboxImg.hidden = false;
   caption.textContent = img.alt;
+  lightbox.classList.remove("coming-soon");
   lightbox.classList.add("active");
 }
 
 function closeLightbox() {
-  document.getElementById("lightbox").classList.remove("active");
+  document.getElementById("lightbox").classList.remove("active", "coming-soon");
+}
+
+function showComingSoon(event) {
+  event.preventDefault();
+  const lightbox = document.getElementById("lightbox");
+  const image = document.getElementById("lightbox-img");
+  image.hidden = true;
+  document.getElementById("lightbox-caption").textContent = "3D-Flythrough - Coming soon!";
+  lightbox.classList.add("coming-soon");
+  lightbox.classList.add("active");
 }

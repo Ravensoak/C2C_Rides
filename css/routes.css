@@ -159,6 +159,38 @@
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
+.route-flythrough {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.65rem;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 999px;
+  background: rgba(31, 42, 54, 0.82);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.24);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.route-flythrough:hover,
+.route-flythrough:focus-visible {
+  background: var(--accent);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.route-flythrough:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
 .route-image-zoom:hover,
 .route-image-zoom:focus-visible {
   background: var(--accent);
@@ -321,6 +353,27 @@
   text-align: center;
 }
 
+.lightbox.coming-soon .image-box {
+  display: none;
+}
+
+.lightbox.coming-soon .lightbox-content {
+  min-width: min(280px, 80vw);
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  background: #1f2a36;
+}
+
+.lightbox.coming-soon .lightbox-close {
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.lightbox.coming-soon #lightbox-caption {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
 /* Core fix: constrain positioning inside this box */
 .image-box {
   position: relative;
@@ -347,9 +400,11 @@
   color: white;
   border: none;
   border-radius: 50%;
-  font-size: 1.4rem;
-  width: 36px;
-  height: 36px;
+  font-size: 0.9rem;
+  width: 26px;
+  min-width: 26px;
+  height: 26px;
+  padding: 0;
   cursor: pointer;
   z-index: 10;
   display: flex;
