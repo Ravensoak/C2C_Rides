@@ -7,7 +7,14 @@
     "description": "This casual 17th-century stone pub with rooms is 2 miles from the market town of Masham.",
     "url": "https://blackswan-masham.co.uk/"
   },
-
+  {
+    "name": "The Green Dragon",
+    "image": "pictures/The Green Dragon.jpg",
+    "alt": "The Green Dragon, Hardraw",
+    "address": "Bellow Hill, Hardraw, Hawes DL8 3LZ",
+    "description": "Located in the charming Yorkshire village of Hardraw. The Green Dragon Inn stands in a stunning location overlooking Upper Wensleydale. Situated beneath the rising fells of Great Shunner Fell, not far from the town of Hawes.",
+    "url": "https://thegreendragonhardraw.co.uk/"
+  },
   {
     "name": "Premier Inn Skipton North (Gargrave) hotel",
     "image": "pictures/Premier Inn - Gargrave.webp",
